@@ -1,26 +1,19 @@
-use std::fs;
 use std::path::PathBuf;
 
-use anyhow::{bail, Result};
+use anyhow::Result;
 
-use crate::raw_data::RawQuestionData;
+use crate::data::CourseData;
+use crate::helpers::read_data_dir;
 
 pub fn sync(data_path: PathBuf) -> Result<()> {
-    let data_path = fs::canonicalize(data_path)?;
-    let entries = fs::read_dir(data_path)?;
+    let entries = read_data_dir(data_path)?;
 
     for dir_entry in entries {
-        let entry = dir_entry?;
+        let course_data = CourseData::load_and_write_formatted(dir_entry?)?;
 
-        if entry.file_type()?.is_dir() {
-            bail!("");
-        };
-
-        let raw_data = fs::read(entry.path())?;
-
-        let questions: Vec<RawQuestionData> = serde_json::from_slice(&raw_data)?;
-
-        println!("{:?}", questions);
+        println!("{:?}", course_data.key);
+        println!("{:?}", course_data.hash);
+        println!("{:?}", course_data);
     }
 
     Ok(())
