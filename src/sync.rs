@@ -1,12 +1,13 @@
 use std::path::PathBuf;
 
 use anyhow::Result;
+use secrecy::Secret;
 use url::Url;
 
 use medici_data_sync::data::CourseData;
 use medici_data_sync::helpers::read_data_dir;
 
-pub async fn sync(data_path: PathBuf, engine_url: Url) -> Result<()> {
+pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String>) -> Result<()> {
     let entries = read_data_dir(data_path)?;
 
     let courses_data = entries
@@ -16,6 +17,7 @@ pub async fn sync(data_path: PathBuf, engine_url: Url) -> Result<()> {
 
     println!("{courses_data:?}");
     println!("{engine_url:?}");
+    println!("{engine_key:?}");
 
     Ok(())
 }

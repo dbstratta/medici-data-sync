@@ -2,6 +2,7 @@ use std::path::PathBuf;
 
 use anyhow::Result;
 use clap::{Parser, Subcommand};
+use secrecy::Secret;
 use url::Url;
 
 mod format;
@@ -25,8 +26,9 @@ impl Synchronizer {
             Command::Sync {
                 data_path,
                 engine_url,
+                engine_key,
             } => {
-                sync::sync(data_path, engine_url).await?;
+                sync::sync(data_path, engine_url, engine_key).await?;
             }
             Command::Format { data_path } => {
                 format::format(data_path)?;
@@ -47,14 +49,11 @@ enum Command {
         #[clap(short, long, value_parser, value_name = "PATH")]
         data_path: PathBuf,
 
-        #[clap(
-            short,
-            long,
-            value_parser,
-            value_name = "ENGINE_URL",
-            env = "ENGINE_URL"
-        )]
+        #[clap(long, value_parser, value_name = "ENGINE_URL", env = "ENGINE_URL")]
         engine_url: Url,
+
+        #[clap(long, value_parser, value_name = "ENGINE_KEY", env = "ENGINE_KEY")]
+        engine_key: Secret<String>,
     },
 }
 
