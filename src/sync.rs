@@ -2,8 +2,8 @@ use std::path::PathBuf;
 
 use anyhow::Result;
 
-use data_synchronizer::data::CourseData;
-use data_synchronizer::helpers::read_data_dir;
+use medici_data_sync::data::CourseData;
+use medici_data_sync::helpers::read_data_dir;
 
 pub async fn sync(data_path: PathBuf) -> Result<()> {
     let entries = read_data_dir(data_path)?;
