@@ -19,7 +19,7 @@ pub fn read_dir_entry_data(dir_entry: DirEntry) -> Result<Vec<u8>> {
 }
 
 pub fn write_data(path: PathBuf, data: String) -> Result<()> {
-    fs::write(path, data)?;
+    fs::write(path, format!("{data}\n"))?;
 
     Ok(())
 }

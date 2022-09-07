@@ -13,16 +13,16 @@ struct Synchronizer {
 }
 
 impl Synchronizer {
-    fn run() -> Result<()> {
+    async fn run() -> Result<()> {
         let synchronizer = Synchronizer::parse();
 
-        synchronizer.run_command()
+        synchronizer.run_command().await
     }
 
-    fn run_command(self) -> Result<()> {
+    async fn run_command(self) -> Result<()> {
         match self.command {
             Command::Sync { data_path } => {
-                sync::sync(data_path)?;
+                sync::sync(data_path).await?;
             }
             Command::Format { data_path } => {
                 format::format(data_path)?;
@@ -45,6 +45,7 @@ enum Command {
     },
 }
 
-fn main() {
-    Synchronizer::run().unwrap();
+#[tokio::main]
+async fn main() -> Result<()> {
+    Synchronizer::run().await
 }

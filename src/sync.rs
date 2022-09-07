@@ -5,16 +5,15 @@ use anyhow::Result;
 use data_synchronizer::data::CourseData;
 use data_synchronizer::helpers::read_data_dir;
 
-pub fn sync(data_path: PathBuf) -> Result<()> {
+pub async fn sync(data_path: PathBuf) -> Result<()> {
     let entries = read_data_dir(data_path)?;
 
-    for dir_entry in entries {
-        let course_data = CourseData::load_and_write_formatted(dir_entry?)?;
+    let courses_data = entries
+        .into_iter()
+        .map(|dir_entry| CourseData::load_and_write_formatted(dir_entry?))
+        .collect::<Result<Vec<_>>>()?;
 
-        println!("{:?}", course_data.key);
-        println!("{:?}", course_data.hash);
-        println!("{:?}", course_data);
-    }
+    println!("{courses_data:?}");
 
     Ok(())
 }
