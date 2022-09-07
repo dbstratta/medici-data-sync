@@ -2,7 +2,7 @@ use std::cmp::Ordering;
 use std::fs::DirEntry;
 use std::path::PathBuf;
 
-use anyhow::Result;
+use anyhow::{bail, Result};
 use serde::Deserialize;
 use uuid::Uuid;
 
@@ -49,6 +49,8 @@ impl CourseData {
         let path = dir_entry.path();
         let mut data = Self::load(path.clone(), dir_entry)?;
 
+        data.check()?;
+        data.deduplicate();
         data.sort();
         data.clone().write(path)?;
 
@@ -82,13 +84,32 @@ impl CourseData {
     fn sort(&mut self) {
         self.questions
             .sort_by(|a, b| match a.evaluation.cmp(&b.evaluation) {
-                Ordering::Equal => a.text.cmp(&b.text),
+                Ordering::Equal => match a.text.cmp(&b.text) {
+                    Ordering::Equal => a.id.cmp(&b.id),
+                    ordering => ordering,
+                },
                 ordering => ordering,
             });
 
         for question in self.questions.iter_mut() {
-            OptionData::sort(&mut question.options);
+            question.sort_options();
         }
+    }
+
+    fn deduplicate(&mut self) {
+        self.questions.dedup_by(|a, b| a.eq_data(b));
+
+        for question in self.questions.iter_mut() {
+            question.deduplicate_options();
+        }
+    }
+
+    fn check(&self) -> Result<()> {
+        for question in &self.questions {
+            question.check()?;
+        }
+
+        Ok(())
     }
 }
 
@@ -139,6 +160,40 @@ impl QuestionData {
 
         Ok(raw_questions.into_iter().map(Into::into).collect())
     }
+
+    fn sort_options(&mut self) {
+        self.options.sort_by(|a, b| {
+            if a.correct {
+                Ordering::Less
+            } else if b.correct {
+                Ordering::Greater
+            } else {
+                a.text.cmp(&b.text)
+            }
+        })
+    }
+
+    fn deduplicate_options(&mut self) {
+        self.options.dedup_by(|a, b| a.eq_data(b));
+    }
+
+    fn eq_data(&self, other: &Self) -> bool {
+        self.text == other.text
+            && self.evaluation == other.evaluation
+            && self.options.len() == other.options.len()
+            && self
+                .options
+                .iter()
+                .all(|a| other.options.iter().any(|b| a.eq_data(b)))
+    }
+
+    fn check(&self) -> Result<()> {
+        if self.options.len() < 2 || self.options.len() > 5 {
+            bail!("Question {} has {} option(s)", self.id, self.options.len());
+        }
+
+        Ok(())
+    }
 }
 
 impl From<RawQuestionData> for QuestionData {
@@ -186,16 +241,8 @@ impl OptionData {
         hasher.finalize().to_string()
     }
 
-    fn sort(options: &mut [Self]) {
-        options.sort_by(|a, b| {
-            if a.correct {
-                Ordering::Less
-            } else if b.correct {
-                Ordering::Greater
-            } else {
-                a.text.cmp(&b.text)
-            }
-        })
+    fn eq_data(&self, other: &Self) -> bool {
+        self.text == other.text && self.correct == other.correct
     }
 }
 

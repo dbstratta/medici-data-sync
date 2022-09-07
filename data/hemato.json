@@ -33,24 +33,12 @@
     "options": [
       {
         "id": "7412a22a-d06d-40e9-99a1-bf54b5c5bd2c",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "text": "Lorem",
         "correct": true
       },
       {
         "id": "75700ed7-b74a-4f0f-b392-8017842bc887",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      },
-      {
-        "id": "e5e75c1c-4bcf-48c5-bf52-b894a1ec4062",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      },
-      {
-        "id": "1f06d33c-edec-48e4-84dd-163cd78d8515",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      },
-      {
-        "id": "3c15d96c-ab68-4cd8-b900-9b86820d0aab",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "text": "2"
       }
     ],
     "evaluation": "2_parcial"
