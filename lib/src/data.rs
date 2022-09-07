@@ -192,6 +192,12 @@ impl QuestionData {
             bail!("Question {} has {} option(s)", self.id, self.options.len());
         }
 
+        let correct_count = self.options.iter().filter(|option| option.correct).count();
+
+        if correct_count != 1 {
+            bail!("Question {} has {correct_count} correct options", self.id)
+        }
+
         Ok(())
     }
 }
