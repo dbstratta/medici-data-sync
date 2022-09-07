@@ -1,11 +1,12 @@
 use std::path::PathBuf;
 
 use anyhow::Result;
+use url::Url;
 
 use medici_data_sync::data::CourseData;
 use medici_data_sync::helpers::read_data_dir;
 
-pub async fn sync(data_path: PathBuf) -> Result<()> {
+pub async fn sync(data_path: PathBuf, engine_url: Url) -> Result<()> {
     let entries = read_data_dir(data_path)?;
 
     let courses_data = entries
@@ -14,6 +15,7 @@ pub async fn sync(data_path: PathBuf) -> Result<()> {
         .collect::<Result<Vec<_>>>()?;
 
     println!("{courses_data:?}");
+    println!("{engine_url:?}");
 
     Ok(())
 }

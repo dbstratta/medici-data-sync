@@ -2,6 +2,7 @@ use std::path::PathBuf;
 
 use anyhow::Result;
 use clap::{Parser, Subcommand};
+use url::Url;
 
 mod format;
 mod sync;
@@ -21,8 +22,11 @@ impl Synchronizer {
 
     async fn run_command(self) -> Result<()> {
         match self.command {
-            Command::Sync { data_path } => {
-                sync::sync(data_path).await?;
+            Command::Sync {
+                data_path,
+                engine_url,
+            } => {
+                sync::sync(data_path, engine_url).await?;
             }
             Command::Format { data_path } => {
                 format::format(data_path)?;
@@ -42,10 +46,24 @@ enum Command {
     Sync {
         #[clap(short, long, value_parser, value_name = "PATH")]
         data_path: PathBuf,
+
+        #[clap(
+            short,
+            long,
+            value_parser,
+            value_name = "ENGINE_URL",
+            env = "ENGINE_URL"
+        )]
+        engine_url: Url,
     },
 }
 
 #[tokio::main]
 async fn main() -> Result<()> {
+    #[cfg(feature = "env-file")]
+    {
+        dotenvy::dotenv().ok();
+    }
+
     Synchronizer::run().await
 }
