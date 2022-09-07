@@ -1,13 +1,16 @@
+[workspace]
+members = [".", "lib"]
+
 [package]
-name = "medici-data-synchronizer"
+name = "data-synchronizer-bin"
 version = "0.1.0"
 edition = "2021"
 rust-version = "1.62"
 
 [dependencies]
 anyhow = "1.0.64"
-blake3 = "1.3.1"
 clap = { version = "3.2.20", features = ["derive"] }
+data-synchronizer = { path = "lib" }
 reqwest = { version = "0.11.11", default-features = false, features = [
     "rustls-tls",
     "json",

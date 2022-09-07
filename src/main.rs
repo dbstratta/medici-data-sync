@@ -2,7 +2,8 @@ use std::path::PathBuf;
 
 use clap::{Parser, Subcommand};
 
-use medici_data_synchronizer::{format, sync};
+mod format;
+mod sync;
 
 #[derive(Parser)]
 struct Synchronizer {
