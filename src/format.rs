@@ -2,8 +2,7 @@ use std::path::PathBuf;
 
 use anyhow::Result;
 
-use medici_data_sync::data::CourseData;
-use medici_data_sync::helpers::read_data_dir;
+use medici_data_sync::{read_data_dir, CourseData};
 
 pub fn format(data_path: PathBuf) -> Result<()> {
     let entries = read_data_dir(data_path)?;

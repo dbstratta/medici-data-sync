@@ -159,6 +159,7 @@ dependencies = [
  "clap",
  "dotenvy",
  "medici-data-sync",
+ "once_cell",
  "reqwest",
  "secrecy",
  "serde",

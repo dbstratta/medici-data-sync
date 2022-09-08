@@ -3,7 +3,7 @@ use std::fs::DirEntry;
 use std::path::PathBuf;
 
 use anyhow::{bail, Result};
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
 use crate::helpers::{read_dir_entry_data, write_data};
@@ -260,4 +260,11 @@ impl From<RawOptionData> for OptionData {
             raw.correct.unwrap_or(false),
         )
     }
+}
+
+#[derive(Serialize, Deserialize)]
+pub struct CourseMetadata {
+    pub id: i32,
+    pub key: String,
+    pub hash: String,
 }
