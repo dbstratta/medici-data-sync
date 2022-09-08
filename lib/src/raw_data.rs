@@ -33,6 +33,8 @@ pub struct RawOptionData {
     pub text: String,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub correct: Option<bool>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub explanation: Option<String>,
 }
 
 impl From<OptionData> for RawOptionData {
@@ -45,6 +47,7 @@ impl From<OptionData> for RawOptionData {
             } else {
                 None
             },
+            explanation: data.explanation,
         }
     }
 }

@@ -9,7 +9,7 @@ use uuid::Uuid;
 use crate::helpers::{read_dir_entry_data, write_data};
 use crate::raw_data::{RawOptionData, RawQuestionData};
 
-#[derive(Deserialize, Clone, Debug)]
+#[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct CourseData {
     pub key: String,
 
@@ -113,7 +113,7 @@ impl CourseData {
     }
 }
 
-#[derive(Deserialize, Clone, Debug)]
+#[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct QuestionData {
     pub id: Uuid,
 
@@ -215,40 +215,48 @@ impl From<RawQuestionData> for QuestionData {
     }
 }
 
-#[derive(Deserialize, Clone, Debug)]
+#[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct OptionData {
     pub id: Uuid,
 
     pub text: String,
     pub correct: bool,
+    pub explanation: Option<String>,
 
     pub hash: String,
 }
 
 impl OptionData {
-    fn new(id: Uuid, text: String, correct: bool) -> Self {
-        let hash = Self::hash_data(id, &text, correct);
+    fn new(id: Uuid, text: String, correct: bool, explanation: Option<String>) -> Self {
+        let hash = Self::hash_data(id, &text, correct, explanation.as_deref());
 
         Self {
             id,
             text,
             correct,
+            explanation,
             hash,
         }
     }
 
-    fn hash_data(id: Uuid, text: &str, correct: bool) -> String {
+    fn hash_data(id: Uuid, text: &str, correct: bool, explanation: Option<&str>) -> String {
         let mut hasher = blake3::Hasher::new();
 
         hasher.update(id.as_bytes());
         hasher.update(text.as_bytes());
         hasher.update(&[correct as u8]);
 
+        if let Some(explanation) = explanation {
+            hasher.update(explanation.as_bytes());
+        }
+
         hasher.finalize().to_string()
     }
 
     fn eq_data(&self, other: &Self) -> bool {
-        self.text == other.text && self.correct == other.correct
+        self.text == other.text
+            && self.correct == other.correct
+            && self.explanation == other.explanation
     }
 }
 
@@ -258,11 +266,12 @@ impl From<RawOptionData> for OptionData {
             raw.id.unwrap_or_else(|| Uuid::new_v4()),
             raw.text,
             raw.correct.unwrap_or(false),
+            raw.explanation,
         )
     }
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug)]
 pub struct CourseMetadata {
     pub id: i32,
     pub key: String,

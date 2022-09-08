@@ -1,6 +1,6 @@
-use std::path::PathBuf;
+use std::{collections::HashMap, path::PathBuf};
 
-use anyhow::Result;
+use anyhow::{bail, Result};
 use secrecy::{ExposeSecret, Secret};
 use url::Url;
 
@@ -15,7 +15,17 @@ pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String
         .collect::<Result<Vec<_>>>()?;
 
     let engine_client = engine_client(engine_key)?;
-    let courses_metadata = courses_metadata(engine_client, &engine_url).await?;
+    let courses_metadata = courses_metadata(&engine_client, engine_url.clone()).await?;
+
+    for course_data in courses_data {
+        sync_course_data(
+            &engine_client,
+            engine_url.clone(),
+            course_data.clone(),
+            courses_metadata.get(&course_data.key),
+        )
+        .await?;
+    }
 
     Ok(())
 }
@@ -35,9 +45,43 @@ fn engine_client(engine_key: Secret<String>) -> Result<reqwest::Client> {
     Ok(client)
 }
 
-async fn courses_metadata(client: reqwest::Client, engine_url: &Url) -> Result<CourseMetadata> {
-    let mut url = engine_url.clone();
-    url.set_path("");
+async fn courses_metadata(
+    client: &reqwest::Client,
+    engine_url: Url,
+) -> Result<HashMap<String, CourseMetadata>> {
+    let url = engine_url.join("courses-metadata")?;
 
-    Ok(client.get(url).send().await?.json().await?)
+    let courses_metadata = client
+        .get(url)
+        .send()
+        .await?
+        .json::<Vec<CourseMetadata>>()
+        .await?
+        .into_iter()
+        .map(|metadata| (metadata.key.clone(), metadata))
+        .collect();
+
+    Ok(courses_metadata)
+}
+
+async fn sync_course_data(
+    client: &reqwest::Client,
+    engine_url: Url,
+    course_data: CourseData,
+    metadata: Option<&CourseMetadata>,
+) -> Result<()> {
+    if let Some(metadata) = metadata {
+        if metadata.hash == course_data.hash {
+            return Ok(());
+        }
+    }
+
+    let url = engine_url.join("update-course-data")?;
+    let response = client.post(url).json(&course_data).send().await?;
+
+    if response.status().is_success() {
+        Ok(())
+    } else {
+        bail!("Error {}", response.status())
+    }
 }
