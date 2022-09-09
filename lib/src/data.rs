@@ -13,6 +13,7 @@ use crate::raw_data::{RawOptionData, RawQuestionData};
 pub struct CourseData {
     pub key: String,
 
+    #[serde(skip)]
     pub questions: Vec<QuestionData>,
 
     pub hash: String,
@@ -118,6 +119,7 @@ pub struct QuestionData {
     pub id: Uuid,
 
     pub text: String,
+    #[serde(skip)]
     pub options: Vec<OptionData>,
     pub evaluation: String,
 
@@ -269,17 +271,4 @@ impl From<RawOptionData> for OptionData {
             raw.explanation,
         )
     }
-}
-
-#[derive(Serialize, Deserialize, Clone, Debug)]
-pub struct CourseMetadata {
-    pub id: i32,
-    pub key: String,
-    pub hash: String,
-}
-
-#[derive(Serialize, Deserialize, Clone, Debug)]
-pub struct SyncData {
-    pub to_update: Vec<CourseData>,
-    pub to_delete: Vec<String>,
 }
