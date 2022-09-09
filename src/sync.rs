@@ -95,7 +95,7 @@ async fn sync_metadata(client: &reqwest::Client, engine_url: Url) -> Result<Sync
 }
 
 async fn sync_courses(client: &reqwest::Client, engine_url: Url, data: SyncData) -> Result<()> {
-    let url = engine_url.join("sync-courses")?;
+    let url = engine_url.join("sync-data")?;
     let response = client.post(url).json(&data).send().await?;
 
     if response.status().is_success() {
