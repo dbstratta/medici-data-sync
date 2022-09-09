@@ -7,25 +7,28 @@ use url::Url;
 use medici_data_sync::{read_data_dir, CourseData, CourseMetadata};
 
 pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String>) -> Result<()> {
+    let engine_client = engine_client(engine_key)?;
+    let courses_metadata = courses_metadata(&engine_client, engine_url.clone()).await?;
+
     let entries = read_data_dir(data_path)?;
 
     let courses_data = entries
         .into_iter()
         .map(|dir_entry| CourseData::load_and_write_formatted(dir_entry?))
-        .collect::<Result<Vec<_>>>()?;
+        .collect::<Result<Vec<_>>>()?
+        .into_iter()
+        .filter(|data| {
+            if let Some(metadata) = courses_metadata.get(&data.key) {
+                if metadata.hash == data.hash {
+                    return false;
+                }
+            }
 
-    let engine_client = engine_client(engine_key)?;
-    let courses_metadata = courses_metadata(&engine_client, engine_url.clone()).await?;
+            true
+        })
+        .collect::<Vec<_>>();
 
-    for course_data in courses_data {
-        sync_course_data(
-            &engine_client,
-            engine_url.clone(),
-            course_data.clone(),
-            courses_metadata.get(&course_data.key),
-        )
-        .await?;
-    }
+    sync_courses(&engine_client, engine_url.clone(), courses_data).await?;
 
     Ok(())
 }
@@ -64,20 +67,13 @@ async fn courses_metadata(
     Ok(courses_metadata)
 }
 
-async fn sync_course_data(
+async fn sync_courses(
     client: &reqwest::Client,
     engine_url: Url,
-    course_data: CourseData,
-    metadata: Option<&CourseMetadata>,
+    data: Vec<CourseData>,
 ) -> Result<()> {
-    if let Some(metadata) = metadata {
-        if metadata.hash == course_data.hash {
-            return Ok(());
-        }
-    }
-
-    let url = engine_url.join("update-course-data")?;
-    let response = client.post(url).json(&course_data).send().await?;
+    let url = engine_url.join("sync-courses")?;
+    let response = client.post(url).json(&data).send().await?;
 
     if response.status().is_success() {
         Ok(())

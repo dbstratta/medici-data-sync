@@ -277,3 +277,9 @@ pub struct CourseMetadata {
     pub key: String,
     pub hash: String,
 }
+
+#[derive(Serialize, Deserialize, Clone, Debug)]
+pub struct SyncData {
+    pub to_update: Vec<CourseData>,
+    pub to_delete: Vec<String>,
+}
