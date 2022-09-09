@@ -271,7 +271,7 @@ impl From<RawOptionData> for OptionData {
     }
 }
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct CourseMetadata {
     pub id: i32,
     pub key: String,

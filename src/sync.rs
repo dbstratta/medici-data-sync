@@ -4,7 +4,7 @@ use anyhow::{bail, Result};
 use secrecy::{ExposeSecret, Secret};
 use url::Url;
 
-use medici_data_sync::{read_data_dir, CourseData, CourseMetadata};
+use medici_data_sync::{read_data_dir, CourseData, CourseMetadata, SyncData};
 
 pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String>) -> Result<()> {
     let engine_client = engine_client(engine_key)?;
@@ -28,7 +28,15 @@ pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String
         })
         .collect::<Vec<_>>();
 
-    sync_courses(&engine_client, engine_url.clone(), courses_data).await?;
+    sync_courses(
+        &engine_client,
+        engine_url.clone(),
+        SyncData {
+            to_update: courses_data,
+            to_delete: vec![],
+        },
+    )
+    .await?;
 
     Ok(())
 }
@@ -67,11 +75,7 @@ async fn courses_metadata(
     Ok(courses_metadata)
 }
 
-async fn sync_courses(
-    client: &reqwest::Client,
-    engine_url: Url,
-    data: Vec<CourseData>,
-) -> Result<()> {
+async fn sync_courses(client: &reqwest::Client, engine_url: Url, data: SyncData) -> Result<()> {
     let url = engine_url.join("sync-courses")?;
     let response = client.post(url).json(&data).send().await?;
 
