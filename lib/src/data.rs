@@ -138,6 +138,7 @@ impl QuestionData {
 
         Self {
             id,
+            course_key: None,
             text,
             question_options,
             evaluation,
@@ -254,6 +255,7 @@ impl QuestionOptionData {
 
         Self {
             id,
+            question_id: None,
             text,
             correct,
             explanation,
