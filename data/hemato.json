@@ -1,47 +1,55 @@
-[
-  {
-    "id": "06fef0cd-9128-40ec-a736-1ff9dc247109",
-    "text": "2",
-    "options": [
-      {
-        "id": "808aee51-b0eb-463f-a3eb-00501682ec35",
-        "text": "2",
-        "correct": true
-      },
-      {
-        "id": "8d8673c3-73e9-42e8-9913-8df4ec18df21",
-        "text": "1"
-      },
-      {
-        "id": "90b1389c-2fb0-496f-9970-a1fa23c2c9ea",
-        "text": "3"
-      },
-      {
-        "id": "eaa41546-6637-4b9c-8228-81479767b1ee",
-        "text": "4",
-        "explanation": "gg"
-      },
-      {
-        "id": "ed23af68-5711-4ec8-a8c2-6d226de148a9",
-        "text": "5"
-      }
-    ],
-    "evaluation": "1_parcial"
-  },
-  {
-    "id": "1a92c4bd-4912-485b-8d60-1c6cdae26255",
-    "text": "1",
-    "options": [
-      {
-        "id": "7412a22a-d06d-40e9-99a1-bf54b5c5bd2c",
-        "text": "Lorem",
-        "correct": true
-      },
-      {
-        "id": "75700ed7-b74a-4f0f-b392-8017842bc887",
-        "text": "2"
-      }
-    ],
-    "evaluation": "2_parcial"
-  }
-]
+{
+  "name": "Hematología e Inmunología",
+  "short_name": "Hemato",
+  "aliases": [
+    "hemato",
+    "inmuno"
+  ],
+  "questions": [
+    {
+      "id": "06fef0cd-9128-40ec-a736-1ff9dc247109",
+      "text": "2",
+      "options": [
+        {
+          "id": "808aee51-b0eb-463f-a3eb-00501682ec35",
+          "text": "2",
+          "correct": true
+        },
+        {
+          "id": "8d8673c3-73e9-42e8-9913-8df4ec18df21",
+          "text": "1"
+        },
+        {
+          "id": "90b1389c-2fb0-496f-9970-a1fa23c2c9ea",
+          "text": "3"
+        },
+        {
+          "id": "eaa41546-6637-4b9c-8228-81479767b1ee",
+          "text": "4",
+          "explanation": "gg"
+        },
+        {
+          "id": "ed23af68-5711-4ec8-a8c2-6d226de148a9",
+          "text": "5"
+        }
+      ],
+      "evaluation": "1_parcial"
+    },
+    {
+      "id": "1a92c4bd-4912-485b-8d60-1c6cdae26255",
+      "text": "1",
+      "options": [
+        {
+          "id": "7412a22a-d06d-40e9-99a1-bf54b5c5bd2c",
+          "text": "Lorem",
+          "correct": true
+        },
+        {
+          "id": "75700ed7-b74a-4f0f-b392-8017842bc887",
+          "text": "2"
+        }
+      ],
+      "evaluation": "2_parcial"
+    }
+  ]
+}

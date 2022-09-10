@@ -6,12 +6,18 @@ use anyhow::{bail, Result};
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
-use crate::helpers::{read_dir_entry_data, write_data};
 use crate::raw_data::{RawQuestionData, RawQuestionOptionData};
+use crate::{
+    helpers::{read_dir_entry_data, write_data},
+    RawCourseData,
+};
 
 #[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct CourseData {
     pub key: String,
+    pub name: String,
+    pub short_name: String,
+    pub aliases: Vec<String>,
 
     #[serde(skip)]
     pub questions: Vec<QuestionData>,
@@ -20,19 +26,36 @@ pub struct CourseData {
 }
 
 impl CourseData {
-    pub fn new(key: String, questions: Vec<QuestionData>) -> Self {
-        let hash = Self::hash_data(&key, &questions[..]);
+    pub fn new(key: String, raw: RawCourseData) -> Self {
+        let questions: Vec<QuestionData> = raw.questions.into_iter().map(Into::into).collect();
+        let hash = Self::hash_data(
+            &key,
+            &raw.name,
+            &raw.short_name,
+            &raw.aliases,
+            &questions[..],
+        );
 
         Self {
             key,
+            name: raw.name,
+            short_name: raw.short_name,
+            aliases: raw.aliases,
             questions,
             hash,
         }
     }
 
-    fn hash_data(key: &str, questions: &[QuestionData]) -> String {
+    fn hash_data(
+        key: &str,
+        name: &str,
+        short_name: &str,
+        aliases: &[String],
+        questions: &[QuestionData],
+    ) -> String {
         let mut hasher = blake3::Hasher::new();
 
+        hasher.update(key.as_bytes());
         hasher.update(key.as_bytes());
         hasher.update(
             questions
@@ -66,18 +89,14 @@ impl CourseData {
             .and_then(|name| name.to_str())
             .expect("invalid file name")
             .to_owned();
-        let questions = QuestionData::from_slice(&raw_data[..])?;
+        let raw_course_data = RawCourseData::from_slice(&raw_data[..])?;
 
-        Ok(Self::new(key, questions))
+        Ok(Self::new(key, raw_course_data))
     }
 
     pub fn write(self, path: PathBuf) -> Result<()> {
-        let raw_questions = self
-            .questions
-            .into_iter()
-            .map(Into::into)
-            .collect::<Vec<RawQuestionData>>();
-        let raw_data = serde_json::to_string_pretty(&raw_questions)?;
+        let raw = self.into();
+        let raw_data = serde_json::to_string_pretty::<RawCourseData>(&raw)?;
 
         write_data(path, raw_data)
     }
@@ -167,12 +186,6 @@ impl QuestionData {
         hasher.update(evaluation.as_bytes());
 
         hasher.finalize().to_string()
-    }
-
-    fn from_slice(raw_data: &[u8]) -> Result<Vec<Self>> {
-        let raw_questions: Vec<RawQuestionData> = serde_json::from_slice(&raw_data)?;
-
-        Ok(raw_questions.into_iter().map(Into::into).collect())
     }
 
     fn sort_options(&mut self) {

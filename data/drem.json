@@ -1,0 +1,44 @@
+{
+  "name": "DREM-RD",
+  "short_name": "DREM-RD",
+  "aliases": ["drem"],
+  "questions": [
+    {
+      "id": "dc8c2e64-1e41-44f1-9b1b-17b657cf7a51",
+      "text": "drem?",
+      "options": [
+        {
+          "id": "3bbd790a-4b04-4c3d-a21f-d294a975f49d",
+          "text": "2",
+          "correct": true
+        },
+        {
+          "id": "401ae0bd-6e0c-4cd3-9932-f375cc879223",
+          "text": "4",
+          "explanation": "gg"
+        },
+        {
+          "id": "ab8eacda-d207-4087-9270-281b29841399",
+          "text": "5"
+        }
+      ],
+      "evaluation": "1_parcial"
+    },
+    {
+      "id": "832df4b8-adca-4194-8055-81920b2b23b5",
+      "text": "dreeem",
+      "options": [
+        {
+          "id": "f8692de8-8b49-4a9b-9d69-18df83392904",
+          "text": "Lorem",
+          "correct": true
+        },
+        {
+          "id": "7e09cc0e-ae51-4c03-baf7-f4a7fae97a0c",
+          "text": "2"
+        }
+      ],
+      "evaluation": "3_parcial"
+    }
+  ]
+}

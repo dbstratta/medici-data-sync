@@ -1,7 +1,36 @@
+use anyhow::Result;
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
-use crate::data::{QuestionData, QuestionOptionData};
+use crate::{CourseData, QuestionData, QuestionOptionData};
+
+#[derive(Serialize, Deserialize, Debug)]
+#[serde(deny_unknown_fields)]
+pub struct RawCourseData {
+    pub name: String,
+    pub short_name: String,
+    pub aliases: Vec<String>,
+    pub questions: Vec<RawQuestionData>,
+}
+
+impl RawCourseData {
+    pub fn from_slice(raw_data: &[u8]) -> Result<Self> {
+        Ok(serde_json::from_slice(&raw_data)?)
+    }
+}
+
+impl From<CourseData> for RawCourseData {
+    fn from(data: CourseData) -> Self {
+        let raw_questions = data.questions.into_iter().map(Into::into).collect();
+
+        Self {
+            name: data.name,
+            short_name: data.short_name,
+            aliases: data.aliases,
+            questions: raw_questions,
+        }
+    }
+}
 
 #[derive(Serialize, Deserialize, Debug)]
 #[serde(deny_unknown_fields)]
