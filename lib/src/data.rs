@@ -118,6 +118,7 @@ impl CourseData {
 pub struct QuestionData {
     pub id: Uuid,
 
+    pub course_key: Option<String>,
     pub text: String,
     #[serde(skip)]
     pub question_options: Vec<QuestionOptionData>,
@@ -239,6 +240,7 @@ impl From<RawQuestionData> for QuestionData {
 pub struct QuestionOptionData {
     pub id: Uuid,
 
+    pub question_id: Option<Uuid>,
     pub text: String,
     pub correct: bool,
     pub explanation: Option<String>,

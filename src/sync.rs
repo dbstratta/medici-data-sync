@@ -31,17 +31,21 @@ pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String
                 }
             }
 
-            for option_data in question_data.question_options.drain(..) {
+            question_data.course_key = Some(course_data.key.clone());
+
+            for mut question_option_data in question_data.question_options.drain(..) {
                 if let Some(option_hash) = sync_metadata
                     .question_options_metadata
-                    .remove(&option_data.id)
+                    .remove(&question_option_data.id)
                 {
-                    if option_hash == option_data.hash {
+                    if option_hash == question_option_data.hash {
                         continue;
                     }
                 }
 
-                question_options_to_sync.push(option_data);
+                question_option_data.question_id = Some(question_data.id);
+
+                question_options_to_sync.push(question_option_data);
             }
 
             questions_to_sync.push(question_data);
