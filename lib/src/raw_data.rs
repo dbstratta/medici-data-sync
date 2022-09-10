@@ -1,7 +1,7 @@
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
-use crate::data::{OptionData, QuestionData};
+use crate::data::{QuestionData, QuestionOptionData};
 
 #[derive(Serialize, Deserialize, Debug)]
 #[serde(deny_unknown_fields)]
@@ -9,25 +9,25 @@ pub struct RawQuestionData {
     pub id: Option<Uuid>,
 
     pub text: String,
-    pub options: Vec<RawOptionData>,
+    pub question_options: Vec<RawQuestionOptionData>,
     pub evaluation: String,
 }
 
 impl From<QuestionData> for RawQuestionData {
     fn from(data: QuestionData) -> Self {
-        let raw_options = data.options.into_iter().map(Into::into).collect();
+        let raw_question_options = data.question_options.into_iter().map(Into::into).collect();
 
         Self {
             id: Some(data.id),
             text: data.text,
-            options: raw_options,
+            question_options: raw_question_options,
             evaluation: data.evaluation,
         }
     }
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-pub struct RawOptionData {
+pub struct RawQuestionOptionData {
     pub id: Option<Uuid>,
 
     pub text: String,
@@ -37,8 +37,8 @@ pub struct RawOptionData {
     pub explanation: Option<String>,
 }
 
-impl From<OptionData> for RawOptionData {
-    fn from(data: OptionData) -> Self {
+impl From<QuestionOptionData> for RawQuestionOptionData {
+    fn from(data: QuestionOptionData) -> Self {
         Self {
             id: Some(data.id),
             text: data.text,

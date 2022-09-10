@@ -7,7 +7,7 @@ use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
 use crate::helpers::{read_dir_entry_data, write_data};
-use crate::raw_data::{RawOptionData, RawQuestionData};
+use crate::raw_data::{RawQuestionData, RawQuestionOptionData};
 
 #[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct CourseData {
@@ -120,32 +120,42 @@ pub struct QuestionData {
 
     pub text: String,
     #[serde(skip)]
-    pub options: Vec<OptionData>,
+    pub question_options: Vec<QuestionOptionData>,
     pub evaluation: String,
 
     pub hash: String,
 }
 
 impl QuestionData {
-    fn new(id: Uuid, text: String, options: Vec<OptionData>, evaluation: String) -> Self {
-        let hash = Self::hash_data(id, &text, &options[..], &evaluation);
+    fn new(
+        id: Uuid,
+        text: String,
+        question_options: Vec<QuestionOptionData>,
+        evaluation: String,
+    ) -> Self {
+        let hash = Self::hash_data(id, &text, &question_options[..], &evaluation);
 
         Self {
             id,
             text,
-            options,
+            question_options,
             evaluation,
             hash,
         }
     }
 
-    fn hash_data(id: Uuid, text: &str, options: &[OptionData], evaluation: &str) -> String {
+    fn hash_data(
+        id: Uuid,
+        text: &str,
+        question_options: &[QuestionOptionData],
+        evaluation: &str,
+    ) -> String {
         let mut hasher = blake3::Hasher::new();
 
         hasher.update(id.as_bytes());
         hasher.update(text.as_bytes());
         hasher.update(
-            options
+            question_options
                 .iter()
                 .map(|option| option.hash.clone())
                 .collect::<Vec<_>>()
@@ -164,7 +174,7 @@ impl QuestionData {
     }
 
     fn sort_options(&mut self) {
-        self.options.sort_by(|a, b| {
+        self.question_options.sort_by(|a, b| {
             if a.correct {
                 Ordering::Less
             } else if b.correct {
@@ -176,25 +186,33 @@ impl QuestionData {
     }
 
     fn deduplicate_options(&mut self) {
-        self.options.dedup_by(|a, b| a.eq_data(b));
+        self.question_options.dedup_by(|a, b| a.eq_data(b));
     }
 
     fn eq_data(&self, other: &Self) -> bool {
         self.text == other.text
             && self.evaluation == other.evaluation
-            && self.options.len() == other.options.len()
+            && self.question_options.len() == other.question_options.len()
             && self
-                .options
+                .question_options
                 .iter()
-                .all(|a| other.options.iter().any(|b| a.eq_data(b)))
+                .all(|a| other.question_options.iter().any(|b| a.eq_data(b)))
     }
 
     fn check(&self) -> Result<()> {
-        if self.options.len() < 2 || self.options.len() > 5 {
-            bail!("Question {} has {} option(s)", self.id, self.options.len());
+        if self.question_options.len() < 2 || self.question_options.len() > 5 {
+            bail!(
+                "Question {} has {} option(s)",
+                self.id,
+                self.question_options.len()
+            );
         }
 
-        let correct_count = self.options.iter().filter(|option| option.correct).count();
+        let correct_count = self
+            .question_options
+            .iter()
+            .filter(|option| option.correct)
+            .count();
 
         if correct_count != 1 {
             bail!("Question {} has {correct_count} correct options", self.id)
@@ -206,7 +224,7 @@ impl QuestionData {
 
 impl From<RawQuestionData> for QuestionData {
     fn from(raw: RawQuestionData) -> Self {
-        let options = raw.options.into_iter().map(Into::into).collect();
+        let options = raw.question_options.into_iter().map(Into::into).collect();
 
         Self::new(
             raw.id.unwrap_or_else(|| Uuid::new_v4()),
@@ -218,7 +236,7 @@ impl From<RawQuestionData> for QuestionData {
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug)]
-pub struct OptionData {
+pub struct QuestionOptionData {
     pub id: Uuid,
 
     pub text: String,
@@ -228,7 +246,7 @@ pub struct OptionData {
     pub hash: String,
 }
 
-impl OptionData {
+impl QuestionOptionData {
     fn new(id: Uuid, text: String, correct: bool, explanation: Option<String>) -> Self {
         let hash = Self::hash_data(id, &text, correct, explanation.as_deref());
 
@@ -262,8 +280,8 @@ impl OptionData {
     }
 }
 
-impl From<RawOptionData> for OptionData {
-    fn from(raw: RawOptionData) -> Self {
+impl From<RawQuestionOptionData> for QuestionOptionData {
+    fn from(raw: RawQuestionOptionData) -> Self {
         Self::new(
             raw.id.unwrap_or_else(|| Uuid::new_v4()),
             raw.text,

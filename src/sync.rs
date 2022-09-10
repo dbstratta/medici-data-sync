@@ -4,7 +4,7 @@ use anyhow::{bail, Result};
 use secrecy::{ExposeSecret, Secret};
 use url::Url;
 
-use medici_data_sync::{read_data_dir, CourseData, SyncData, SyncMetadata};
+use medici_data_sync::{load_courses_data_and_write_formatted, SyncData, SyncMetadata};
 
 pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String>) -> Result<()> {
     let engine_client = engine_client(engine_key)?;
@@ -12,12 +12,9 @@ pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String
 
     let mut courses_to_sync = vec![];
     let mut questions_to_sync = vec![];
-    let mut options_to_sync = vec![];
+    let mut question_options_to_sync = vec![];
 
-    let mut courses_data = read_data_dir(data_path)?
-        .into_iter()
-        .map(|dir_entry| CourseData::load_and_write_formatted(dir_entry?))
-        .collect::<Result<Vec<_>>>()?;
+    let mut courses_data = load_courses_data_and_write_formatted(data_path)?;
 
     for mut course_data in courses_data.drain(..) {
         if let Some(course_hash) = sync_metadata.courses_metadata.remove(&course_data.key) {
@@ -34,14 +31,17 @@ pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String
                 }
             }
 
-            for option_data in question_data.options.drain(..) {
-                if let Some(option_hash) = sync_metadata.options_metadata.remove(&option_data.id) {
+            for option_data in question_data.question_options.drain(..) {
+                if let Some(option_hash) = sync_metadata
+                    .question_options_metadata
+                    .remove(&option_data.id)
+                {
                     if option_hash == option_data.hash {
                         continue;
                     }
                 }
 
-                options_to_sync.push(option_data);
+                question_options_to_sync.push(option_data);
             }
 
             questions_to_sync.push(question_data);
@@ -52,9 +52,13 @@ pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String
 
     let courses_to_delete = sync_metadata.courses_metadata.keys().cloned().collect();
     let questions_to_delete = sync_metadata.questions_metadata.keys().cloned().collect();
-    let options_to_delete = sync_metadata.options_metadata.keys().cloned().collect();
+    let question_options_to_delete = sync_metadata
+        .question_options_metadata
+        .keys()
+        .cloned()
+        .collect();
 
-    sync_courses(
+    sync_data(
         &engine_client,
         engine_url.clone(),
         SyncData {
@@ -64,8 +68,8 @@ pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String
             questions_to_sync,
             questions_to_delete,
 
-            options_to_sync,
-            options_to_delete,
+            question_options_to_sync,
+            question_options_to_delete,
         },
     )
     .await?;
@@ -94,7 +98,7 @@ async fn sync_metadata(client: &reqwest::Client, engine_url: Url) -> Result<Sync
     Ok(client.get(url).send().await?.json().await?)
 }
 
-async fn sync_courses(client: &reqwest::Client, engine_url: Url, data: SyncData) -> Result<()> {
+async fn sync_data(client: &reqwest::Client, engine_url: Url, data: SyncData) -> Result<()> {
     let url = engine_url.join("sync-data")?;
     let response = client.post(url).json(&data).send().await?;
 
