@@ -222,6 +222,14 @@ impl QuestionData {
 
         Ok(())
     }
+
+    pub fn set_course_key(&mut self, course_key: String) {
+        self.course_key = Some(course_key.clone());
+        self.evaluation = format!(
+            "{}{COURSE_EVALUATION_KEY_SEPARATOR}{}",
+            course_key, self.evaluation
+        )
+    }
 }
 
 impl From<RawQuestionData> for QuestionData {
@@ -282,6 +290,10 @@ impl QuestionOptionData {
             && self.correct == other.correct
             && self.explanation == other.explanation
     }
+
+    pub fn set_question_id(&mut self, question_id: Uuid) {
+        self.question_id = Some(question_id);
+    }
 }
 
 impl From<RawQuestionOptionData> for QuestionOptionData {
@@ -294,3 +306,11 @@ impl From<RawQuestionOptionData> for QuestionOptionData {
         )
     }
 }
+
+#[derive(Serialize, Deserialize, PartialEq, Hash, Eq, Clone, Debug)]
+pub struct CourseEvaluationData {
+    pub course_key: String,
+    pub key: String,
+}
+
+pub const COURSE_EVALUATION_KEY_SEPARATOR: &str = "/";
