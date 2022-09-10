@@ -9,7 +9,7 @@ pub struct RawQuestionData {
     pub id: Option<Uuid>,
 
     pub text: String,
-    pub question_options: Vec<RawQuestionOptionData>,
+    pub options: Vec<RawQuestionOptionData>,
     pub evaluation: String,
 }
 
@@ -20,7 +20,7 @@ impl From<QuestionData> for RawQuestionData {
         Self {
             id: Some(data.id),
             text: data.text,
-            question_options: raw_question_options,
+            options: raw_question_options,
             evaluation: data.evaluation,
         }
     }

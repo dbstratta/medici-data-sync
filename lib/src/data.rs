@@ -234,7 +234,7 @@ impl QuestionData {
 
 impl From<RawQuestionData> for QuestionData {
     fn from(raw: RawQuestionData) -> Self {
-        let options = raw.question_options.into_iter().map(Into::into).collect();
+        let options = raw.options.into_iter().map(Into::into).collect();
 
         Self::new(
             raw.id.unwrap_or_else(|| Uuid::new_v4()),

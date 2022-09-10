@@ -20,11 +20,22 @@ pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String
     let mut courses_data = load_courses_data_and_write_formatted(data_path)?;
 
     for mut course_data in courses_data.drain(..) {
+        let skip_course = match sync_metadata.courses_metadata.remove(&course_data.key) {
+            Some(course_hash) if course_hash == course_data.hash => true,
+            _ => false,
+        };
+
         for mut question_data in course_data.questions.drain(..) {
             question_data.set_course_key(course_data.key.clone());
             sync_metadata
                 .course_evaluations
                 .remove(&question_data.evaluation);
+
+            let skip_question = match sync_metadata.questions_metadata.remove(&question_data.id) {
+                Some(question_hash) if question_hash == question_data.hash => true,
+                _ if !skip_course => false,
+                _ => true,
+            };
 
             for mut question_option_data in question_data.question_options.drain(..) {
                 question_option_data.set_question_id(question_data.id);
@@ -39,21 +50,17 @@ pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String
                 }
             }
 
-            match sync_metadata.questions_metadata.remove(&question_data.id) {
-                Some(question_hash) if question_hash == question_data.hash => {}
-                _ => {
-                    course_evaluations_to_sync.insert(CourseEvaluationData {
-                        course_key: course_data.key.clone(),
-                        key: question_data.evaluation.clone(),
-                    });
-                    questions_to_sync.push(question_data);
-                }
+            if !skip_question {
+                course_evaluations_to_sync.insert(CourseEvaluationData {
+                    course_key: course_data.key.clone(),
+                    key: question_data.evaluation.clone(),
+                });
+                questions_to_sync.push(question_data);
             }
         }
 
-        match sync_metadata.courses_metadata.remove(&course_data.key) {
-            Some(course_hash) if course_hash == course_data.hash => {}
-            _ => courses_to_sync.push(course_data),
+        if !skip_course {
+            courses_to_sync.push(course_data.clone());
         }
     }
 
@@ -120,8 +127,6 @@ async fn sync_metadata(client: &reqwest::Client, engine_url: Url) -> Result<Sync
 
 async fn sync_data(client: &reqwest::Client, engine_url: Url, data: SyncData) -> Result<()> {
     let url = engine_url.join("sync-data")?;
-    // println!("{data:?}");
-    // Ok(())
     let response = client.post(url).json(&data).send().await?;
 
     if response.status().is_success() {
