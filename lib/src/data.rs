@@ -56,7 +56,9 @@ impl CourseData {
         let mut hasher = blake3::Hasher::new();
 
         hasher.update(key.as_bytes());
-        hasher.update(key.as_bytes());
+        hasher.update(name.as_bytes());
+        hasher.update(short_name.as_bytes());
+        hasher.update(aliases.join("").as_bytes());
         hasher.update(
             questions
                 .iter()
