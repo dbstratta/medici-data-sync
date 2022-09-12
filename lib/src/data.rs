@@ -6,10 +6,13 @@ use anyhow::{bail, Result};
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
-use crate::raw_data::{RawQuestionData, RawQuestionOptionData};
 use crate::{
     helpers::{read_dir_entry_data, write_data},
     RawCourseData,
+};
+use crate::{
+    raw_data::{RawQuestionData, RawQuestionOptionData},
+    RawCourseEvaluationData,
 };
 
 #[derive(Serialize, Deserialize, Clone, Debug)]
@@ -21,6 +24,7 @@ pub struct CourseData {
 
     #[serde(skip)]
     pub questions: Vec<QuestionData>,
+    pub evaluations: Vec<CourseEvaluationData>,
 
     pub hash: String,
 }
@@ -28,6 +32,8 @@ pub struct CourseData {
 impl CourseData {
     pub fn new(key: String, raw: RawCourseData) -> Self {
         let questions: Vec<QuestionData> = raw.questions.into_iter().map(Into::into).collect();
+        let evaluations: Vec<CourseEvaluationData> =
+            raw.evaluations.into_iter().map(Into::into).collect();
         let hash = Self::hash_data(
             &key,
             &raw.name,
@@ -42,6 +48,7 @@ impl CourseData {
             short_name: raw.short_name,
             aliases: raw.aliases,
             questions,
+            evaluations,
             hash,
         }
     }
@@ -324,8 +331,33 @@ impl From<RawQuestionOptionData> for QuestionOptionData {
 
 #[derive(Serialize, Deserialize, PartialEq, Hash, Eq, Clone, Debug)]
 pub struct CourseEvaluationData {
-    pub course_key: String,
+    pub course_key: Option<String>,
     pub key: String,
+    pub name: String,
+}
+
+impl CourseEvaluationData {
+    pub fn new(key: String, name: String) -> Self {
+        Self {
+            course_key: None,
+            key,
+            name,
+        }
+    }
+
+    pub fn set_course_key(&mut self, course_key: String) {
+        self.course_key = Some(course_key.clone());
+        self.key = format!(
+            "{}{COURSE_EVALUATION_KEY_SEPARATOR}{}",
+            course_key, self.key
+        )
+    }
+}
+
+impl From<RawCourseEvaluationData> for CourseEvaluationData {
+    fn from(raw: RawCourseEvaluationData) -> Self {
+        Self::new(raw.key, raw.name)
+    }
 }
 
 pub const COURSE_EVALUATION_KEY_SEPARATOR: &str = "/";

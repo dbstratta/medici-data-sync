@@ -1,9 +1,7 @@
 {
   "name": "DREM-RD",
   "short_name": "DREM-RD",
-  "aliases": [
-    "drem"
-  ],
+  "aliases": ["drem"],
   "questions": [
     {
       "id": "dc8c2e64-1e41-44f1-9b1b-17b657cf7a51",
@@ -41,6 +39,16 @@
         }
       ],
       "evaluation": "3_parcial"
+    }
+  ],
+  "evaluations": [
+    {
+      "key": "1_parcial",
+      "name": "1er parcial"
+    },
+    {
+      "key": "3_parcial",
+      "name": "3er parcial"
     }
   ]
 }

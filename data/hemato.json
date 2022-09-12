@@ -1,10 +1,7 @@
 {
   "name": "Hematología e Inmunología",
   "short_name": "Hemato",
-  "aliases": [
-    "hemato",
-    "inmuno"
-  ],
+  "aliases": ["hemato", "inmuno"],
   "questions": [
     {
       "id": "0fedd8d3-fd1d-40df-82c8-725c3125576f",
@@ -82,6 +79,16 @@
         }
       ],
       "evaluation": "2_parcial"
+    }
+  ],
+  "evaluations": [
+    {
+      "key": "1_parcial",
+      "name": "1er parcial"
+    },
+    {
+      "key": "2_parcial",
+      "name": "2do parcial"
     }
   ]
 }

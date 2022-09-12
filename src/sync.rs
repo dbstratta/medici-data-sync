@@ -51,10 +51,12 @@ pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String
             }
 
             if !skip_question {
-                course_evaluations_to_sync.insert(CourseEvaluationData {
-                    course_key: course_data.key.clone(),
-                    key: question_data.evaluation.clone(),
-                });
+                let mut course_evaluation = CourseEvaluationData::new(
+                    course_data.key.clone(),
+                    question_data.evaluation.clone(),
+                );
+                course_evaluation.set_course_key(course_data.key.clone());
+                course_evaluations_to_sync.insert(course_evaluation);
                 questions_to_sync.push(question_data);
             }
         }

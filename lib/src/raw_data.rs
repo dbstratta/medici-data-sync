@@ -2,7 +2,7 @@ use anyhow::Result;
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
-use crate::{CourseData, QuestionData, QuestionOptionData};
+use crate::{CourseData, CourseEvaluationData, QuestionData, QuestionOptionData};
 
 #[derive(Serialize, Deserialize, Debug)]
 #[serde(deny_unknown_fields)]
@@ -11,6 +11,7 @@ pub struct RawCourseData {
     pub short_name: String,
     pub aliases: Vec<String>,
     pub questions: Vec<RawQuestionData>,
+    pub evaluations: Vec<RawCourseEvaluationData>,
 }
 
 impl RawCourseData {
@@ -22,12 +23,14 @@ impl RawCourseData {
 impl From<CourseData> for RawCourseData {
     fn from(data: CourseData) -> Self {
         let raw_questions = data.questions.into_iter().map(Into::into).collect();
+        let raw_evaluations = data.evaluations.into_iter().map(Into::into).collect();
 
         Self {
             name: data.name,
             short_name: data.short_name,
             aliases: data.aliases,
             questions: raw_questions,
+            evaluations: raw_evaluations,
         }
     }
 }
@@ -77,6 +80,21 @@ impl From<QuestionOptionData> for RawQuestionOptionData {
                 None
             },
             explanation: data.explanation,
+        }
+    }
+}
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct RawCourseEvaluationData {
+    pub key: String,
+    pub name: String,
+}
+
+impl From<CourseEvaluationData> for RawCourseEvaluationData {
+    fn from(data: CourseEvaluationData) -> Self {
+        Self {
+            key: data.key,
+            name: data.name,
         }
     }
 }
