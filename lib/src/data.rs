@@ -247,10 +247,7 @@ impl QuestionData {
 
     pub fn set_course_key(&mut self, course_key: String) {
         self.course_key = Some(course_key.clone());
-        self.evaluation = format!(
-            "{}{COURSE_EVALUATION_KEY_SEPARATOR}{}",
-            course_key, self.evaluation
-        )
+        self.evaluation = CourseEvaluationData::full_key(&course_key, &self.evaluation);
     }
 }
 
@@ -347,10 +344,11 @@ impl CourseEvaluationData {
 
     pub fn set_course_key(&mut self, course_key: String) {
         self.course_key = Some(course_key.clone());
-        self.key = format!(
-            "{}{COURSE_EVALUATION_KEY_SEPARATOR}{}",
-            course_key, self.key
-        )
+        self.key = Self::full_key(&course_key, &self.key);
+    }
+
+    pub fn full_key(course_key: &str, key: &str) -> String {
+        format!("{}{COURSE_EVALUATION_KEY_SEPARATOR}{}", course_key, key)
     }
 }
 
