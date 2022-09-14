@@ -40,6 +40,7 @@ impl CourseData {
             &raw.short_name,
             &raw.aliases,
             &questions[..],
+            &evaluations[..],
         );
 
         Self {
@@ -59,6 +60,7 @@ impl CourseData {
         short_name: &str,
         aliases: &[String],
         questions: &[QuestionData],
+        evaluations: &[CourseEvaluationData],
     ) -> String {
         let mut hasher = blake3::Hasher::new();
 
@@ -70,6 +72,14 @@ impl CourseData {
             questions
                 .iter()
                 .map(|question| question.hash.clone())
+                .collect::<Vec<_>>()
+                .join("")
+                .as_bytes(),
+        );
+        hasher.update(
+            evaluations
+                .iter()
+                .map(|evaluation| evaluation.hash.clone())
                 .collect::<Vec<_>>()
                 .join("")
                 .as_bytes(),
