@@ -1,12 +1,10 @@
-use std::{collections::HashSet, path::PathBuf};
+use std::path::PathBuf;
 
 use anyhow::{bail, Result};
 use secrecy::{ExposeSecret, Secret};
 use url::Url;
 
-use medici_data_sync::{
-    load_courses_data_and_write_formatted, CourseEvaluationData, SyncData, SyncMetadata,
-};
+use medici_data_sync::{load_courses_data_and_write_formatted, SyncData, SyncMetadata};
 
 pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String>) -> Result<()> {
     let engine_client = engine_client(engine_key)?;
@@ -15,7 +13,7 @@ pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String
     let mut courses_to_sync = vec![];
     let mut questions_to_sync = vec![];
     let mut question_options_to_sync = vec![];
-    let mut course_evaluations_to_sync = HashSet::<CourseEvaluationData>::new();
+    let mut course_evaluations_to_sync = vec![];
 
     let mut courses_data = load_courses_data_and_write_formatted(data_path)?;
 
@@ -25,11 +23,21 @@ pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String
             _ => false,
         };
 
+        for mut course_evaluation_data in course_data.evaluations.drain(..) {
+            course_evaluation_data.set_course_key(course_data.key.clone());
+
+            match sync_metadata
+                .course_evaluations_metadata
+                .remove(&course_evaluation_data.key)
+            {
+                Some(question_option_hash)
+                    if question_option_hash == course_evaluation_data.hash => {}
+                _ => course_evaluations_to_sync.push(course_evaluation_data),
+            }
+        }
+
         for mut question_data in course_data.questions.drain(..) {
             question_data.set_course_key(course_data.key.clone());
-            sync_metadata
-                .course_evaluations
-                .remove(&question_data.evaluation);
 
             let skip_question = match sync_metadata.questions_metadata.remove(&question_data.id) {
                 Some(question_hash) if question_hash == question_data.hash => true,
@@ -51,12 +59,6 @@ pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String
             }
 
             if !skip_question {
-                let mut course_evaluation = CourseEvaluationData::new(
-                    course_data.key.clone(),
-                    question_data.evaluation.clone(),
-                );
-                course_evaluation.set_course_key(course_data.key.clone());
-                course_evaluations_to_sync.insert(course_evaluation);
                 questions_to_sync.push(question_data);
             }
         }
@@ -74,13 +76,9 @@ pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String
         .cloned()
         .collect();
 
-    let used_course_evaluation_keys = course_evaluations_to_sync
-        .iter()
-        .map(|data| data.key.clone())
-        .collect();
     let course_evaluations_to_delete = sync_metadata
-        .course_evaluations
-        .difference(&used_course_evaluation_keys)
+        .course_evaluations_metadata
+        .keys()
         .cloned()
         .collect();
 

@@ -331,15 +331,27 @@ pub struct CourseEvaluationData {
     pub course_key: Option<String>,
     pub key: String,
     pub name: String,
+    pub hash: String,
 }
 
 impl CourseEvaluationData {
-    pub fn new(key: String, name: String) -> Self {
+    pub fn new(raw: RawCourseEvaluationData) -> Self {
+        let hash = Self::hash_data(&raw.name);
+
         Self {
             course_key: None,
-            key,
-            name,
+            key: raw.key,
+            name: raw.name,
+            hash,
         }
+    }
+
+    fn hash_data(name: &str) -> String {
+        let mut hasher = blake3::Hasher::new();
+
+        hasher.update(name.as_bytes());
+
+        hasher.finalize().to_string()
     }
 
     pub fn set_course_key(&mut self, course_key: String) {
@@ -354,7 +366,7 @@ impl CourseEvaluationData {
 
 impl From<RawCourseEvaluationData> for CourseEvaluationData {
     fn from(raw: RawCourseEvaluationData) -> Self {
-        Self::new(raw.key, raw.name)
+        Self::new(raw)
     }
 }
 

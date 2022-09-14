@@ -1,4 +1,4 @@
-use std::collections::{HashMap, HashSet};
+use std::collections::HashMap;
 
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
@@ -16,7 +16,7 @@ pub struct SyncData {
     pub question_options_to_sync: Vec<QuestionOptionData>,
     pub question_options_to_delete: Vec<Uuid>,
 
-    pub course_evaluations_to_sync: HashSet<CourseEvaluationData>,
+    pub course_evaluations_to_sync: Vec<CourseEvaluationData>,
     pub course_evaluations_to_delete: Vec<String>,
 }
 
@@ -25,5 +25,5 @@ pub struct SyncMetadata {
     pub courses_metadata: HashMap<String, String>,
     pub questions_metadata: HashMap<Uuid, String>,
     pub question_options_metadata: HashMap<Uuid, String>,
-    pub course_evaluations: HashSet<String>,
+    pub course_evaluations_metadata: HashMap<String, String>,
 }
