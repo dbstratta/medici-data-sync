@@ -4,595 +4,757 @@
   "aliases": [],
   "questions": [
     {
+      "id": "1214c114-6b5e-4ac3-bc29-e1767f9fd161",
       "text": "Con respecto a la inmunidad innata, indique la opción correcta:",
       "options": [
         {
-          "text": "Los linfocitos innatos (ILC) expresan anticuerpos de superficie."
-        },
-        {
-          "text": "Las células asesinas naturales (Natural Killer) liberan gránulos con histamina."
-        },
-        {
-          "text": "Los macrófagos pueden inducir apoptosis de células infectadas."
-        },
-        {
+          "id": "99027572-2afe-405d-8596-29a2a675b174",
           "text": "La IL-1β es un pirógeno ya que induce el aumento de la temperatura corporal.",
           "correct": true
         },
         {
+          "id": "aa76acb5-b1e9-4b92-aed0-02e788c6d667",
+          "text": "Las células asesinas naturales (Natural Killer) liberan gránulos con histamina."
+        },
+        {
+          "id": "7cd5506a-e902-4ddd-a3cb-207129397ec5",
+          "text": "Los linfocitos innatos (ILC) expresan anticuerpos de superficie."
+        },
+        {
+          "id": "9656ccca-ff88-4ea6-97fb-38813c2d4602",
+          "text": "Los macrófagos pueden inducir apoptosis de células infectadas."
+        },
+        {
+          "id": "b980fa11-3192-4780-a3af-820049c71cc8",
           "text": "Los mastocitos se caracterizan por tener una alta capacidad de fagocitosis."
         }
       ],
       "evaluation": "parcial_2"
     },
     {
-      "text": "Con respecto al sistema de complemento, indique la opción correcta:",
-      "options": [
-        {
-          "text": "Los productos de activación del sistema de complemento C3a, C4a y C5a median la opsonización de patógenos."
-        },
-        {
-          "text": "Además de generar poros en la membrana de patógenos el complejo de ataque a membrana (MAC) puede permitir la extravasación de leucocitos y promover su reclutamiento al sitio de infección."
-        },
-        {
-          "text": "Existen tres vías de activación del sistema de complemento las cuales generan complejos de ataque de membrana (MAC) compuestos por moléculas diferentes."
-        },
-        {
-          "text": "El sistema de complemento puede inducir la muerte directa de patógenos y además activar la respuesta inflamatoria.",
-          "correct": true
-        },
-        {
-          "text": "La activación del sistema de complemento a través de la vía de las lectinas se realiza a través del reconocimiento de estructuras fosforiladas presentes en patógenos."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
+      "id": "25d33b30-03a1-450b-868a-0d8ce66187f9",
       "text": "Con respecto a las características del reconocimiento por parte de los receptores innatos (PRRs), indique la opción correcta:",
       "options": [
         {
-          "text": "Los PRRs reconocen moléculas derivadas de patógenos o de la microbiota que se encuentran presentes en las células de nuestro organismo."
-        },
-        {
-          "text": "Los patógenos escapan al reconocimiento por los PRRs mutando sus antígenos de superficie."
-        },
-        {
+          "id": "1231eb9c-c825-4ea4-8e02-8bfa3cd05bcd",
           "text": "Los PAMPs poseen diferentes características bioquímicas y comprenden moléculas variadas, desde material genético, proteínas, glúcidos o lípidos.",
           "correct": true
         },
         {
+          "id": "c96b8587-9bd4-413f-b607-e2e661d8afed",
+          "text": "Los DAMPs constituyen moléculas de superficie de las células de nuestro organismo que son sobreexpresadas ante alta concentración de proteína C reactiva (PCR)."
+        },
+        {
+          "id": "d0b49cc6-218c-40d6-97f2-91f896aa7a95",
           "text": "Los PRRs poseen una alta tasa de mutación para poder ampliar su capacidad de reconocimiento de patógenos, generando gran variedad de receptores."
         },
         {
-          "text": "Los DAMPs constituyen moléculas de superficie de las células de nuestro organismo que son sobreexpresadas ante alta concentración de proteína C reactiva (PCR)."
+          "id": "f21b32d2-69bd-4502-85ef-8ba7bd0e6f1a",
+          "text": "Los PRRs reconocen moléculas derivadas de patógenos o de la microbiota que se encuentran presentes en las células de nuestro organismo."
+        },
+        {
+          "id": "83b2b727-7956-40b7-9ed1-80c4da7daf71",
+          "text": "Los patógenos escapan al reconocimiento por los PRRs mutando sus antígenos de superficie."
         }
       ],
       "evaluation": "parcial_2"
     },
     {
-      "text": "Indique la opción correcta sobre los receptores innatos (PRRs):",
-      "options": [
-        {
-          "text": "El inflamasoma activa factores de transcripción, como AP-1, e induce un aumento de la expresión génica de las citoquinas pro-inflamatorias."
-        },
-        {
-          "text": "La flagelina derivada de bacterias pueden ser reconocidas por los receptores de tipo Toll (TLR) pero no por los receptores de tipo NOD (NLR)."
-        },
-        {
-          "text": "NF-kB es un factor de transcripción que, al contrario que AP-1, puede activarse por las vías de señalización de TLRs dependientes de MyD88 y TRIF."
-        },
-        {
-          "text": "La caspasa-1, producto de activación de receptores tipo RIG, cliva la IL-1β, permitiendo su secreción."
-        },
-        {
-          "text": "cGAS puede activar IRF3 para producir IFN de tipo I a través de la activación de STING.",
-          "correct": true
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "En relación a la estructura de los anticuerpos indique la opción correcta.",
-      "options": [
-        {
-          "text": "Las cadenas livianas se encargan de interaccionar físicamente con el epítopo mientras que las pesadas tienen un papel estructural."
-        },
-        {
-          "text": "Los anticuerpos solubles generados en la respuesta primaria tienen la misma constante de afinidad (Kd) que los generados en una respuesta secundaria."
-        },
-        {
-          "text": "Los anticuerpos con cadenas livianas kappa tienen más afinidad por el antígeno que los compuestos por cadenas lambda."
-        },
-        {
-          "text": "La IgA no es capaz de actuar a través de la neutralización."
-        },
-        {
-          "text": "Las IgM son particularmente eficaces en activar el complemento.",
-          "correct": true
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Señale la opción correcta sobre los anticuerpos.",
-      "options": [
-        {
-          "text": "La presencia de IgM anti-estreptococo en un neonato sugiere la infección de la madre y no del niño."
-        },
-        {
-          "text": "El fragmento Fc puede ser reconocido por receptores específicos de cadenas pesadas.",
-          "correct": true
-        },
-        {
-          "text": "La IgA forma pentámeros y alcanza concentraciones séricas importantes durante la respuesta inmune primaria."
-        },
-        {
-          "text": "Los CDRs son las regiones menos variables en la secuencia aminoacidica de un anticuerpo."
-        },
-        {
-          "text": "El reconocimiento de un pequeño antígeno por un clon de anticuerpos define al primero como inmunógeno."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "En relación a la linfopoyesis B indique lo correcto:",
-      "options": [
-        {
-          "text": "Se inicia en la médula ósea, pero es a nivel del timo donde se desarrollan los principales estadíos de diferenciación de la célula B."
-        },
-        {
-          "text": "Las células en estadío pre-B se caracterizan por co-expresar IgM e IgD en su membrana."
-        },
-        {
-          "text": "Los centroblastos, linfocitos B, ubicados en la zona oscura del centro germinal se caracterizan por tener inhibido su ciclo celular."
-        },
-        {
-          "text": "Los centrocitos, linfocitos B localizados en la zona clara del centro germinal, son seleccionados por el antígeno y pueden diferenciarse a células B memoria y/o a plasmocitos.",
-          "correct": true
-        },
-        {
-          "text": "Las células Tfh (helper folicular) tienen como principal función inhibir la diferenciación de las células B que se unen al antígeno con alta afinidad."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Indique lo correcto en relación a los mecanismos de generación de diversidad estructural en los anticuerpos:",
-      "options": [
-        {
-          "text": "La recombinación somática de los segmentos génicos de codifican la región variable de las inmunoglobulinas depende de la activación de la célula progenitora por el antígeno y de citoquinas secretadas por las células Tfh."
-        },
-        {
-          "text": "Las recombinasas RAG1 y RAG2 reconocen secuencias específicas adyacentes a los exones que codifican los dominios constantes de las inmunoglobulinas."
-        },
-        {
-          "text": "Las adiciones de nucleótidos que se observan en la recombinación somática introducen diversidad adicional a nivel de los CDR3 de las cadenas pesadas y livianas.",
-          "correct": true
-        },
-        {
-          "text": "El proceso de hipermutación somática sucede en la médula ósea previo al contacto con el antígeno."
-        },
-        {
-          "text": "El proceso de cambio de clase de un anticuerpo permite cambiar sus regiones variables y por tanto su especificidad, pero manteniendo el mismo isotipo."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Señale la opción correcta acerca de la linfopoyesis T.",
-      "options": [
-        {
-          "text": "La expresión de TCR es prescindible para que un linfocito T madure en el timo."
-        },
-        {
-          "text": "Es un proceso que depende la expresión de recombinasas tipo RAG.",
-          "correct": true
-        },
-        {
-          "text": "Ocurre a partir del precursor mieloide común."
-        },
-        {
-          "text": "Los timocitos evolucionan por programas genéticos independientemente del microambiente tímico."
-        },
-        {
-          "text": "Se da en los órganos linfoides secundarios."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Sobre los marcadores de activación linfocitaria, indique lo correcto.",
-      "options": [
-        {
-          "text": "Son interesantes, pero no tienen utilidad a nivel clínico."
-        },
-        {
-          "text": "El CD25 implica que la célula T se ha transformado en memoria."
-        },
-        {
-          "text": "El CD62L está vinculado a la degranulación de perforina y granzima."
-        },
-        {
-          "text": "La producción de IL-2 por un linfocito T sugiere que éste se ha activado.",
-          "correct": true
-        },
-        {
-          "text": "Los linfocitos T efectores memoria centrales tienen el siguiente fenotipo: CD3-CD45RA+R-IL7-."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "En relación a la presentación de antígenos, marque la opción correcta:",
-      "options": [
-        {
-          "text": "La presentación cruzada no es utilizada para presentar antígenos tumorales."
-        },
-        {
-          "text": "Todas las células nucleadas del organismo pueden cross-presentar."
-        },
-        {
-          "text": "Luego de la fagocitosis, los macrófagos son capaces de mantener un pH neutro en la luz de sus fagosomas gracias a que se activa la ATPasa vacuolar."
-        },
-        {
-          "text": "La enzima NOX2 acidifica el pH de la luz de los fagosomas de las células endoteliales del aparato respiratorio."
-        },
-        {
-          "text": "Si un fármaco inhibe la acidificación de las vesículas endosomales de una célula presentadora, va a inhibir la presentación de antígenos en moléculas del MHC clase II.",
-          "correct": true
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "En cuanto al proceso de presentación y reconocimiento de antígenos, marque la opcióncorrecta:",
-      "options": [
-        {
-          "text": "El TCR reconoce secuencias de aminoácidos del péptido y de la molécula de MHC (Complejo Mayor de Histocompatibilidad) que lo contiene.",
-          "correct": true
-        },
-        {
-          "text": "El antígeno es cargado en las regiones no polimórficas de las moléculas de MHC de clase I y II."
-        },
-        {
-          "text": "Las moléculas de MHC de clase I y II pueden discriminar entre antígenos propios y extranjeros."
-        },
-        {
-          "text": "El complejo péptido-MHC tiene una interacción con disociación muy rápida."
-        },
-        {
-          "text": "EL proteasoma participa en el procesamiento de antígenos citosólicos en condiciones fisiológicas y no sufre cambios en un contexto de peligro inmunológico (por ejemplo en respuesta al IFN-γ)."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Indique lo correcto en relación a los mecanismos efectores celulares del sistema inmune:",
-      "options": [
-        {
-          "text": "En presencia de IL-12 e IFN-γ la activación de un linfocito T vírgen por una célula dendrítica induce la generación del fenotipo Th2."
-        },
-        {
-          "text": "El fenotipo Th17 se diferencia presencia de IL-1, IL-6 y TGF-β, siendo la IL-17 secretada por estas células una fuerte señal para reclutar neutrófilos.",
-          "correct": true
-        },
-        {
-          "text": "El fenotipo Th1, que activa el cambio de clase de los linfocitos B para que produzcan IgE, es clave en el desarrollo de inmunidad frente a parásitos helmintos."
-        },
-        {
-          "text": "Las señales que envía la célula dendrítica al linfocito T vírgen haciéndolo diferenciar en diferentes fenotipos, se adquieren exclusivamente a través del Receptor de células T (TCR) y su mecanismo de transducción de señal."
-        },
-        {
-          "text": "Las células del fenotipo Tfh, se localizan principalmente en las áreas T paracorticales de los ganglios linfáticos."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "En relación a los mecanismos efectores efectivos en la eliminación de patógenos intracelulares, indique la opción correcta:",
-      "options": [
-        {
-          "text": "La producción de IFN-γ por parte de linfocitos Th1 y linfocitos T CD8 aumenta la producción de IL-10 por células infectadas por virus y las hace más susceptibles a la muerte por apoptosis."
-        },
-        {
-          "text": "El reconocimiento de ADN viral monocatenario por parte de los receptores RIG, confiere a la células un estado anti-viral, debido a la activación del IRF3."
-        },
-        {
-          "text": "Los anticuerpos IgG pueden potenciar la actividad de la célula asesina natural (NK) y el reconocimiento de la célula infectada por bacterias intracelulares.",
-          "correct": true
-        },
-        {
-          "text": "Los linfocitos Th2 son esenciales para mediar la muerte de células infectadas por parásitos intracelulares, ya que promueven la diferenciación de linfocitos T CD8 a citotóxicos."
-        },
-        {
-          "text": "Las células asesinas naturales (NK) son críticas para la eliminación de hongos en etapas extracelulares porque pueden reconocer los carbohidratos del patógeno en su superficie."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
+      "id": "0c8e1f94-0c43-4d15-b5e4-d9d24242323c",
       "text": "Con respecto al sistema de complemento, indique la opción correcta:",
       "options": [
         {
-          "text": "La vía alternativa del sistema de complemento fue la primera en ser descubierta por su capacidad de complementar la actividad de los anticuerpos."
+          "id": "3d5e87da-ef06-40e5-8578-6eddf894aeb6",
+          "text": "El sistema de complemento puede inducir la muerte directa de patógenos y además activar la respuesta inflamatoria.",
+          "correct": true
         },
         {
-          "text": "La IgA tiene mayor capacidad que la IgG en activar el Sistema de Complemento porque posee 10 sitios de unión a antígenos."
+          "id": "a24867b8-d0ce-4a8b-9b4a-f00de44ffc8b",
+          "text": "Además de generar poros en la membrana de patógenos el complejo de ataque a membrana (MAC) puede permitir la extravasación de leucocitos y promover su reclutamiento al sitio de infección."
         },
         {
-          "text": "Cuando el sistema de complemento se activa por la vía de las Lectinas, posee mayor capacidad de opsonización, que cuando se activa por la vía clásica."
+          "id": "7b685f66-4212-45b6-b0b8-0e68108ad8ed",
+          "text": "Existen tres vías de activación del sistema de complemento las cuales generan complejos de ataque de membrana (MAC) compuestos por moléculas diferentes."
         },
         {
+          "id": "dd8cc561-ed81-4fa4-9db2-2379ad553e97",
+          "text": "La activación del sistema de complemento a través de la vía de las lectinas se realiza a través del reconocimiento de estructuras fosforiladas presentes en patógenos."
+        },
+        {
+          "id": "046651a9-9bf6-4d32-b7f4-55169c6f4d8d",
+          "text": "Los productos de activación del sistema de complemento C3a, C4a y C5a median la opsonización de patógenos."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "e60c1b3a-c651-4d38-935d-eea6a4aa52ce",
+      "text": "Con respecto al sistema de complemento, indique la opción correcta:",
+      "options": [
+        {
+          "id": "84dcfc42-92a7-48e3-9c8a-7c28a46b7d2b",
           "text": "El inhibidor de C1 es capaz de secuestrar los componentes s y r del complejo C1 y asegura la inactivación del sistema de complemento en células propias.",
           "correct": true
         },
         {
+          "id": "acb346a0-299c-4eab-9d9a-01e6472f9165",
+          "text": "Cuando el sistema de complemento se activa por la vía de las Lectinas, posee mayor capacidad de opsonización, que cuando se activa por la vía clásica."
+        },
+        {
+          "id": "fd9e223f-2315-46ee-a8a8-583c72e72670",
+          "text": "La IgA tiene mayor capacidad que la IgG en activar el Sistema de Complemento porque posee 10 sitios de unión a antígenos."
+        },
+        {
+          "id": "31de7293-d7d4-4100-bb47-6c98f4082c0f",
           "text": "La eliminación de inmunocomplejos se produce gracias a la activación del sistema de complemento, que a través de C5b permite el transporte en sangre anclado a eritrocitos."
+        },
+        {
+          "id": "ba2993bd-6671-434d-847e-3d8647bfc8c5",
+          "text": "La vía alternativa del sistema de complemento fue la primera en ser descubierta por su capacidad de complementar la actividad de los anticuerpos."
         }
       ],
       "evaluation": "parcial_2"
     },
     {
-      "text": "En relación a los mecanismos efectores mediados por los anticuerpos, indique la opción correcta:",
-      "options": [
-        {
-          "text": "Para mediar la neutralización, es necesario que la inmunoglobulina posea alta afinidad porlos receptores FcγRI presentes en macrófagos."
-        },
-        {
-          "text": "Los anticuerpos IgG pueden conferir inmunidad fetal y neonatal, gracias a su transporte mediado por el receptor neonatal (FcRn) presente en la placenta.",
-          "correct": true
-        },
-        {
-          "text": "La opsonización mediada por anticuerpos de clase IgM permite la fagocitosis de bacterias encapsuladas."
-        },
-        {
-          "text": "Los receptores FcγRIII (CD16), que poseen alta afinidad por las IgG, son esenciales para mediar la citotoxicidad de células asesinas naturales (NK) dependiente de anticuerpos."
-        },
-        {
-          "text": "Los anticuerpos pueden regular la respuesta inmune humoral a través de receptores FcαR presentes en los linfocitos B."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "En cuanto a la tolerancia inmunológica y sus mecanismos, marque la opcióncorrecta:",
-      "options": [
-        {
-          "text": "El mecanismo de anergia (inactivación funcional) implica que el linfocito T aumenta las vías de señalización de su TCR."
-        },
-        {
-          "text": "La apoptosis es utilizada como mecanismo de tolerancia para linfocitos T a antígenos propios solamente en los tejidos periféricos (tolerancia periférica)."
-        },
-        {
-          "text": "Las células dendríticas tímicas no presentan antígenos en moléculas de MHC de clase II."
-        },
-        {
-          "text": "Los antígenos restringidos a los tejidos periféricos (TRAs) no pueden ser presentados en el timo."
-        },
-        {
-          "text": "Las células epiteliales medulares tímicas (mTEC) son capaces de presentar sus antígenos citosólicos en moléculas del MHC de clase I y II a los linfocitos T.",
-          "correct": true
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "En cuanto a los linfocitos T reguladores (Tregs), marque la opción correcta:",
-      "options": [
-        {
-          "text": "Los que salen del timo (tTregs) expresan CTLA-4 solamente bajo señales de peligro inmunológico."
-        },
-        {
-          "text": "Son altamente dependientes de la IL-12 (interleuquina 12) para sobrevivir."
-        },
-        {
-          "text": "Son una población muy representada en la sangre periférica ya que constituyen más del 50% de los linfocitos TCD4 totales."
-        },
-        {
-          "text": "Algunos expresan en su membrana enzimas como el CD39 que degrada ATP en AMP lo que favorece la generación de un microambiente regulador.",
-          "correct": true
-        },
-        {
-          "text": "Todos los subtipos de linfocitos Tregs periféricos (pTregs) expresan el factor de transcripción FOXP3."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "En relación con la relación inmune materno-fetal, indique lo correcto:",
-      "options": [
-        {
-          "text": "El aumento de CNS1 en la placenta suele inducir aborto."
-        },
-        {
-          "text": "La disminución de HLA-G evita la pre-eclampsia."
-        },
-        {
-          "text": "Una alta relación Th1/Treg no es buena para el desarrollo del embarazo.",
-          "correct": true
-        },
-        {
-          "text": "Un agonista de TLR-4 actúa como inhibidor de la inducción de parto prematuro."
-        },
-        {
-          "text": "La activación de la vía clásica del complemento puede inducir trabajo de parto."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Indique lo correcto en relación a la inmunidad en mucosas:",
-      "options": [
-        {
-          "text": "Las células epiteliales intestinales expresan Receptores de Reconocimiento de Patrones (PRRs) de diferentes tipos, y al activarse pueden secretar citoquinas y quimioquinas.",
-          "correct": true
-        },
-        {
-          "text": "Las mucinas secretadas por las células caliciformes hacia la lámina propia de la mucosa intestinal, forman una capa densa que interacciona con la cara basolateral de los enterocitos."
-        },
-        {
-          "text": "Los péptidos anti-microbianos sólo son efectivos si se expresan asociados al MHC de clase I de los enterocitos."
-        },
-        {
-          "text": "La IgA secretada hacia la luz intestinal representa un potente activador de la vía clásica del complemento."
-        },
-        {
-          "text": "Los microorganismos de la flora comensal a nivel intestinal no son reconocidos por el sistema inmune innato ni por el adaptativo."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Sobre la inmunidad en mucosas indique la opción correcta:",
-      "options": [
-        {
-          "text": "Los Linfocitos intra-epiteliales corresponden principalmente a linfocitos B responsables de la secreción de IgA hacia la luz intestinal."
-        },
-        {
-          "text": "Los macrófagos que se encuentran en la lámina propia de la mucosa en condiciones de homeostasis, presentan un fenotipo M1 caracterizado por la secreción de citoquinas pro-inflamatorias (TNF-alfa, IL-1β, IL-6, etc.)."
-        },
-        {
-          "text": "Las células M ubicadas en el epitelio de asociado a los folículos de las mucosas, transportan antígenos desde la luz intestinal hacia estas estructuras linfoides.",
-          "correct": true
-        },
-        {
-          "text": "Los linfocitos B activados en las placas de Peyer quedan fijados en el mismo sitio inductivo donde se activaron y no tienen capacidad de recircular por la sangre y la linfa."
-        },
-        {
-          "text": "Frente a una injuria del epitelio y a la activación de una respuesta inflamatoria local (perdida de homeostasis) los linfocitos T a nivel mucoso no tienen capacidad de generar respuestas Th1 ni Th17."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Marque la opción correcta sobre la inmunopatología de la psoriasis.",
-      "options": [
-        {
-          "text": "Es una manifestación de la inmunosupresión ocasionada tanto por el VIH como por fármacos."
-        },
-        {
-          "text": "Se caracteriza por un engrosamiento de la epidermis en placas con aumento del infiltrado leucocitario a ese nivel.",
-          "correct": true
-        },
-        {
-          "text": "Es una enfermedad mediada por linfocitos Th2."
-        },
-        {
-          "text": "Puede tratarse con anticuerpos agonistas del receptor de IL-17."
-        },
-        {
-          "text": "Su desarrollo es controlado si se inyecta TNF-α recombinante."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "En relación a la dermatitis atópica, señale la opción correcta.",
-      "options": [
-        {
-          "text": "Esta mediada por una respuesta de linfocitos T Foxp3+."
-        },
-        {
-          "text": "Las lesiones tiene un riesgo alto de infectarse.",
-          "correct": true
-        },
-        {
-          "text": "Sus manifestaciones clínicas dependen de la respuesta del individuo a Mycobacterium leprae."
-        },
-        {
-          "text": "La inyección de anticuerpos monoclonales anti-IFN-γ es una terapia prometedora."
-        },
-        {
-          "text": "Es una enfermedad de los queratinocitos, sin afectación inmune."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Una bacteria extracelular puede evadir la respuesta del sistema inmune del individuo por los siguientes mecanismos, marque la opción INCORRECTA:",
-      "options": [
-        {
-          "text": "Variación de sus antígenos de membrana."
-        },
-        {
-          "text": "Inhibición de la formación y activación de la C3 convertasa."
-        },
-        {
-          "text": "Las toxinas pueden interferir en el tráfico de las moléculas de MHC (Complejo mayor de Histocompatibilidad) y de esa manera evitar la presentación de antígenos."
-        },
-        {
-          "text": "Disminuyendo su actividad proteolítica sobre la IgA (inmunoglobulina A).",
-          "correct": true
-        },
-        {
-          "text": "Las cápsulas de polisacáridos de los pneumococos impide la adherencia por pseudópodos de los macrófagos."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
+      "id": "6f8e9e07-d31e-41fc-8a65-1c04291cee56",
       "text": "En cuanto a la respuesta del sistema inmune frente a una infección parasitaria, marque la opción correcta:",
       "options": [
         {
-          "text": "La respuesta Th2 es muy importante y está mediada principalmente por INF-g (interferón gamma) que aumenta las capacidades líticas de los macrófagos."
-        },
-        {
-          "text": "La respuesta de la inmunidad adaptativa no causa lesión tisular."
-        },
-        {
+          "id": "32a5696e-adca-4231-bebc-980f49e64e7a",
           "text": "Ciertos helmintos intestinales como T. brasiliensis activan una respuesta inmune mediada por IL-9 que entre otros promueve la proliferación y activación de mastocitos.",
           "correct": true
         },
         {
+          "id": "c39b8d3c-c89c-4c95-8813-00bef0ac483a",
           "text": "La IL-4 (interleuquina 4) inhibe la producción de IgE."
         },
         {
+          "id": "13bcf532-2eef-4de0-8141-49efff0567c2",
+          "text": "La respuesta Th2 es muy importante y está mediada principalmente por INF-g (interferón gamma) que aumenta las capacidades líticas de los macrófagos."
+        },
+        {
+          "id": "7bdccd12-e82b-49e5-b51a-d5dc7d8044f3",
+          "text": "La respuesta de la inmunidad adaptativa no causa lesión tisular."
+        },
+        {
+          "id": "9f78c6af-dd1d-4a59-bb56-b907fd317834",
           "text": "Siempre se producen los mismos anticuerpos contra el parásito independientemente de su estadío madurativo."
         }
       ],
       "evaluation": "parcial_2"
     },
     {
-      "text": "Sobre los anticuerpos de utilidad terapéutica para uso humano, indique lo correcto:",
+      "id": "4411618c-4526-46f3-8b3f-8a7c258993ac",
+      "text": "En cuanto a la tolerancia inmunológica y sus mecanismos, marque la opcióncorrecta:",
       "options": [
         {
-          "text": "Mediante glico-ingeniería de la región Fcγ se puede aumentar su eficacia in vivo porque adquieren mayor unión al receptor para Fcγ.",
+          "id": "c21254b8-f23c-4fd0-8b6a-b0e0fb152ac0",
+          "text": "Las células epiteliales medulares tímicas (mTEC) son capaces de presentar sus antígenos citosólicos en moléculas del MHC de clase I y II a los linfocitos T.",
           "correct": true
         },
         {
-          "text": "Los minibodies son excelentes para matar células tumorales mediante ADCC (Citotoxicidad Celular Dependiente de Anticuerpos)."
+          "id": "adcb4461-7e81-4734-b2ea-d9ea79d22be2",
+          "text": "El mecanismo de anergia (inactivación funcional) implica que el linfocito T aumenta las vías de señalización de su TCR."
         },
         {
-          "text": "Los anticuerpos biespecíficos poseen 2 regiones Fc diferentes con el mismo sector Fab."
+          "id": "358c38b8-dd6e-4e92-b33c-c1f82433e930",
+          "text": "La apoptosis es utilizada como mecanismo de tolerancia para linfocitos T a antígenos propios solamente en los tejidos periféricos (tolerancia periférica)."
         },
         {
-          "text": "Su principal producción se realiza en ratones libres de patógenos."
+          "id": "cc1e681f-e36d-4a1e-855f-17b242b8565b",
+          "text": "Las células dendríticas tímicas no presentan antígenos en moléculas de MHC de clase II."
         },
         {
-          "text": "El ipilimumab es un anticuerpo quimérico."
+          "id": "50a87bb3-eb04-4f05-888f-b3f8bc8ffecf",
+          "text": "Los antígenos restringidos a los tejidos periféricos (TRAs) no pueden ser presentados en el timo."
         }
       ],
       "evaluation": "parcial_2"
     },
     {
+      "id": "5045f500-8ff7-4743-932a-04fe578dbc4a",
+      "text": "En cuanto a los linfocitos T reguladores (Tregs), marque la opción correcta:",
+      "options": [
+        {
+          "id": "c0d82713-252c-49c6-878a-3a6d22885116",
+          "text": "Algunos expresan en su membrana enzimas como el CD39 que degrada ATP en AMP lo que favorece la generación de un microambiente regulador.",
+          "correct": true
+        },
+        {
+          "id": "e04fca5d-1fe2-4908-9b6e-9f69460610c8",
+          "text": "Los que salen del timo (tTregs) expresan CTLA-4 solamente bajo señales de peligro inmunológico."
+        },
+        {
+          "id": "a7eb9794-82f5-4df1-940f-adc66dd2db60",
+          "text": "Son altamente dependientes de la IL-12 (interleuquina 12) para sobrevivir."
+        },
+        {
+          "id": "c58d8819-6c23-4f15-bda5-515c50934002",
+          "text": "Son una población muy representada en la sangre periférica ya que constituyen más del 50% de los linfocitos TCD4 totales."
+        },
+        {
+          "id": "f90b8e54-1e40-4e7a-b751-0bcd6c4736ae",
+          "text": "Todos los subtipos de linfocitos Tregs periféricos (pTregs) expresan el factor de transcripción FOXP3."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "1bea098b-d970-4bdf-924b-4accedce734a",
+      "text": "En cuanto al proceso de presentación y reconocimiento de antígenos, marque la opcióncorrecta:",
+      "options": [
+        {
+          "id": "fdf5ad26-26f0-426e-aa25-a1524772517b",
+          "text": "El TCR reconoce secuencias de aminoácidos del péptido y de la molécula de MHC (Complejo Mayor de Histocompatibilidad) que lo contiene.",
+          "correct": true
+        },
+        {
+          "id": "78a92bcb-e7ae-4be2-a310-5711541320d6",
+          "text": "EL proteasoma participa en el procesamiento de antígenos citosólicos en condiciones fisiológicas y no sufre cambios en un contexto de peligro inmunológico (por ejemplo en respuesta al IFN-γ)."
+        },
+        {
+          "id": "e2b43784-3495-4070-874d-3a80f59cac86",
+          "text": "El antígeno es cargado en las regiones no polimórficas de las moléculas de MHC de clase I y II."
+        },
+        {
+          "id": "2cf1b888-fa66-49c2-b1ba-58bf0899ced3",
+          "text": "El complejo péptido-MHC tiene una interacción con disociación muy rápida."
+        },
+        {
+          "id": "8316c543-950c-42d2-837f-4b3fd9a63901",
+          "text": "Las moléculas de MHC de clase I y II pueden discriminar entre antígenos propios y extranjeros."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "2a1891d0-2021-43e0-a7bf-a64d23eec2a9",
+      "text": "En relación a la dermatitis atópica, señale la opción correcta.",
+      "options": [
+        {
+          "id": "2fe2124a-e0ea-4eab-b73f-6c9de823d677",
+          "text": "Las lesiones tiene un riesgo alto de infectarse.",
+          "correct": true
+        },
+        {
+          "id": "79b54e47-66a1-4fd4-8c30-8af8221b8025",
+          "text": "Es una enfermedad de los queratinocitos, sin afectación inmune."
+        },
+        {
+          "id": "4f71f4c1-59b2-43c7-8c98-f2d06e89d0bd",
+          "text": "Esta mediada por una respuesta de linfocitos T Foxp3+."
+        },
+        {
+          "id": "497753dd-c935-4027-8260-1eef47bd3ba9",
+          "text": "La inyección de anticuerpos monoclonales anti-IFN-γ es una terapia prometedora."
+        },
+        {
+          "id": "a5168cfa-6ddf-4e0d-8ea3-1a38a579a8a3",
+          "text": "Sus manifestaciones clínicas dependen de la respuesta del individuo a Mycobacterium leprae."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "c4d498dc-6957-445e-b946-5e2d83d233d2",
+      "text": "En relación a la estructura de los anticuerpos indique la opción correcta.",
+      "options": [
+        {
+          "id": "71e09e6e-3b67-4bab-93fb-cf1e7879f2ed",
+          "text": "Las IgM son particularmente eficaces en activar el complemento.",
+          "correct": true
+        },
+        {
+          "id": "f2b629bf-9e9c-4fda-bb02-57ac6775a335",
+          "text": "La IgA no es capaz de actuar a través de la neutralización."
+        },
+        {
+          "id": "e9f65e38-3c3c-4131-833d-c09cd8093ef4",
+          "text": "Las cadenas livianas se encargan de interaccionar físicamente con el epítopo mientras que las pesadas tienen un papel estructural."
+        },
+        {
+          "id": "8144a0c0-995c-463b-bbe1-7a9f791bd9be",
+          "text": "Los anticuerpos con cadenas livianas kappa tienen más afinidad por el antígeno que los compuestos por cadenas lambda."
+        },
+        {
+          "id": "13666dde-ce40-4afa-8263-83c3172c4a3e",
+          "text": "Los anticuerpos solubles generados en la respuesta primaria tienen la misma constante de afinidad (Kd) que los generados en una respuesta secundaria."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "cd4ee709-3d05-4726-8973-58b5d9f9b9a1",
+      "text": "En relación a la linfopoyesis B indique lo correcto:",
+      "options": [
+        {
+          "id": "0137a4fb-b797-449a-9438-45f5df739217",
+          "text": "Los centrocitos, linfocitos B localizados en la zona clara del centro germinal, son seleccionados por el antígeno y pueden diferenciarse a células B memoria y/o a plasmocitos.",
+          "correct": true
+        },
+        {
+          "id": "9f046b8e-d6e6-49a8-8683-222f4f19af38",
+          "text": "Las células Tfh (helper folicular) tienen como principal función inhibir la diferenciación de las células B que se unen al antígeno con alta afinidad."
+        },
+        {
+          "id": "1b0ccb7c-495f-408d-9580-cd441f8e62e5",
+          "text": "Las células en estadío pre-B se caracterizan por co-expresar IgM e IgD en su membrana."
+        },
+        {
+          "id": "f6d762ff-a87b-4610-930b-faa313a26efb",
+          "text": "Los centroblastos, linfocitos B, ubicados en la zona oscura del centro germinal se caracterizan por tener inhibido su ciclo celular."
+        },
+        {
+          "id": "f8c950d2-ed27-4f12-a834-23e36253afff",
+          "text": "Se inicia en la médula ósea, pero es a nivel del timo donde se desarrollan los principales estadíos de diferenciación de la célula B."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "82f894b2-d991-4463-8423-b28bef9dc2c7",
+      "text": "En relación a la presentación de antígenos, marque la opción correcta:",
+      "options": [
+        {
+          "id": "f342aa75-a153-4764-8179-73a1cf5db4bd",
+          "text": "Si un fármaco inhibe la acidificación de las vesículas endosomales de una célula presentadora, va a inhibir la presentación de antígenos en moléculas del MHC clase II.",
+          "correct": true
+        },
+        {
+          "id": "81a145a0-e2b1-46e0-b05d-98ff7cf9341e",
+          "text": "La enzima NOX2 acidifica el pH de la luz de los fagosomas de las células endoteliales del aparato respiratorio."
+        },
+        {
+          "id": "cbbb84ba-bcbd-4834-a0e5-96f3a326f755",
+          "text": "La presentación cruzada no es utilizada para presentar antígenos tumorales."
+        },
+        {
+          "id": "61f6a92c-25b6-48f1-8642-ec2c499120ac",
+          "text": "Luego de la fagocitosis, los macrófagos son capaces de mantener un pH neutro en la luz de sus fagosomas gracias a que se activa la ATPasa vacuolar."
+        },
+        {
+          "id": "69a48b9f-adaa-43d4-9996-bc6af045bd12",
+          "text": "Todas las células nucleadas del organismo pueden cross-presentar."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "004a5d2f-3290-4fa0-b00a-0696bb140de0",
+      "text": "En relación a los mecanismos efectores efectivos en la eliminación de patógenos intracelulares, indique la opción correcta:",
+      "options": [
+        {
+          "id": "16ab89fc-bbed-4b6b-988e-022804f40f14",
+          "text": "Los anticuerpos IgG pueden potenciar la actividad de la célula asesina natural (NK) y el reconocimiento de la célula infectada por bacterias intracelulares.",
+          "correct": true
+        },
+        {
+          "id": "b7b6d539-a29a-472e-8c19-370daf45ba53",
+          "text": "El reconocimiento de ADN viral monocatenario por parte de los receptores RIG, confiere a la células un estado anti-viral, debido a la activación del IRF3."
+        },
+        {
+          "id": "28afb974-1cbf-4c76-b8c5-cf494f1ff1f9",
+          "text": "La producción de IFN-γ por parte de linfocitos Th1 y linfocitos T CD8 aumenta la producción de IL-10 por células infectadas por virus y las hace más susceptibles a la muerte por apoptosis."
+        },
+        {
+          "id": "853a5887-3f95-4c6b-985e-03fc9986fc9b",
+          "text": "Las células asesinas naturales (NK) son críticas para la eliminación de hongos en etapas extracelulares porque pueden reconocer los carbohidratos del patógeno en su superficie."
+        },
+        {
+          "id": "b7f3b77b-b161-48e6-b53b-85da3c0e9b63",
+          "text": "Los linfocitos Th2 son esenciales para mediar la muerte de células infectadas por parásitos intracelulares, ya que promueven la diferenciación de linfocitos T CD8 a citotóxicos."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "3cc9ef99-3d95-43f8-966f-aec26a0866fd",
+      "text": "En relación a los mecanismos efectores mediados por los anticuerpos, indique la opción correcta:",
+      "options": [
+        {
+          "id": "1404c8ef-4e6e-47ac-881a-faab1bb1a12c",
+          "text": "Los anticuerpos IgG pueden conferir inmunidad fetal y neonatal, gracias a su transporte mediado por el receptor neonatal (FcRn) presente en la placenta.",
+          "correct": true
+        },
+        {
+          "id": "b761e6e0-ebe0-4f9b-b955-8cf63aaaf41e",
+          "text": "La opsonización mediada por anticuerpos de clase IgM permite la fagocitosis de bacterias encapsuladas."
+        },
+        {
+          "id": "d4934df3-60e7-43b7-8a3f-bf8bae8f8c7f",
+          "text": "Los anticuerpos pueden regular la respuesta inmune humoral a través de receptores FcαR presentes en los linfocitos B."
+        },
+        {
+          "id": "ae668144-1a20-48f2-86d8-d5fed9302760",
+          "text": "Los receptores FcγRIII (CD16), que poseen alta afinidad por las IgG, son esenciales para mediar la citotoxicidad de células asesinas naturales (NK) dependiente de anticuerpos."
+        },
+        {
+          "id": "8d58d2cd-3c85-4803-8be5-0bf7dec3604c",
+          "text": "Para mediar la neutralización, es necesario que la inmunoglobulina posea alta afinidad porlos receptores FcγRI presentes en macrófagos."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "2c2c8c0d-ea7a-4a90-913b-a351296f8218",
+      "text": "En relación con la relación inmune materno-fetal, indique lo correcto:",
+      "options": [
+        {
+          "id": "bec5a48f-9ddd-4292-8758-d469c7c7e662",
+          "text": "Una alta relación Th1/Treg no es buena para el desarrollo del embarazo.",
+          "correct": true
+        },
+        {
+          "id": "3ca526e3-db80-4a1f-a049-6f2b154fd784",
+          "text": "El aumento de CNS1 en la placenta suele inducir aborto."
+        },
+        {
+          "id": "df684d6a-ae4c-4706-9575-abc4e952247a",
+          "text": "La activación de la vía clásica del complemento puede inducir trabajo de parto."
+        },
+        {
+          "id": "54345e29-2721-44bf-8bcc-fee350651402",
+          "text": "La disminución de HLA-G evita la pre-eclampsia."
+        },
+        {
+          "id": "9933ba8b-6e98-4802-b0eb-9d79fc2bedad",
+          "text": "Un agonista de TLR-4 actúa como inhibidor de la inducción de parto prematuro."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "56c84f9a-69d0-460b-8cf1-d7756df7db77",
       "text": "En relación con los linfocitos CAR-T, indique lo correcto:",
       "options": [
         {
-          "text": "Son linfocitos reguladores, sin receptores para antígenos."
-        },
-        {
-          "text": "Se originan de un hibridoma de linfocitos T."
-        },
-        {
+          "id": "3471eafd-5477-4877-9ff1-480aaa8be145",
           "text": "Además del TCR tienen un receptor (scFv) derivado de un linfocito B.",
           "correct": true
         },
         {
+          "id": "711badef-9fff-4a8d-a2fa-987622b69e45",
+          "text": "Se administran cuando es necesario mejorar la tolerancia ante un trasplante de órganos."
+        },
+        {
+          "id": "1ba14dea-c547-49c1-a510-d08f408d3a6b",
+          "text": "Se originan de un hibridoma de linfocitos T."
+        },
+        {
+          "id": "4bf50956-860a-411f-8524-29aace022945",
           "text": "Solo reconocen antígenos peptídicos."
         },
         {
-          "text": "Se administran cuando es necesario mejorar la tolerancia ante un trasplante de órganos."
+          "id": "d5636dfb-cf4f-4c0f-b56b-d96dc00de6d2",
+          "text": "Son linfocitos reguladores, sin receptores para antígenos."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "cc901369-80a7-4786-9034-f38ca17411e0",
+      "text": "Indique la opción correcta sobre los receptores innatos (PRRs):",
+      "options": [
+        {
+          "id": "aaa9e772-2504-4479-9a93-bbf8c158f659",
+          "text": "cGAS puede activar IRF3 para producir IFN de tipo I a través de la activación de STING.",
+          "correct": true
+        },
+        {
+          "id": "917ffa05-724e-4644-96b4-0bf1d85c1238",
+          "text": "El inflamasoma activa factores de transcripción, como AP-1, e induce un aumento de la expresión génica de las citoquinas pro-inflamatorias."
+        },
+        {
+          "id": "4995e828-dd4e-4c57-9cc6-5ff7d9a85296",
+          "text": "La caspasa-1, producto de activación de receptores tipo RIG, cliva la IL-1β, permitiendo su secreción."
+        },
+        {
+          "id": "d900a27f-4533-4416-a170-85b6e67ba860",
+          "text": "La flagelina derivada de bacterias pueden ser reconocidas por los receptores de tipo Toll (TLR) pero no por los receptores de tipo NOD (NLR)."
+        },
+        {
+          "id": "d9c7ae39-faab-4bdb-b0b3-d72cc24c4037",
+          "text": "NF-kB es un factor de transcripción que, al contrario que AP-1, puede activarse por las vías de señalización de TLRs dependientes de MyD88 y TRIF."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "2329d2db-94d1-45b2-a7e9-14f7333be9a6",
+      "text": "Indique lo correcto en relación a la inmunidad en mucosas:",
+      "options": [
+        {
+          "id": "7797b0e7-d4bb-4bdd-9baa-8008b4d99b61",
+          "text": "Las células epiteliales intestinales expresan Receptores de Reconocimiento de Patrones (PRRs) de diferentes tipos, y al activarse pueden secretar citoquinas y quimioquinas.",
+          "correct": true
+        },
+        {
+          "id": "9f026630-2520-45f4-b19d-ae63ecc6967d",
+          "text": "La IgA secretada hacia la luz intestinal representa un potente activador de la vía clásica del complemento."
+        },
+        {
+          "id": "c4b2ce32-8777-4d45-8c58-481e963e9702",
+          "text": "Las mucinas secretadas por las células caliciformes hacia la lámina propia de la mucosa intestinal, forman una capa densa que interacciona con la cara basolateral de los enterocitos."
+        },
+        {
+          "id": "ce149b50-63db-468a-b47c-788fee69c67b",
+          "text": "Los microorganismos de la flora comensal a nivel intestinal no son reconocidos por el sistema inmune innato ni por el adaptativo."
+        },
+        {
+          "id": "72597957-a38c-46ab-9792-6164f867e742",
+          "text": "Los péptidos anti-microbianos sólo son efectivos si se expresan asociados al MHC de clase I de los enterocitos."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "ad0ca5e9-4929-4204-9ee7-3c540ddb8173",
+      "text": "Indique lo correcto en relación a los mecanismos de generación de diversidad estructural en los anticuerpos:",
+      "options": [
+        {
+          "id": "428c7c91-4d3d-4cc2-9e41-725a3e785644",
+          "text": "Las adiciones de nucleótidos que se observan en la recombinación somática introducen diversidad adicional a nivel de los CDR3 de las cadenas pesadas y livianas.",
+          "correct": true
+        },
+        {
+          "id": "69e2c4b5-0c40-475d-a40e-3f6341776bd3",
+          "text": "El proceso de cambio de clase de un anticuerpo permite cambiar sus regiones variables y por tanto su especificidad, pero manteniendo el mismo isotipo."
+        },
+        {
+          "id": "a978fab0-8894-417e-9363-78b289247128",
+          "text": "El proceso de hipermutación somática sucede en la médula ósea previo al contacto con el antígeno."
+        },
+        {
+          "id": "3b6678dc-1b33-4197-bfe7-bb2e4eeb49de",
+          "text": "La recombinación somática de los segmentos génicos de codifican la región variable de las inmunoglobulinas depende de la activación de la célula progenitora por el antígeno y de citoquinas secretadas por las células Tfh."
+        },
+        {
+          "id": "cca0483f-b4cb-49bd-b355-8903d3d415f2",
+          "text": "Las recombinasas RAG1 y RAG2 reconocen secuencias específicas adyacentes a los exones que codifican los dominios constantes de las inmunoglobulinas."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "f0ae50fc-b472-4c95-b029-acf4fd94623e",
+      "text": "Indique lo correcto en relación a los mecanismos efectores celulares del sistema inmune:",
+      "options": [
+        {
+          "id": "a4aba15f-6774-4bec-af19-d209da4a81cc",
+          "text": "El fenotipo Th17 se diferencia presencia de IL-1, IL-6 y TGF-β, siendo la IL-17 secretada por estas células una fuerte señal para reclutar neutrófilos.",
+          "correct": true
+        },
+        {
+          "id": "209c6438-bf4f-48c5-9ed8-2714e008f7a2",
+          "text": "El fenotipo Th1, que activa el cambio de clase de los linfocitos B para que produzcan IgE, es clave en el desarrollo de inmunidad frente a parásitos helmintos."
+        },
+        {
+          "id": "963297b5-5f67-45dd-adc6-2aeeb1d248c5",
+          "text": "En presencia de IL-12 e IFN-γ la activación de un linfocito T vírgen por una célula dendrítica induce la generación del fenotipo Th2."
+        },
+        {
+          "id": "bb828c78-1ce8-409e-9d1f-3371a3e08762",
+          "text": "Las células del fenotipo Tfh, se localizan principalmente en las áreas T paracorticales de los ganglios linfáticos."
+        },
+        {
+          "id": "b8208297-9ea3-486f-bb16-2979f86d0ff1",
+          "text": "Las señales que envía la célula dendrítica al linfocito T vírgen haciéndolo diferenciar en diferentes fenotipos, se adquieren exclusivamente a través del Receptor de células T (TCR) y su mecanismo de transducción de señal."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "e29b3089-3633-4caa-9eea-e75bd4a534b9",
+      "text": "Marque la opción correcta sobre la inmunopatología de la psoriasis.",
+      "options": [
+        {
+          "id": "54f6df9e-ef3f-483e-8734-a3aee6456f77",
+          "text": "Se caracteriza por un engrosamiento de la epidermis en placas con aumento del infiltrado leucocitario a ese nivel.",
+          "correct": true
+        },
+        {
+          "id": "d497501f-4abb-4ae4-8a6f-bfd37757658b",
+          "text": "Es una enfermedad mediada por linfocitos Th2."
+        },
+        {
+          "id": "c9f2faff-9c15-48ea-9377-b751354918c4",
+          "text": "Es una manifestación de la inmunosupresión ocasionada tanto por el VIH como por fármacos."
+        },
+        {
+          "id": "e958426b-b37e-478f-a0b8-12a72249e6c8",
+          "text": "Puede tratarse con anticuerpos agonistas del receptor de IL-17."
+        },
+        {
+          "id": "31005944-3fbc-472c-976e-9f6f9ce5c958",
+          "text": "Su desarrollo es controlado si se inyecta TNF-α recombinante."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "ff7cd0d2-073c-45bd-91c8-7420023f7c2e",
+      "text": "Señale la opción correcta acerca de la linfopoyesis T.",
+      "options": [
+        {
+          "id": "60c55984-5ad5-4245-9101-9393344bebb7",
+          "text": "Es un proceso que depende la expresión de recombinasas tipo RAG.",
+          "correct": true
+        },
+        {
+          "id": "93bb4ea7-de63-4fa0-874b-a9ed26729610",
+          "text": "La expresión de TCR es prescindible para que un linfocito T madure en el timo."
+        },
+        {
+          "id": "8aa76d46-03ff-4b19-b279-a72f6d22dbcd",
+          "text": "Los timocitos evolucionan por programas genéticos independientemente del microambiente tímico."
+        },
+        {
+          "id": "f5226ad7-82a8-4176-af06-dc540663780d",
+          "text": "Ocurre a partir del precursor mieloide común."
+        },
+        {
+          "id": "acebef67-9998-4cb2-9804-b70867c9aedb",
+          "text": "Se da en los órganos linfoides secundarios."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "aaecbcf5-aea2-40e1-8c8a-bac38e8598bd",
+      "text": "Señale la opción correcta sobre los anticuerpos.",
+      "options": [
+        {
+          "id": "67811f80-a04a-4e60-a4a5-f6034554c1bb",
+          "text": "El fragmento Fc puede ser reconocido por receptores específicos de cadenas pesadas.",
+          "correct": true
+        },
+        {
+          "id": "1140740c-447f-471a-882e-aa5bf34214e0",
+          "text": "El reconocimiento de un pequeño antígeno por un clon de anticuerpos define al primero como inmunógeno."
+        },
+        {
+          "id": "ea04c272-87a2-45be-8fa4-5b3be6205847",
+          "text": "La IgA forma pentámeros y alcanza concentraciones séricas importantes durante la respuesta inmune primaria."
+        },
+        {
+          "id": "6f5ba8b3-248c-4358-a2ec-225eb2b3642d",
+          "text": "La presencia de IgM anti-estreptococo en un neonato sugiere la infección de la madre y no del niño."
+        },
+        {
+          "id": "071ee4a4-83e7-4372-8349-99db8f340b67",
+          "text": "Los CDRs son las regiones menos variables en la secuencia aminoacidica de un anticuerpo."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "f4a152a1-c1f3-4550-8c22-3a0f9cc74807",
+      "text": "Sobre la inmunidad en mucosas indique la opción correcta:",
+      "options": [
+        {
+          "id": "3fca9730-811e-463b-a80a-41b7bca61000",
+          "text": "Las células M ubicadas en el epitelio de asociado a los folículos de las mucosas, transportan antígenos desde la luz intestinal hacia estas estructuras linfoides.",
+          "correct": true
+        },
+        {
+          "id": "8235aad0-6694-49f2-a5f0-adc460bdb905",
+          "text": "Frente a una injuria del epitelio y a la activación de una respuesta inflamatoria local (perdida de homeostasis) los linfocitos T a nivel mucoso no tienen capacidad de generar respuestas Th1 ni Th17."
+        },
+        {
+          "id": "435a9c76-7241-47e5-98a2-1f97ca966b4c",
+          "text": "Los Linfocitos intra-epiteliales corresponden principalmente a linfocitos B responsables de la secreción de IgA hacia la luz intestinal."
+        },
+        {
+          "id": "ffec06cb-cd74-42e6-8e7b-380bee3605ad",
+          "text": "Los linfocitos B activados en las placas de Peyer quedan fijados en el mismo sitio inductivo donde se activaron y no tienen capacidad de recircular por la sangre y la linfa."
+        },
+        {
+          "id": "5c36d9f0-f7e6-444f-bc64-3f9c98033ffe",
+          "text": "Los macrófagos que se encuentran en la lámina propia de la mucosa en condiciones de homeostasis, presentan un fenotipo M1 caracterizado por la secreción de citoquinas pro-inflamatorias (TNF-alfa, IL-1β, IL-6, etc.)."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "6d1c67a0-761a-41ba-b197-5f072e5a30c2",
+      "text": "Sobre los anticuerpos de utilidad terapéutica para uso humano, indique lo correcto:",
+      "options": [
+        {
+          "id": "44b5fa6f-dcc5-4dd7-bced-efae9e20104b",
+          "text": "Mediante glico-ingeniería de la región Fcγ se puede aumentar su eficacia in vivo porque adquieren mayor unión al receptor para Fcγ.",
+          "correct": true
+        },
+        {
+          "id": "4d5f5fbd-e8d1-4c45-9e17-179d0d67022c",
+          "text": "El ipilimumab es un anticuerpo quimérico."
+        },
+        {
+          "id": "855ab0aa-562b-4c19-8af3-139d2f5248b0",
+          "text": "Los anticuerpos biespecíficos poseen 2 regiones Fc diferentes con el mismo sector Fab."
+        },
+        {
+          "id": "54903341-4d97-44e6-998c-8b0d5d56c8b2",
+          "text": "Los minibodies son excelentes para matar células tumorales mediante ADCC (Citotoxicidad Celular Dependiente de Anticuerpos)."
+        },
+        {
+          "id": "b746f6b0-2935-47da-ac09-082a9cdb0428",
+          "text": "Su principal producción se realiza en ratones libres de patógenos."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "d999752d-2aef-441b-b86f-f0bea68bfbc6",
+      "text": "Sobre los marcadores de activación linfocitaria, indique lo correcto.",
+      "options": [
+        {
+          "id": "4ceb04c4-77c8-486b-b9e9-d97ee7c9ca9d",
+          "text": "La producción de IL-2 por un linfocito T sugiere que éste se ha activado.",
+          "correct": true
+        },
+        {
+          "id": "f5e77ed1-cbe8-4b4c-90d0-9186e1c64b6a",
+          "text": "El CD25 implica que la célula T se ha transformado en memoria."
+        },
+        {
+          "id": "9f677c6e-37b5-41a7-bef8-6bc58a2e0483",
+          "text": "El CD62L está vinculado a la degranulación de perforina y granzima."
+        },
+        {
+          "id": "4d4d3922-676b-4672-9422-454128855fd4",
+          "text": "Los linfocitos T efectores memoria centrales tienen el siguiente fenotipo: CD3-CD45RA+R-IL7-."
+        },
+        {
+          "id": "c0efeb4e-5dea-44ff-b1d9-6572ae46fae3",
+          "text": "Son interesantes, pero no tienen utilidad a nivel clínico."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "095eb31f-8fea-401a-adfc-525eaa85a52d",
+      "text": "Una bacteria extracelular puede evadir la respuesta del sistema inmune del individuo por los siguientes mecanismos, marque la opción INCORRECTA:",
+      "options": [
+        {
+          "id": "87879563-19bb-43c5-a036-cbc68f8e024b",
+          "text": "Disminuyendo su actividad proteolítica sobre la IgA (inmunoglobulina A).",
+          "correct": true
+        },
+        {
+          "id": "e93bbd09-ff8b-44d6-a6be-9dbc744bff72",
+          "text": "Inhibición de la formación y activación de la C3 convertasa."
+        },
+        {
+          "id": "2388cfa1-bf03-44d3-bf50-bb5db38a2636",
+          "text": "Las cápsulas de polisacáridos de los pneumococos impide la adherencia por pseudópodos de los macrófagos."
+        },
+        {
+          "id": "1726bb84-6da2-4dc5-92b3-927e5d23ae85",
+          "text": "Las toxinas pueden interferir en el tráfico de las moléculas de MHC (Complejo mayor de Histocompatibilidad) y de esa manera evitar la presentación de antígenos."
+        },
+        {
+          "id": "c3717bab-7198-4294-a76b-5fbdce2deb98",
+          "text": "Variación de sus antígenos de membrana."
         }
       ],
       "evaluation": "parcial_2"
