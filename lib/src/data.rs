@@ -95,6 +95,8 @@ impl CourseData {
         data.check()?;
         data.deduplicate();
         data.sort();
+        data.format_text();
+
         data.clone().write(path)?;
 
         Ok(data)
@@ -149,6 +151,13 @@ impl CourseData {
         }
 
         Ok(())
+    }
+
+    fn format_text(&mut self) {
+        for question in self.questions.iter_mut() {
+            question.text = question.text.trim().into();
+            question.format_text();
+        }
     }
 }
 
@@ -253,6 +262,12 @@ impl QuestionData {
         }
 
         Ok(())
+    }
+
+    fn format_text(&mut self) {
+        for question_option in self.question_options.iter_mut() {
+            question_option.text = question_option.text.trim().into();
+        }
     }
 
     pub fn set_course_key(&mut self, course_key: String) {
