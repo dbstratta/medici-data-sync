@@ -27,7 +27,7 @@
         },
         {
           "id": "6dd50a13-4ac2-44be-a83a-e1ed12fc5771",
-          "text": "Los macrófagos son células que típicamente realizan presentación cruzada (crosspresentación) ya que mantienen su pH fagosomal aproximadamente en 7.4 durante las primeras 2 horas luego de la fagocitosis."
+          "text": "Los macrófagos son células que típicamente realizan presentación cruzada (cross-presentación) ya que mantienen su pH fagosomal aproximadamente en 7.4 durante las primeras 2 horas luego de la fagocitosis."
         }
       ],
       "evaluation": "parcial_2"
@@ -155,7 +155,7 @@
         },
         {
           "id": "f4722d88-5d8a-46c8-8d7e-1c2da1110897",
-          "text": "El TCR de los linfocitos T reguladores tímicos (tTregs) tiene una avidez nula por el MHC-péptido, motivo por el cuál no responden y semueren."
+          "text": "El TCR de los linfocitos T reguladores tímicos (tTregs) tiene una avidez nula por el MHC-péptido, motivo por el cuál no responden y se mueren."
         },
         {
           "id": "c8376459-5afa-46b6-addb-930d4df42ef7",
@@ -262,12 +262,12 @@
       "options": [
         {
           "id": "124098a3-a5ac-4704-b8fc-1e191edff109",
-          "text": "La IL-1β, IL-6 y TNF-α producidos por macrófagos poseen efectos locales y sistémicos, y potencian la acción de losfagocitos.",
+          "text": "La IL-1β, IL-6 y TNF-α producidos por macrófagos poseen efectos locales y sistémicos, y potencian la acción de los fagocitos.",
           "correct": true
         },
         {
           "id": "ba944538-b93e-475e-a32a-910b4ccbb2f8",
-          "text": "La fagocitosis puede ser potenciada por la opsonización, gracias a la presencia de receptores específicos de citoquinas que unen patógenos y que se encuentran presentes en la superficie de losfagocitos."
+          "text": "La fagocitosis puede ser potenciada por la opsonización, gracias a la presencia de receptores específicos de citoquinas que unen patógenos y que se encuentran presentes en la superficie de los fagocitos."
         },
         {
           "id": "abd16039-1ad1-46b8-9792-94b68a43569a",
@@ -275,7 +275,7 @@
         },
         {
           "id": "c3c0158d-ddbd-4561-8b91-dfd98531701a",
-          "text": "Los basófilos activados por IgE realizan Netosis para dañar patógenos."
+          "text": "Los basófilos activados por IgE realizan netosis para dañar patógenos."
         },
         {
           "id": "19b9950e-6312-46b7-8c55-12d3735d081b",
@@ -346,7 +346,7 @@
       "options": [
         {
           "id": "e6ad7032-4b9e-4014-9fa9-45f933a25382",
-          "text": "Los carbohidratos suelen inducir respuestas secundarias con producción de anticuerpos con mayor afinidad por el antígeno con respecto a la respuestaprimaria.",
+          "text": "Los carbohidratos suelen inducir respuestas secundarias con producción de anticuerpos con mayor afinidad por el antígeno con respecto a la respuesta primaria.",
           "correct": true
         },
         {
@@ -407,7 +407,7 @@
         },
         {
           "id": "217f5c95-9c85-407b-b665-985230c028b1",
-          "text": "El paratopo es la porción de la inmunoglobulina reconocida por los receptores Fcgamma en macrófagos y NKs."
+          "text": "El paratopo es la porción de la inmunoglobulina reconocida por los receptores Fc gamma en macrófagos y NKs."
         },
         {
           "id": "9ee45b66-9fc7-4864-b916-fdd3d9f8e927",
@@ -538,11 +538,11 @@
     },
     {
       "id": "9870ead7-6036-46f4-95e6-efc1ac2da6e8",
-      "text": "Indique lo correcto en relación a los mecanismos efectores de la respuestainmune celular:",
+      "text": "Indique lo correcto en relación a los mecanismos efectores de la respuesta inmune celular:",
       "options": [
         {
           "id": "373fe4d2-9bae-4bbc-beb6-59d6b1efecac",
-          "text": "Los linfocitos T γδ (gamma/delta) reconocen mediante el recpetor NKG2D a las proteínas MICA y MICB expresadas en la membrana de células estresadas.",
+          "text": "Los linfocitos T γδ (gamma-delta) reconocen mediante el recpetor NKG2D a las proteínas MICA y MICB expresadas en la membrana de células estresadas.",
           "correct": true
         },
         {
@@ -566,7 +566,7 @@
     },
     {
       "id": "a730a155-d680-472a-99be-37b84927411c",
-      "text": "Los receptores para la porción Fc de los anticuerpos (Receptores Fc), activan gran variedad de células efectoras de la respuesta inmune. Con respecto a ellos, señale la opción correcta:",
+      "text": "Los receptores para la porción Fc de los anticuerpos (receptores Fc), activan gran variedad de células efectoras de la respuesta inmune. Con respecto a ellos, señale la opción correcta:",
       "options": [
         {
           "id": "518d02b2-bf7a-454c-99c7-41cce6149553",
@@ -579,7 +579,7 @@
         },
         {
           "id": "d276219b-8e33-45f2-825d-875456a2c25a",
-          "text": "El receptor CD16 (FcγRIIIa) expresado por los Natural Killers se une con mayor afinidad a las IgG monoméricas circulantes que a aquellas mostradas en superficies celulares."
+          "text": "El receptor CD16 (FcγRIIIa) expresado por los natural killers se une con mayor afinidad a las IgG monoméricas circulantes que a aquellas mostradas en superficies celulares."
         },
         {
           "id": "6e1dffc2-b8bb-4efb-b401-829c0ffad5e0",
@@ -653,8 +653,8 @@
       "text": "Marque la opción correcta sobre los receptores innatos de reconocimiento de material genético:",
       "options": [
         {
-          "id": "a297ea32-ee8b-4fea-b12e-295bf824981a",
-          "text": "Los receptores de tipo lectina C (CLR) pueden reconocer ADN glicosilado derivado de patógenos.",
+          "id": "4bff4531-ec61-4c03-85ce-623cfd8f0b8d",
+          "text": "Los receptores de tipo RIG (RLR) reconocen ARN viral y su señalización promueve la producción de IFN-α.",
           "correct": true
         },
         {
@@ -670,8 +670,8 @@
           "text": "Los receptores de tipo NOD (NLR) pueden reconocer ADN de doble hebra e inducir la activación de IRF7 en conjunto con la producción de IL-1β e IL-18."
         },
         {
-          "id": "4bff4531-ec61-4c03-85ce-623cfd8f0b8d",
-          "text": "Los receptores de tipo RIG (RLR) reconocen ARN viral y su señalización promueve la producción de IFN-α."
+          "id": "a297ea32-ee8b-4fea-b12e-295bf824981a",
+          "text": "Los receptores de tipo lectina C (CLR) pueden reconocer ADN glicosilado derivado de patógenos."
         }
       ],
       "evaluation": "parcial_2"
@@ -738,7 +738,7 @@
       "options": [
         {
           "id": "9c2fba2f-b9d9-4774-ab3a-156f8ae00122",
-          "text": "Los antígenos propios presentados sin moléculas de co-estimulación hacen que el linfocito T sufra apoptosis activando las proteínas de tipo BH3 en lamitocondria.",
+          "text": "Los antígenos propios presentados sin moléculas de co-estimulación hacen que el linfocito T sufra apoptosis activando las proteínas de tipo BH3 en la mitocondria.",
           "correct": true
         },
         {

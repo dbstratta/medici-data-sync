@@ -34,7 +34,7 @@
     },
     {
       "id": "5b7c7b29-1f26-4a3f-b34c-fe3c8ca451d4",
-      "text": "En cuanto a los receptores Fc para las Inmunoglobulinas, marque la opción correcta.",
+      "text": "En cuanto a los receptores Fc para las inmunoglobulinas, marque la opción correcta.",
       "options": [
         {
           "id": "00886e4a-150c-469b-becb-6f9da74da841",
@@ -90,7 +90,7 @@
     },
     {
       "id": "b7f84157-6335-462b-b3a2-d67ef31a30fe",
-      "text": "En las técnicas de Inmunofluorescencia Indirecta para investigación de anticuerpos cuál de los siguientes componentes NO se utiliza:",
+      "text": "En las técnicas de inmunofluorescencia indirecta para investigación de anticuerpos cuál de los siguientes componentes NO se utiliza:",
       "options": [
         {
           "id": "9dbb59b8-c954-4130-be20-682239f18bfa",
@@ -206,7 +206,7 @@
       "options": [
         {
           "id": "d2d5c32b-723b-473f-9b80-a3596bf40d50",
-          "text": "Las células citotóxicas no son específicas, la especificidad está dada por las Inmunoglobulinas que las dirige a la célula blanco.",
+          "text": "Las células citotóxicas no son específicas, la especificidad está dada por las inmunoglobulinas que las dirige a la célula blanco.",
           "correct": true
         },
         {
@@ -223,7 +223,7 @@
         },
         {
           "id": "f89df864-9633-4969-b080-2cd0413ebcf7",
-          "text": "Las células NK (Natural Killers) que matan por ADCC son específicas de la célula blanco."
+          "text": "Las células NK (natural killers) que matan por ADCC son específicas de la célula blanco."
         }
       ],
       "evaluation": "parcial_2"
@@ -258,7 +258,7 @@
     },
     {
       "id": "4929ec7d-470c-45f4-9ee7-7453999b4c6a",
-      "text": "Indique la opción correcta sobre el IFN-gama.",
+      "text": "Indique la opción correcta sobre el IFN-gamma.",
       "options": [
         {
           "id": "f14942b5-919c-49f7-8071-a0ce66f4a9b9",
@@ -318,7 +318,7 @@
       "options": [
         {
           "id": "0a0651b5-4960-4c7d-8a21-75ef1a21ed29",
-          "text": "Los tumores que producen CTLA-4 son los que responden al anticuerpo Ipilimumab.",
+          "text": "Los tumores que producen CTLA-4 son los que responden al anticuerpo ipilimumab.",
           "correct": true
         },
         {
@@ -415,7 +415,7 @@
         },
         {
           "id": "b089ef36-d162-4f8e-9c00-ba888dc67de6",
-          "text": "El aumento del IFN-ɣ."
+          "text": "El aumento del IFN-γ."
         },
         {
           "id": "5ae096d8-8453-482d-b04c-6636d02a10ee",
@@ -550,10 +550,6 @@
           "text": "Aumento de la función Th17 – mayor posibilidad de psoriasis."
         },
         {
-          "id": "761603a6-f11f-4cf3-a169-dc51990e62b8",
-          "text": "Aumento de la función Th2 – lepra tuberculoide."
-        },
-        {
           "id": "af27a256-a20e-4fed-befe-4f33dec4fafb",
           "text": "Inhibición de la IL-12 – efecto favorable en pacientes con dermatitis atópica."
         },
@@ -594,7 +590,7 @@
     },
     {
       "id": "c75a0e5a-c705-48b8-bf2a-16cf32843d46",
-      "text": "Sobre las células Natural killer (NK) uterinas, indique lo INCORRECTO:",
+      "text": "Sobre las células natural killer (NK) uterinas, indique lo INCORRECTO:",
       "options": [
         {
           "id": "3bfd94f5-3501-454f-9807-8e6796c34c43",
@@ -678,7 +674,7 @@
     },
     {
       "id": "5b4c914d-2d22-4d4d-8494-a075c5623daa",
-      "text": "¿Cual las siguientes de células del sistema inmune tienen un papel fundamental en la respuesta frente a una infección por bacterias extracelulares? Marque la opción correcta.",
+      "text": "¿Cual de las siguientes células del sistema inmune tiene un papel fundamental en la respuesta frente a una infección por bacterias extracelulares? Marque la opción correcta.",
       "options": [
         {
           "id": "0ac039f8-4146-4138-82fa-b130e7b4739a",
