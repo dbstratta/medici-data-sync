@@ -10,6 +10,7 @@ pub struct RawCourseData {
     pub name: String,
     pub short_name: String,
     pub aliases: Vec<String>,
+    pub year: Option<i16>,
     pub questions: Vec<RawQuestionData>,
     pub evaluations: Vec<RawCourseEvaluationData>,
 }
@@ -29,6 +30,7 @@ impl From<CourseData> for RawCourseData {
             name: data.name,
             short_name: data.short_name,
             aliases: data.aliases,
+            year: data.year,
             questions: raw_questions,
             evaluations: raw_evaluations,
         }

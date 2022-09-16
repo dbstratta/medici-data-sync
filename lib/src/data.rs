@@ -21,6 +21,7 @@ pub struct CourseData {
     pub name: String,
     pub short_name: String,
     pub aliases: Vec<String>,
+    pub year: Option<i16>,
 
     #[serde(skip)]
     pub questions: Vec<QuestionData>,
@@ -48,6 +49,7 @@ impl CourseData {
             name: raw.name,
             short_name: raw.short_name,
             aliases: raw.aliases,
+            year: raw.year,
             questions,
             evaluations,
             hash,
