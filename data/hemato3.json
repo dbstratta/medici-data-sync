@@ -70,7 +70,7 @@
         },
         {
           "id": "a24867b8-d0ce-4a8b-9b4a-f00de44ffc8b",
-          "text": "Además de generar poros en la membrana de patógenos el complejo de ataque a membrana (MAC) puede permitir la extravasación de leucocitos y promover su reclutamiento al sitio de infección."
+          "text": "Además de generar poros en la membrana de patógenos, el complejo de ataque a membrana (MAC) puede permitir la extravasación de leucocitos y promover su reclutamiento al sitio de infección."
         },
         {
           "id": "7b685f66-4212-45b6-b0b8-0e68108ad8ed",
@@ -145,7 +145,7 @@
     },
     {
       "id": "4411618c-4526-46f3-8b3f-8a7c258993ac",
-      "text": "En cuanto a la tolerancia inmunológica y sus mecanismos, marque la opcióncorrecta:",
+      "text": "En cuanto a la tolerancia inmunológica y sus mecanismos, marque la opción correcta:",
       "options": [
         {
           "id": "c21254b8-f23c-4fd0-8b6a-b0e0fb152ac0",
@@ -201,7 +201,7 @@
     },
     {
       "id": "1bea098b-d970-4bdf-924b-4accedce734a",
-      "text": "En cuanto al proceso de presentación y reconocimiento de antígenos, marque la opcióncorrecta:",
+      "text": "En cuanto al proceso de presentación y reconocimiento de antígenos, marque la opción correcta:",
       "options": [
         {
           "id": "fdf5ad26-26f0-426e-aa25-a1524772517b",
@@ -210,7 +210,7 @@
         },
         {
           "id": "78a92bcb-e7ae-4be2-a310-5711541320d6",
-          "text": "EL proteasoma participa en el procesamiento de antígenos citosólicos en condiciones fisiológicas y no sufre cambios en un contexto de peligro inmunológico (por ejemplo en respuesta al IFN-γ)."
+          "text": "El proteasoma participa en el procesamiento de antígenos citosólicos en condiciones fisiológicas y no sufre cambios en un contexto de peligro inmunológico (por ejemplo en respuesta al IFN-γ)."
         },
         {
           "id": "e2b43784-3495-4070-874d-3a80f59cac86",
@@ -233,7 +233,7 @@
       "options": [
         {
           "id": "2fe2124a-e0ea-4eab-b73f-6c9de823d677",
-          "text": "Las lesiones tiene un riesgo alto de infectarse.",
+          "text": "Las lesiones tienen un riesgo alto de infectarse.",
           "correct": true
         },
         {
@@ -242,7 +242,7 @@
         },
         {
           "id": "4f71f4c1-59b2-43c7-8c98-f2d06e89d0bd",
-          "text": "Esta mediada por una respuesta de linfocitos T Foxp3+."
+          "text": "Esta mediada por una respuesta de linfocitos T FOXP3+."
         },
         {
           "id": "497753dd-c935-4027-8260-1eef47bd3ba9",
@@ -390,7 +390,7 @@
         },
         {
           "id": "8d58d2cd-3c85-4803-8be5-0bf7dec3604c",
-          "text": "Para mediar la neutralización, es necesario que la inmunoglobulina posea alta afinidad porlos receptores FcγRI presentes en macrófagos."
+          "text": "Para mediar la neutralización, es necesario que la inmunoglobulina posea alta afinidad por los receptores FcγRI presentes en macrófagos."
         }
       ],
       "evaluation": "parcial_2"
@@ -502,7 +502,7 @@
         },
         {
           "id": "72597957-a38c-46ab-9792-6164f867e742",
-          "text": "Los péptidos anti-microbianos sólo son efectivos si se expresan asociados al MHC de clase I de los enterocitos."
+          "text": "Los péptidos anti-microbianos solo son efectivos si se expresan asociados al MHC de clase I de los enterocitos."
         }
       ],
       "evaluation": "parcial_2"
@@ -526,7 +526,7 @@
         },
         {
           "id": "3b6678dc-1b33-4197-bfe7-bb2e4eeb49de",
-          "text": "La recombinación somática de los segmentos génicos de codifican la región variable de las inmunoglobulinas depende de la activación de la célula progenitora por el antígeno y de citoquinas secretadas por las células Tfh."
+          "text": "La recombinación somática de los segmentos génicos que codifican la región variable de las inmunoglobulinas depende de la activación de la célula progenitora por el antígeno y de citoquinas secretadas por las células Tfh."
         },
         {
           "id": "cca0483f-b4cb-49bd-b355-8903d3d415f2",
@@ -653,7 +653,7 @@
       "options": [
         {
           "id": "3fca9730-811e-463b-a80a-41b7bca61000",
-          "text": "Las células M ubicadas en el epitelio de asociado a los folículos de las mucosas, transportan antígenos desde la luz intestinal hacia estas estructuras linfoides.",
+          "text": "Las células M ubicadas en el epitelio asociado a los folículos de las mucosas, transportan antígenos desde la luz intestinal hacia estas estructuras linfoides.",
           "correct": true
         },
         {
