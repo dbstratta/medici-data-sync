@@ -40,6 +40,7 @@ impl CourseData {
             &raw.name,
             &raw.short_name,
             &raw.aliases,
+            raw.year.as_ref(),
             &questions[..],
             &evaluations[..],
         );
@@ -61,6 +62,7 @@ impl CourseData {
         name: &str,
         short_name: &str,
         aliases: &[String],
+        year: Option<&i16>,
         questions: &[QuestionData],
         evaluations: &[CourseEvaluationData],
     ) -> String {
@@ -70,6 +72,11 @@ impl CourseData {
         hasher.update(name.as_bytes());
         hasher.update(short_name.as_bytes());
         hasher.update(aliases.join("").as_bytes());
+
+        if let Some(year) = year {
+            hasher.update(&year.to_be_bytes());
+        }
+
         hasher.update(
             questions
                 .iter()
