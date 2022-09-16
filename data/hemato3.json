@@ -5,551 +5,701 @@
   "year": 3,
   "questions": [
     {
-      "text": "En las técnicas de Inmunofluorescencia Indirecta para investigación de anticuerpos cuál de los siguientes componentes NO se utiliza:",
+      "id": "14302554-6643-4422-a3f8-cf4facf82679",
+      "text": "En cuanto a los antígenos presentados en moléculas de MHC de clase II por la vía clásica, marque la opción correcta.",
       "options": [
         {
-          "text": "Un sustrato fijado en la lámina con la muestra del paciente: expectoración, lesiones genitales, etc.",
+          "id": "2a352a17-abe2-4ca7-877b-18c5c1f3df03",
+          "text": "Su corte y cargado en moléculas de MHC de clase II puede estar comprometido por ciertos fármacos como la cloroquina.",
           "correct": true
         },
         {
-          "text": "Un microscopio de fluorescencia con luz ultravioleta."
+          "id": "01ffe3c5-f685-4ebc-bd83-0218fc144ab1",
+          "text": "En general están constituidos por más de 80 aminoácidos"
         },
         {
-          "text": "Un sustrato fijado en la lámina con ejemplares de Toxoplasma gondii."
+          "id": "06ba284c-60bc-48f3-88aa-f47c7f0d5162",
+          "text": "No existen mecanismos para presentar antígenos exógenos en moléculas de MHC de clase II."
         },
         {
-          "text": "Un anticuerpo anti-IgG o anti gamma marcado con un fluorocromo."
+          "id": "c9eed61c-c239-45dd-bd73-5b0827cc62db",
+          "text": "Son procesados por el inmunoproteasoma."
         },
         {
-          "text": "Un sustrato fijado en la lámina de células HEp2 para anticuerpos antinucleares."
+          "id": "01f8efd1-7b59-4727-b737-ce4edfadada7",
+          "text": "Son procesados por el proteasoma."
         }
       ],
       "evaluation": "parcial_2"
     },
     {
-      "text": "En cuanto al proceso de presentación cruzada de antígenos, marque la opción correcta.",
-      "options": [
-        {
-          "text": "Los macrófagos necesitan un período de al menos 2 horas luego da la fagocitosis para acidificar sus fagosomas."
-        },
-        {
-          "text": "Una disfunción de la enzima NADPH oxidasa (NOX2) mejora este proceso en células dendríticas."
-        },
-        {
-          "text": "Se activa en monocitos o macrófagos bajos señales como el IFN gamma."
-        },
-        {
-          "text": "Se activa en linfocitos B cuando interacciona con el linfocito T."
-        },
-        {
-          "text": "Las células dendríticas no acidifican sus fagosomas en etapas precoces de su formación.",
-          "correct": true
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Los patógenos intracelulares NO desarrollan la siguiente estrategia de evasión inmunológica:",
-      "options": [
-        {
-          "text": "Inhibición de la expresión de moléculas co-estimuladoras."
-        },
-        {
-          "text": "Diferenciación a linfocitos T reguladores."
-        },
-        {
-          "text": "Disminución de la expresión de MHC de clase I por la célula infectada."
-        },
-        {
-          "text": "Inducción de la producción de TGF-β."
-        },
-        {
-          "text": "Inducción de apoptosis por células asesinas naturales (NK).",
-          "correct": true
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "¿Cual las siguientes de células del sistema inmune tienen un papel fundamental en la respuesta frente a una infección por bacterias extracelulares? Marque la opción correcta.",
-      "options": [
-        {
-          "text": "Linfocitos Th9."
-        },
-        {
-          "text": "Linfocitos Th0."
-        },
-        {
-          "text": "Linfocitos T reguladores."
-        },
-        {
-          "text": "Neutrófilos.",
-          "correct": true
-        },
-        {
-          "text": "Células endoteliales."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Indique lo correcto sobre factores que favorecen la buena tolerancia de un embarazo:",
-      "options": [
-        {
-          "text": "El aumento de la relación entre linfocitos Th1/Th2."
-        },
-        {
-          "text": "Disminución de IL-10."
-        },
-        {
-          "text": "La ausencia de reconocimiento de antígenos paternos."
-        },
-        {
-          "text": "Todas las otras opciones de esta pregunta son incorrectas.",
-          "correct": true
-        },
-        {
-          "text": "El aumento del IFN-ɣ."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Sobre el sistema inmune cutáneo, indique la relación INCORRECTA:",
-      "options": [
-        {
-          "text": "Inhibición de la IL-12 – efecto favorable en pacientes con dermatitis atópica."
-        },
-        {
-          "text": "Queratinocitos – reconocimiento de patógenos por receptores TLR."
-        },
-        {
-          "text": "Aumento de la función Th2 – lepra tuberculoide."
-        },
-        {
-          "text": "Activación del receptor de IL-17 – tratamiento de la psoriasis.",
-          "correct": true
-        },
-        {
-          "text": "Aumento de la función Th17 – mayor posibilidad de psoriasis."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Indique la opción correcta sobre el bloqueo de la IL-1.",
-      "options": [
-        {
-          "text": "No tendría que impactar en la producción de proteína C reactiva."
-        },
-        {
-          "text": "Favorece el reclutamiento de neutrófilos."
-        },
-        {
-          "text": "Es esperable que disminuya la incidencia de infecciones."
-        },
-        {
-          "text": "Aumenta el riesgo de sufrir cáncer."
-        },
-        {
-          "text": "Puede tener un efecto protector en enfermedad cardiovascular.",
-          "correct": true
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Marque la opción correcta sobre las citoquinas pro-inflamatorias.",
-      "options": [
-        {
-          "text": "Pueden inducir la migración de células dendríticas al ganglio linfático.",
-          "correct": true
-        },
-        {
-          "text": "La más caracterizada es la IL-10."
-        },
-        {
-          "text": "Habitualmente tienen efectos locales pero no sistémicos."
-        },
-        {
-          "text": "Inhiben la activación endotelial al favorecer al factor de transcripción NF-kB."
-        },
-        {
-          "text": "A nivel clínico no se ha logrado bloquearlas con anticuerpos monoclonales."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "En relación al taller de activación linfocitaria, marque la opción correcta:",
-      "options": [
-        {
-          "text": "En el ganglio linfático que drena un tumor, existe una fuerte respuesta de células T frente al virus influenza."
-        },
-        {
-          "text": "El CD69 es un marcador temprano de activación de linfocitos T.",
-          "correct": true
-        },
-        {
-          "text": "Cuando un linfocito T deja de expresar CD62L, rápidamente muere por apoptosis."
-        },
-        {
-          "text": "El virus influenza activa células T sin inducir su proliferación."
-        },
-        {
-          "text": "CD62L forma parte del receptor de la IL-2."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Indique lo INCORRECTO sobre lo que se puede observar en las respuestas inmunes ante el desarrollo de un tumor:",
-      "options": [
-        {
-          "text": "Los tumores que producen mucho TGF-β pueden generar un ambiente tolerogénico."
-        },
-        {
-          "text": "Los tumores que producen CTLA-4 son los que responden al anticuerpo Ipilimumab.",
-          "correct": true
-        },
-        {
-          "text": "La actividad del sistema inmune puede favorecer el crecimiento tumoral."
-        },
-        {
-          "text": "El interferón-γ favorece el desarrollo de respuestas citotóxicas contra el cáncer."
-        },
-        {
-          "text": "Los macrófagos M2 pueden favorecer el crecimiento tumoral."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "En relación con el sistema inmune cutáneo, indique lo correcto:",
-      "options": [
-        {
-          "text": "No tiene linfocitos T memoria, pero los mismos se reclutan rápido por aumento de melanina."
-        },
-        {
-          "text": "Los queratinocitos producen la mayor parte del interferón-γ cutáneo."
-        },
-        {
-          "text": "Los linfocitos Treg tienen el antígeno CLA de membrana en lugar de CTLA-4."
-        },
-        {
-          "text": "El riesgo de psoriasis aumenta si no se producen péptidos antimicrobianos."
-        },
-        {
-          "text": "Las células de Langerhans son células dendríticas localizadas en la epidermis.",
-          "correct": true
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "En relación con la citotoxicidad celular dependiente de anticuerpos (ADCC), marque la opción correcta.",
-      "options": [
-        {
-          "text": "Las células NK (Natural Killers) que matan por ADCC son específicas de la célula blanco."
-        },
-        {
-          "text": "Las células citotóxicas no son específicas, la especificidad está dada por las Inmunoglobulinas que las dirige a la célula blanco.",
-          "correct": true
-        },
-        {
-          "text": "Es el mecanismo inmune más importante en la respuesta frente a hongos."
-        },
-        {
-          "text": "El receptor Fc CD16 inhibe la liberación de perforinas por las células NK (natural killer)."
-        },
-        {
-          "text": "El CD16 es de baja afinidad y se une a IgG monoméricas circulantes."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Sobre las células Natural killer (NK) uterinas, indique lo INCORRECTO:",
-      "options": [
-        {
-          "text": "Su formación es favorecida por el TGF-β."
-        },
-        {
-          "text": "Producen factores de crecimiento que favorecen el desarrollo del embarazo."
-        },
-        {
-          "text": "Tienen receptor para IgG (R-Fcγ).",
-          "correct": true
-        },
-        {
-          "text": "Su mayor cantidad se observa en el primer trimestre del embarazo."
-        },
-        {
-          "text": "No fagocitan virus."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Indique lo correcto en relación a los linfocitos intraepiteliales:",
-      "options": [
-        {
-          "text": "Representan una población diferenciada de linfocitos B."
-        },
-        {
-          "text": "Son los principales responsables de la secreción de IgA hacia la luz intestinal."
-        },
-        {
-          "text": "Participan en el mantenimiento de los epitelios mediante la eliminación de células epiteliales dañadas o infectadas.",
-          "correct": true
-        },
-        {
-          "text": "Se diferencian a partir de los enterocitos presentes en las criptas."
-        },
-        {
-          "text": "En condiciones homeostáticas generan fuertes reacciones inflamatorias frente a los antígenos de la dieta."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Marque la opción correcta sobre los linfocitos citotóxicos:",
-      "options": [
-        {
-          "text": "Los linfocitos NK reconocen antígenos virales presentados en el MHC de clase I."
-        },
-        {
-          "text": "Gracias a su TCR, los linfocitos NK pueden producir altas cantidades de IFN-γ."
-        },
-        {
-          "text": "Los linfocitos NK necesitan previa activación para poder inducir apoptosis en células infectadas."
-        },
-        {
-          "text": "La actividad citotóxica de las células NK aumenta en presencia de IFN de tipo I.",
-          "correct": true
-        },
-        {
-          "text": "Los linfocitos T citotóxicos deben expresar CD4 para inducir la expresión de FAS."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
+      "id": "5b7c7b29-1f26-4a3f-b34c-fe3c8ca451d4",
       "text": "En cuanto a los receptores Fc para las Inmunoglobulinas, marque la opción correcta.",
       "options": [
         {
-          "text": "El CD64 (FcγRI) expresado por macrófagos señaliza cascadas inhibitorias."
-        },
-        {
-          "text": "Los que son de baja afinidad son inhibidores."
-        },
-        {
+          "id": "00886e4a-150c-469b-becb-6f9da74da841",
           "text": "Los receptores Fc de los fagocitos promueven la ingestión y destrucción de patógenos extracelulares.",
           "correct": true
         },
         {
+          "id": "e0a7eb0e-8559-4194-90d5-d306ebf1b593",
+          "text": "El CD64 (FcγRI) expresado por macrófagos señaliza cascadas inhibitorias."
+        },
+        {
+          "id": "127971e0-08bc-4da2-9779-7257e83a61e4",
           "text": "Los Fcγ (gamma) siempre señalizan cascadas activadoras en la célula que lo expresa."
         },
         {
+          "id": "aabe89e6-5823-4084-9601-767694584054",
+          "text": "Los que son de baja afinidad son inhibidores."
+        },
+        {
+          "id": "cc435cb4-9fd2-4f66-9c40-7942c36ae8f3",
           "text": "No son específicos, el mismo receptor se puede unir a una IgG o a una IgA."
         }
       ],
       "evaluation": "parcial_2"
     },
     {
-      "text": "Sobre los linfocitos T reguladores tímicos, marque la opción correcta.",
+      "id": "687d8e48-2e3d-4ca1-9d5e-2f9389303778",
+      "text": "En cuanto al proceso de presentación cruzada de antígenos, marque la opción correcta.",
       "options": [
         {
-          "text": "Comienzan a generarse luego del nacimiento y llegan a los tejidos a los 2 meses de vida."
-        },
-        {
-          "text": "La citoquina que es crítica para su desarrollo tímico es la IL-10."
-        },
-        {
-          "text": "Expresan el receptor CD25 pero en menor proporción y afinidad que los linfocitos T efectores."
-        },
-        {
-          "text": "No expresan CTLA-4."
-        },
-        {
-          "text": "El factor FoxP3 es necesario para su supervivencia y su actividad reguladora.",
+          "id": "2834f10a-80cd-4504-b860-241aec6fb680",
+          "text": "Las células dendríticas no acidifican sus fagosomas en etapas precoces de su formación.",
           "correct": true
+        },
+        {
+          "id": "c86802c2-4fbf-4a43-8199-84162c0045cf",
+          "text": "Los macrófagos necesitan un período de al menos 2 horas luego da la fagocitosis para acidificar sus fagosomas."
+        },
+        {
+          "id": "bfc99fd7-8be4-4284-9e19-70a743a833c4",
+          "text": "Se activa en linfocitos B cuando interacciona con el linfocito T."
+        },
+        {
+          "id": "b37216ad-0fae-45a2-a6a4-a613e326d040",
+          "text": "Se activa en monocitos o macrófagos bajos señales como el IFN gamma."
+        },
+        {
+          "id": "f3a58145-3c06-4ac5-819d-f6c8f769b3a7",
+          "text": "Una disfunción de la enzima NADPH oxidasa (NOX2) mejora este proceso en células dendríticas."
         }
       ],
       "evaluation": "parcial_2"
     },
     {
-      "text": "En cuanto a los antígenos presentados en moléculas de MHC de clase II por la vía clásica, marque la opción correcta.",
+      "id": "b7f84157-6335-462b-b3a2-d67ef31a30fe",
+      "text": "En las técnicas de Inmunofluorescencia Indirecta para investigación de anticuerpos cuál de los siguientes componentes NO se utiliza:",
       "options": [
         {
-          "text": "Son procesados por el inmunoproteasoma."
-        },
-        {
-          "text": "Su corte y cargado en moléculas de MHC de clase II puede estar comprometido por ciertos fármacos como la cloroquina.",
+          "id": "9dbb59b8-c954-4130-be20-682239f18bfa",
+          "text": "Un sustrato fijado en la lámina con la muestra del paciente: expectoración, lesiones genitales, etc.",
           "correct": true
         },
         {
-          "text": "No existen mecanismos para presentar antígenos exógenos en moléculas de MHC de clase II."
+          "id": "769224cc-87b1-4176-973e-fe552ad5091a",
+          "text": "Un anticuerpo anti-IgG o anti gamma marcado con un fluorocromo."
         },
         {
-          "text": "Son procesados por el proteasoma."
+          "id": "922a179f-cfc5-42c9-9b9f-5b42e6ff8cec",
+          "text": "Un microscopio de fluorescencia con luz ultravioleta."
         },
         {
-          "text": "En general están constituidos por más de 80 aminoácidos"
+          "id": "5a9237d5-497d-4c33-8463-f37544eb35cc",
+          "text": "Un sustrato fijado en la lámina con ejemplares de Toxoplasma gondii."
+        },
+        {
+          "id": "31d25100-4b68-4ccf-8a2b-2bc28b41b05a",
+          "text": "Un sustrato fijado en la lámina de células HEp2 para anticuerpos antinucleares."
         }
       ],
       "evaluation": "parcial_2"
     },
     {
-      "text": "Sobre la respuesta inmune innata frente a los parásitos extracelulares, marque la opción correcta.",
-      "options": [
-        {
-          "text": "Plasmodium (responsable del paludismo) activa al TLR7 y TLR3."
-        },
-        {
-          "text": "En este caso los macrófagos generan una respuesta inflamatoria no específica mediada por proteasas y leucotrienos.",
-          "correct": true
-        },
-        {
-          "text": "Los anticuerpos de tipo IgA no son eficaces frente a bacterias encapsuladas."
-        },
-        {
-          "text": "La fagocitosis no es efectiva contra los protozoos."
-        },
-        {
-          "text": "Activan la vía clásica del complemento."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
-      "text": "Marque la opción correcta en relación a la granzima B.",
-      "options": [
-        {
-          "text": "Se une a Fas para matar células blanco."
-        },
-        {
-          "text": "Mata células blanco por apoptosis.",
-          "correct": true
-        },
-        {
-          "text": "Es un factor de transcripción de células T citotóxicas."
-        },
-        {
-          "text": "Es un inhibidor de la calcineurina."
-        },
-        {
-          "text": "Se libera al espacio extracelular y tiene un efecto endócrino."
-        }
-      ],
-      "evaluation": "parcial_2"
-    },
-    {
+      "id": "34977d7d-6735-4bc2-abc7-d52df9bbf211",
       "text": "En relación al taller de activación linfocitaria, marque la opción correcta:",
       "options": [
         {
-          "text": "El virus influenza queda inactivado si se altera genéticamente para que exprese el antígeno OVA."
-        },
-        {
+          "id": "f823e333-b29d-48a2-b64c-b522ce63d2b4",
           "text": "La infección con virus influenza aumenta la expresión de CD69 en células T.",
           "correct": true
         },
         {
+          "id": "7434e4ff-3d11-4683-a971-7cc6f3df7aec",
+          "text": "El virus influenza queda inactivado si se altera genéticamente para que exprese el antígeno OVA."
+        },
+        {
+          "id": "f75999ec-c38b-436b-8346-6e5c12f7f4ad",
+          "text": "La infección con virus influenza aumenta la expresión de CD62L en células T."
+        },
+        {
+          "id": "71bc3cc2-038b-4eec-aac0-2210728bd7d5",
           "text": "La infección con virus influenza no modifica la expresión de CD44 en células T."
         },
         {
+          "id": "d75f6f8a-3e9c-4e93-8fe9-f2d66739ab43",
           "text": "No es posible estudiar la respuesta T específica de un virus."
-        },
-        {
-          "text": "La infección con virus influenza aumenta la expresión de CD62L en células T."
         }
       ],
       "evaluation": "parcial_2"
     },
     {
-      "text": "Indique lo correcto en relación a las funciones inmunes de los enterocitos:",
+      "id": "a6547474-24e0-4eb8-b451-e9b89c188e9b",
+      "text": "En relación al taller de activación linfocitaria, marque la opción correcta:",
       "options": [
         {
-          "text": "Frente a la pérdida de la homeostasis solo pueden secretar citoquinas anti-inflamatorias."
-        },
-        {
-          "text": "Se caracterizan por no expresar receptores de reconocimiento de patrones (PRRs)."
-        },
-        {
-          "text": "Las señales moleculares que envían los enterocitos son determinantes del tipo de respuesta inmune que se desarrolla a nivel mucoso.",
+          "id": "f929a64f-97c5-49e2-b852-6960023c5741",
+          "text": "El CD69 es un marcador temprano de activación de linfocitos T.",
           "correct": true
         },
         {
-          "text": "Reconocen patrones moleculares asociados a patógenos (PAMPs) mediante interacción con los TCRs (T-cell receptors) en sus membranas."
+          "id": "5817c50c-9b51-4c2e-b9a2-9f1651f019f1",
+          "text": "CD62L forma parte del receptor de la IL-2."
         },
         {
-          "text": "Las mucinas secretadas por los enterocitos representan los principales componentes de la matriz extracelular de la lámina propia."
+          "id": "3febf0f0-6e94-4aa5-986e-2eee7b7af6b9",
+          "text": "Cuando un linfocito T deja de expresar CD62L, rápidamente muere por apoptosis."
+        },
+        {
+          "id": "58a2cce9-9f63-4084-a853-1527b2dc682e",
+          "text": "El virus influenza activa células T sin inducir su proliferación."
+        },
+        {
+          "id": "6ce9d5a9-2680-489e-9d46-35c72c1fb187",
+          "text": "En el ganglio linfático que drena un tumor, existe una fuerte respuesta de células T frente al virus influenza."
         }
       ],
       "evaluation": "parcial_2"
     },
     {
+      "id": "57f40125-8c95-4556-bb3d-f46d66f81135",
+      "text": "En relación con el sistema inmune cutáneo, indique lo correcto:",
+      "options": [
+        {
+          "id": "84e8de57-15a1-4a60-a8e3-63720bc9f26b",
+          "text": "Las células de Langerhans son células dendríticas localizadas en la epidermis.",
+          "correct": true
+        },
+        {
+          "id": "02e5d2a4-066d-494d-8773-a665bf3b2494",
+          "text": "El riesgo de psoriasis aumenta si no se producen péptidos antimicrobianos."
+        },
+        {
+          "id": "bd38a1f4-08a4-4bde-8e29-9e2e3eefbd64",
+          "text": "Los linfocitos Treg tienen el antígeno CLA de membrana en lugar de CTLA-4."
+        },
+        {
+          "id": "17b92777-45d6-4c81-9efb-d33fcc1b0edc",
+          "text": "Los queratinocitos producen la mayor parte del interferón-γ cutáneo."
+        },
+        {
+          "id": "74102bac-fcd1-4476-9724-1bc97648b44c",
+          "text": "No tiene linfocitos T memoria, pero los mismos se reclutan rápido por aumento de melanina."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "de796a5f-d312-446a-9d9e-2842a71b8570",
+      "text": "En relación con la citotoxicidad celular dependiente de anticuerpos (ADCC), marque la opción correcta.",
+      "options": [
+        {
+          "id": "d2d5c32b-723b-473f-9b80-a3596bf40d50",
+          "text": "Las células citotóxicas no son específicas, la especificidad está dada por las Inmunoglobulinas que las dirige a la célula blanco.",
+          "correct": true
+        },
+        {
+          "id": "8dbc07c4-7133-495f-9711-4d0fcb84885e",
+          "text": "El CD16 es de baja afinidad y se une a IgG monoméricas circulantes."
+        },
+        {
+          "id": "67fda066-1bef-4634-a883-8f3cdd6dbb05",
+          "text": "El receptor Fc CD16 inhibe la liberación de perforinas por las células NK (natural killer)."
+        },
+        {
+          "id": "b516a7ed-bd3b-4701-a913-386bb4717039",
+          "text": "Es el mecanismo inmune más importante en la respuesta frente a hongos."
+        },
+        {
+          "id": "f89df864-9633-4969-b080-2cd0413ebcf7",
+          "text": "Las células NK (Natural Killers) que matan por ADCC son específicas de la célula blanco."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "f90199aa-a068-4d03-8d59-1b875e8cc8fc",
+      "text": "En relación con los neoantígenos tumorales, indique lo correcto:",
+      "options": [
+        {
+          "id": "80a3dc1c-a804-46e6-8628-b9e181487e71",
+          "text": "Pueden utilizarse para generar vacunas personalizadas al tipo de tumor de un paciente.",
+          "correct": true
+        },
+        {
+          "id": "9f627b61-d387-4ab6-beee-61f8cb05c569",
+          "text": "En general no son péptidos."
+        },
+        {
+          "id": "3e117b88-d2ab-4030-993b-bb218444c7fc",
+          "text": "La gran mayoría se localizan en la superficie celular."
+        },
+        {
+          "id": "176a705c-3a5b-48b7-a80f-72fcb5f21d0b",
+          "text": "Pueden ser carbohidratos."
+        },
+        {
+          "id": "4b0a4fba-bb43-4788-af11-297e9130636a",
+          "text": "Suelen activar a los linfocitos B pero raramente a los linfocitos T."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "4929ec7d-470c-45f4-9ee7-7453999b4c6a",
       "text": "Indique la opción correcta sobre el IFN-gama.",
       "options": [
         {
-          "text": "Su bloqueo debería favorecer la eliminación de Mycobacterium tuberculosis."
-        },
-        {
+          "id": "f14942b5-919c-49f7-8071-a0ce66f4a9b9",
           "text": "Favorece la acción de linfocitos citotóxicos.",
           "correct": true
         },
         {
+          "id": "708d885d-78a4-4e73-9085-e50e4005921f",
           "text": "Es producida principalmente por macrófagos."
         },
         {
+          "id": "e5cd02b5-fe86-462d-963d-4d2b6a5ad897",
           "text": "Induce la expresión de IL-4."
         },
         {
+          "id": "7a8d0210-c20c-48ea-bdc5-a95b60103b4b",
           "text": "Inhibe la expresión de CD40L."
+        },
+        {
+          "id": "d330df5a-4b5c-4268-82f8-d735b3d11bd3",
+          "text": "Su bloqueo debería favorecer la eliminación de Mycobacterium tuberculosis."
         }
       ],
       "evaluation": "parcial_2"
     },
     {
+      "id": "0a64b32e-c583-43a3-ac62-23ae56376f66",
+      "text": "Indique la opción correcta sobre el bloqueo de la IL-1.",
+      "options": [
+        {
+          "id": "dab9a92d-c499-403e-aadb-97a6926f0904",
+          "text": "Puede tener un efecto protector en enfermedad cardiovascular.",
+          "correct": true
+        },
+        {
+          "id": "5a6ecfb8-465b-45e4-8460-71473dd62984",
+          "text": "Aumenta el riesgo de sufrir cáncer."
+        },
+        {
+          "id": "890e5d81-4dfc-45f3-baf0-b13a38b30d59",
+          "text": "Es esperable que disminuya la incidencia de infecciones."
+        },
+        {
+          "id": "1559a170-b3a9-4f83-9b31-a72f8bd065c5",
+          "text": "Favorece el reclutamiento de neutrófilos."
+        },
+        {
+          "id": "abc28f78-bc71-462a-a14c-bcc0b01ff12c",
+          "text": "No tendría que impactar en la producción de proteína C reactiva."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "1468e5f3-4cdd-4934-b732-6f627cc19f28",
+      "text": "Indique lo INCORRECTO sobre lo que se puede observar en las respuestas inmunes ante el desarrollo de un tumor:",
+      "options": [
+        {
+          "id": "0a0651b5-4960-4c7d-8a21-75ef1a21ed29",
+          "text": "Los tumores que producen CTLA-4 son los que responden al anticuerpo Ipilimumab.",
+          "correct": true
+        },
+        {
+          "id": "1f9ae6c8-98a0-4e4b-ae67-edc145aa470f",
+          "text": "El interferón-γ favorece el desarrollo de respuestas citotóxicas contra el cáncer."
+        },
+        {
+          "id": "11d91cd5-ecfa-4e70-96cb-02300d110739",
+          "text": "La actividad del sistema inmune puede favorecer el crecimiento tumoral."
+        },
+        {
+          "id": "846fdd4a-db83-4b7f-b152-cd537d9a3323",
+          "text": "Los macrófagos M2 pueden favorecer el crecimiento tumoral."
+        },
+        {
+          "id": "2e808b29-47e3-4f98-80da-2184f4e638fe",
+          "text": "Los tumores que producen mucho TGF-β pueden generar un ambiente tolerogénico."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "d3f7b367-cc3e-4977-b7d0-f3fdd71d061b",
+      "text": "Indique lo correcto en relación a las funciones inmunes de los enterocitos:",
+      "options": [
+        {
+          "id": "edf9c25f-6a08-4979-aaeb-e4b36e64176f",
+          "text": "Las señales moleculares que envían los enterocitos son determinantes del tipo de respuesta inmune que se desarrolla a nivel mucoso.",
+          "correct": true
+        },
+        {
+          "id": "53a61a69-92a2-478d-bea9-6f1ab12adb02",
+          "text": "Frente a la pérdida de la homeostasis solo pueden secretar citoquinas anti-inflamatorias."
+        },
+        {
+          "id": "044badb6-465f-447f-90f1-452c6174fdde",
+          "text": "Las mucinas secretadas por los enterocitos representan los principales componentes de la matriz extracelular de la lámina propia."
+        },
+        {
+          "id": "18f68cc9-3d84-42fc-ba69-b2ede2bada2f",
+          "text": "Reconocen patrones moleculares asociados a patógenos (PAMPs) mediante interacción con los TCRs (T-cell receptors) en sus membranas."
+        },
+        {
+          "id": "534a8fd1-7c97-4eaa-b0c1-7e1278a252b4",
+          "text": "Se caracterizan por no expresar receptores de reconocimiento de patrones (PRRs)."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "2726fa0e-384c-4857-b1d2-02f774006436",
+      "text": "Indique lo correcto en relación a los linfocitos intraepiteliales:",
+      "options": [
+        {
+          "id": "f642a9d2-9362-4049-8346-9479d2ec75b4",
+          "text": "Participan en el mantenimiento de los epitelios mediante la eliminación de células epiteliales dañadas o infectadas.",
+          "correct": true
+        },
+        {
+          "id": "95be0a5b-6f6c-46bf-8fc2-d31ac237b504",
+          "text": "En condiciones homeostáticas generan fuertes reacciones inflamatorias frente a los antígenos de la dieta."
+        },
+        {
+          "id": "bf882607-6125-4b48-9d40-fd3f7e642acb",
+          "text": "Representan una población diferenciada de linfocitos B."
+        },
+        {
+          "id": "a50803ef-c01a-4aba-8881-9099ab8aa1a8",
+          "text": "Se diferencian a partir de los enterocitos presentes en las criptas."
+        },
+        {
+          "id": "4c1501f8-a2ac-4e7c-8f5b-f50b803c1772",
+          "text": "Son los principales responsables de la secreción de IgA hacia la luz intestinal."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "470185ce-8684-4f16-b249-f6cb48423bae",
+      "text": "Indique lo correcto sobre factores que favorecen la buena tolerancia de un embarazo:",
+      "options": [
+        {
+          "id": "71c39f31-4571-46a0-b079-e80490d02597",
+          "text": "Todas las otras opciones de esta pregunta son incorrectas.",
+          "correct": true
+        },
+        {
+          "id": "50840cd2-a568-47d7-9524-297ee96552a3",
+          "text": "Disminución de IL-10."
+        },
+        {
+          "id": "394e3cf9-a567-4bd4-b43d-afb177312e1a",
+          "text": "El aumento de la relación entre linfocitos Th1/Th2."
+        },
+        {
+          "id": "b089ef36-d162-4f8e-9c00-ba888dc67de6",
+          "text": "El aumento del IFN-ɣ."
+        },
+        {
+          "id": "5ae096d8-8453-482d-b04c-6636d02a10ee",
+          "text": "La ausencia de reconocimiento de antígenos paternos."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "9121e505-511d-4262-b704-998abc5bce37",
+      "text": "Los patógenos intracelulares NO desarrollan la siguiente estrategia de evasión inmunológica:",
+      "options": [
+        {
+          "id": "a77b7617-d95a-4056-8fce-5c06989075de",
+          "text": "Inducción de apoptosis por células asesinas naturales (NK).",
+          "correct": true
+        },
+        {
+          "id": "e3996382-7800-475d-92c1-6cf9ee442dde",
+          "text": "Diferenciación a linfocitos T reguladores."
+        },
+        {
+          "id": "a39a32c9-aa15-4169-bea0-75f07ec88aee",
+          "text": "Disminución de la expresión de MHC de clase I por la célula infectada."
+        },
+        {
+          "id": "10c6024c-cef8-4add-8299-87cd942cd960",
+          "text": "Inducción de la producción de TGF-β."
+        },
+        {
+          "id": "19b072e4-8f4b-4363-b7e0-fcae5327c6c5",
+          "text": "Inhibición de la expresión de moléculas co-estimuladoras."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "8d1b38cf-900e-435c-8ced-1d4e976e7f44",
+      "text": "Marque la opción correcta en relación a la granzima B.",
+      "options": [
+        {
+          "id": "74e27d19-c861-4b56-8cc4-011072ff89de",
+          "text": "Mata células blanco por apoptosis.",
+          "correct": true
+        },
+        {
+          "id": "33a8ae32-b7e7-4234-aad2-83f41e479223",
+          "text": "Es un factor de transcripción de células T citotóxicas."
+        },
+        {
+          "id": "66cd36d2-61f1-4226-b5cd-9a91a0ad2745",
+          "text": "Es un inhibidor de la calcineurina."
+        },
+        {
+          "id": "af971056-f20a-46f8-b81e-e052c76b6764",
+          "text": "Se libera al espacio extracelular y tiene un efecto endócrino."
+        },
+        {
+          "id": "68d00d4f-9e7d-40a3-93f2-dcebab77822e",
+          "text": "Se une a Fas para matar células blanco."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "d2399e2c-77fd-4aa6-9657-76689da0903d",
+      "text": "Marque la opción correcta sobre las citoquinas pro-inflamatorias.",
+      "options": [
+        {
+          "id": "6407a586-a864-4b4b-9a0d-d09a2592df90",
+          "text": "Pueden inducir la migración de células dendríticas al ganglio linfático.",
+          "correct": true
+        },
+        {
+          "id": "15205ac4-f110-4285-a553-f372428afff9",
+          "text": "A nivel clínico no se ha logrado bloquearlas con anticuerpos monoclonales."
+        },
+        {
+          "id": "0a205dc7-cd11-4a2f-b963-87662e1bbf81",
+          "text": "Habitualmente tienen efectos locales pero no sistémicos."
+        },
+        {
+          "id": "79e2e56b-bc88-4e22-9e8d-add5fad38e67",
+          "text": "Inhiben la activación endotelial al favorecer al factor de transcripción NF-kB."
+        },
+        {
+          "id": "69d2fa0f-5b12-4b11-9f16-526b5fdbd545",
+          "text": "La más caracterizada es la IL-10."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "11b52e84-aa5b-4a14-9f09-10a34c7462a6",
+      "text": "Marque la opción correcta sobre los linfocitos citotóxicos:",
+      "options": [
+        {
+          "id": "9e9f1c96-d2ef-4721-8e1a-b37b98166a1d",
+          "text": "La actividad citotóxica de las células NK aumenta en presencia de IFN de tipo I.",
+          "correct": true
+        },
+        {
+          "id": "0f4de141-5e44-4c84-99c4-3574f1892eff",
+          "text": "Gracias a su TCR, los linfocitos NK pueden producir altas cantidades de IFN-γ."
+        },
+        {
+          "id": "a39b2204-0f7d-46c4-9767-0a2ddef16eac",
+          "text": "Los linfocitos NK necesitan previa activación para poder inducir apoptosis en células infectadas."
+        },
+        {
+          "id": "138907df-b169-4915-82b8-c3de3ff7e98d",
+          "text": "Los linfocitos NK reconocen antígenos virales presentados en el MHC de clase I."
+        },
+        {
+          "id": "d5f250d0-487e-4191-856d-8740b1e339d1",
+          "text": "Los linfocitos T citotóxicos deben expresar CD4 para inducir la expresión de FAS."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "873afdd3-5fa5-45fa-bbe7-e4a9ee504776",
+      "text": "Sobre el sistema inmune cutáneo, indique la relación INCORRECTA:",
+      "options": [
+        {
+          "id": "70659676-9201-444b-83ab-c45635900125",
+          "text": "Activación del receptor de IL-17 – tratamiento de la psoriasis.",
+          "correct": true
+        },
+        {
+          "id": "063683fc-0660-4d78-81c8-1c120887219c",
+          "text": "Aumento de la función Th17 – mayor posibilidad de psoriasis."
+        },
+        {
+          "id": "761603a6-f11f-4cf3-a169-dc51990e62b8",
+          "text": "Aumento de la función Th2 – lepra tuberculoide."
+        },
+        {
+          "id": "af27a256-a20e-4fed-befe-4f33dec4fafb",
+          "text": "Inhibición de la IL-12 – efecto favorable en pacientes con dermatitis atópica."
+        },
+        {
+          "id": "4e91d415-497e-40ce-8495-2263457603a5",
+          "text": "Queratinocitos – reconocimiento de patógenos por receptores TLR."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "c7340827-8ac5-4add-8f17-478ca4d6fcca",
+      "text": "Sobre la respuesta inmune innata frente a los parásitos extracelulares, marque la opción correcta.",
+      "options": [
+        {
+          "id": "f2465453-575d-436b-a4ad-a1f569d8e0da",
+          "text": "En este caso los macrófagos generan una respuesta inflamatoria no específica mediada por proteasas y leucotrienos.",
+          "correct": true
+        },
+        {
+          "id": "ae320b2e-9735-4c01-bda8-1d4234b4d939",
+          "text": "Activan la vía clásica del complemento."
+        },
+        {
+          "id": "2aabdba0-b470-4e34-b41b-d0e69cd8ca3e",
+          "text": "La fagocitosis no es efectiva contra los protozoos."
+        },
+        {
+          "id": "9f12a3aa-22fb-4240-b15b-46ebb9e3440a",
+          "text": "Los anticuerpos de tipo IgA no son eficaces frente a bacterias encapsuladas."
+        },
+        {
+          "id": "7c0f0b69-3e5e-489b-85b1-81427b4135f8",
+          "text": "Plasmodium (responsable del paludismo) activa al TLR7 y TLR3."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "c75a0e5a-c705-48b8-bf2a-16cf32843d46",
+      "text": "Sobre las células Natural killer (NK) uterinas, indique lo INCORRECTO:",
+      "options": [
+        {
+          "id": "3bfd94f5-3501-454f-9807-8e6796c34c43",
+          "text": "Tienen receptor para IgG (R-Fcγ).",
+          "correct": true
+        },
+        {
+          "id": "37ed28a4-5da8-419f-8e68-19f62d41be1e",
+          "text": "No fagocitan virus."
+        },
+        {
+          "id": "3c2f5158-021f-4d73-a43c-193dea517df0",
+          "text": "Producen factores de crecimiento que favorecen el desarrollo del embarazo."
+        },
+        {
+          "id": "2814ce1b-25de-437a-9161-e4becd080c82",
+          "text": "Su formación es favorecida por el TGF-β."
+        },
+        {
+          "id": "aeb8c5b9-0a10-4bea-bc26-f689a59e274f",
+          "text": "Su mayor cantidad se observa en el primer trimestre del embarazo."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "d4e57b79-5d43-4526-a9f0-43b72036ae20",
+      "text": "Sobre los linfocitos T reguladores tímicos, marque la opción correcta.",
+      "options": [
+        {
+          "id": "a7d4e70e-5b35-47b2-ae47-e684555651db",
+          "text": "El factor FoxP3 es necesario para su supervivencia y su actividad reguladora.",
+          "correct": true
+        },
+        {
+          "id": "b43d411d-1d6c-404c-a2f1-2329c6beb09a",
+          "text": "Comienzan a generarse luego del nacimiento y llegan a los tejidos a los 2 meses de vida."
+        },
+        {
+          "id": "df495ab6-839f-4395-9274-a542f0a140d5",
+          "text": "Expresan el receptor CD25 pero en menor proporción y afinidad que los linfocitos T efectores."
+        },
+        {
+          "id": "1fdcf96c-3c55-4c05-84c1-bf74985c7f51",
+          "text": "La citoquina que es crítica para su desarrollo tímico es la IL-10."
+        },
+        {
+          "id": "90fb85f5-5691-4dd6-842b-5de634711e05",
+          "text": "No expresan CTLA-4."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "id": "e1bb76c8-d7b4-4adf-885d-627ca94936e4",
       "text": "Sobre los mecanismos de acción de un linfocito T regulador, marque la opción correcta.",
       "options": [
         {
-          "text": "Inhiben la producción de la enzima IDO (indoleamina 2,3 deoxigenasa) por las células dendríticas."
+          "id": "b5168492-9d56-4768-9563-8bad6ea43ffc",
+          "text": "Puede modular a la célula dendrítica por mecanismos mediados por CTLA-4 y LAG3.",
+          "correct": true
         },
         {
+          "id": "10a3b99b-d7e7-416d-9b11-b2f902f22b2a",
           "text": "Algunos expresan CD39, que convierte AMP en ATP, que tiene propiedades antiinflamatorias."
         },
         {
-          "text": "No se ha descrito que utilicen mecanismos de citotoxicidad."
-        },
-        {
+          "id": "c78de40f-1385-40c2-9046-a1feb3e8d29a",
           "text": "El efecto \"bystander\" implica que consume la IL-2 privando a los linfocitos T efectores de la misma."
         },
         {
-          "text": "Puede modular a la célula dendrítica por mecanismos mediados por CTLA-4 y LAG3.",
-          "correct": true
+          "id": "bc79e822-73da-4b9c-96a6-8b0e2be0cac1",
+          "text": "Inhiben la producción de la enzima IDO (indoleamina 2,3 deoxigenasa) por las células dendríticas."
+        },
+        {
+          "id": "542bfa61-fa88-4070-9f63-7e7b014570da",
+          "text": "No se ha descrito que utilicen mecanismos de citotoxicidad."
         }
       ],
       "evaluation": "parcial_2"
     },
     {
-      "text": "En relación con los neoantígenos tumorales, indique lo correcto:",
+      "id": "5b4c914d-2d22-4d4d-8494-a075c5623daa",
+      "text": "¿Cual las siguientes de células del sistema inmune tienen un papel fundamental en la respuesta frente a una infección por bacterias extracelulares? Marque la opción correcta.",
       "options": [
         {
-          "text": "La gran mayoría se localizan en la superficie celular."
-        },
-        {
-          "text": "Suelen activar a los linfocitos B pero raramente a los linfocitos T."
-        },
-        {
-          "text": "En general no son péptidos."
-        },
-        {
-          "text": "Pueden ser carbohidratos."
-        },
-        {
-          "text": "Pueden utilizarse para generar vacunas personalizadas al tipo de tumor de un paciente.",
+          "id": "0ac039f8-4146-4138-82fa-b130e7b4739a",
+          "text": "Neutrófilos.",
           "correct": true
+        },
+        {
+          "id": "3401e4ac-c3d2-4da0-a721-f13f6f0da8a0",
+          "text": "Células endoteliales."
+        },
+        {
+          "id": "a68ddcb9-2b55-4c49-b1cc-226e0d1b7d84",
+          "text": "Linfocitos T reguladores."
+        },
+        {
+          "id": "3e8c394c-0ff1-4017-a8e3-29d048b06fee",
+          "text": "Linfocitos Th0."
+        },
+        {
+          "id": "d3bc47a0-484b-4c2f-9abc-ac5d28ddb984",
+          "text": "Linfocitos Th9."
         }
       ],
       "evaluation": "parcial_2"
