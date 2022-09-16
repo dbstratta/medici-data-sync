@@ -1,0 +1,630 @@
+{
+  "name": "Hematología 2",
+  "short_name": "Hemato2",
+  "aliases": [],
+  "year": 3,
+  "questions": [
+    {
+      "text": "En relación con la respuesta inmune primaria y la secundaria, indique lo INCORRECTO:",
+      "options": [
+        {
+          "text": "En la respuesta secundaria se observa la producción de anticuerpos con mayor afinidad por el antígeno con respecto a la respuesta primaria."
+        },
+        {
+          "text": "En la respuesta primaria predominan los anticuerpos de isotipo IgM mientras que en la secundaria los anticuerpos IgG."
+        },
+        {
+          "text": "Los antígenos de tipo proteico producen respuestas inmunes primarias y secundarias muy diferentes."
+        },
+        {
+          "text": "Los carbohidratos suelen inducir respuestas secundarias con producción de anticuerpos con mayor afinidad por el antígeno con respecto a la respuestaprimaria.",
+          "correct": true
+        },
+        {
+          "text": "Tanto en la respuesta inmune primaria como en la secundaria se producen anticuerpos que pueden activar al sistema complemento."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "En relación con los linfocitos, indique lo correcto:",
+      "options": [
+        {
+          "text": "Dentro de los linfocitos T CD4+ pueden existir poblaciones celulares que cumplan funciones cooperadoras pero no linfocitos con funciones supresoras de las respuestas inmunes."
+        },
+        {
+          "text": "Los linfocitos B pueden reconocer antígenos de tipo proteico pero no carbohidratos."
+        },
+        {
+          "text": "Los linfocitos T cooperadores activados actúan como células presentadoras de antígenos en presencia de células dendríticas."
+        },
+        {
+          "text": "Los linfocitos T suelen reconocer a un antígeno en su configuración nativa."
+        },
+        {
+          "text": "Todas las otras opciones son incorrectas.",
+          "correct": true
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "Marque la opción correcta sobre los receptores innatos de reconocimiento de material genético:",
+      "options": [
+        {
+          "text": "Al reconocer ARN, cGAS induce la activación de NF-kB."
+        },
+        {
+          "text": "Los receptores de tipo RIG (RLR) reconocen ARN viral y su señalización promueve la producción de IFN-α."
+        },
+        {
+          "text": "Los receptores de tipo lectina C (CLR) pueden reconocer ADN glicosilado derivado de patógenos.",
+          "correct": true
+        },
+        {
+          "text": "Los TLRs endosomales que reconocen ARN o ADN derivado de patógenos inducen la activación de IRF3, IRF5 e IRF7, pero no de NF-kB."
+        },
+        {
+          "text": "Los receptores de tipo NOD (NLR) pueden reconocer ADN de doble hebra e inducir la activación de IRF7 en conjunto con la producción de IL-1β e IL-18."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "Indique la opción correcta sobre las diferentes vías de señalización de los receptores innatos que reconocen patrones moleculares derivados de patógenos:",
+      "options": [
+        {
+          "text": "La proteína adaptadora TRIF participa en la señalización por TLR4, TLR1/2, TLR3 y TLR5."
+        },
+        {
+          "text": "La señalización de algunos CLRs puede activar ARNasas que eliminan el ARN derivado de virus."
+        },
+        {
+          "text": "La señalización de los TLRs induce la activación de IRF3 y AP-1, pero no de NF-kB."
+        },
+        {
+          "text": "Al reconocer sus ligandos, algunos receptores de tipo lectina C (CLR) modulan la señalización inducida por los TLRs.",
+          "correct": true
+        },
+        {
+          "text": "La señalización por los TLR bloquea la activación de la Caspasa-1 por el inflamasoma."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "En relación a los mecanismos efectores de la inmunidad innata, indique la opción correcta:",
+      "options": [
+        {
+          "text": "Las células NK (asesinas naturales) inducen apoptosis de células alteradas tras una señalización prevalente de sus receptores inhibidores."
+        },
+        {
+          "text": "La fagocitosis puede ser potenciada por la opsonización, gracias a la presencia de receptores específicos de citoquinas que unen patógenos y que se encuentran presentes en la superficie de losfagocitos."
+        },
+        {
+          "text": "Los basófilos activados por IgE realizan Netosis para dañar patógenos."
+        },
+        {
+          "text": "Los linfocitos innatos citotóxicos de tipo ILC3 promueven la activación de granulocitos y la contracción muscular."
+        },
+        {
+          "text": "La IL-1β, IL-6 y TNF-α producidos por macrófagos poseen efectos locales y sistémicos, y potencian la acción de losfagocitos.",
+          "correct": true
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "Indique la opción correcta en relación a la estructura de los anticuerpos.",
+      "options": [
+        {
+          "text": "El paratopo está formado por los dominios variables H y L.",
+          "correct": true
+        },
+        {
+          "text": "El paratopo es la porción de la inmunoglobulina reconocida por los receptores Fcgamma en macrófagos y NKs."
+        },
+        {
+          "text": "El tipo de cadena pesada determina la especificidad por el antígeno."
+        },
+        {
+          "text": "Las cadenas mu son cinco veces más pesadas que las gamma."
+        },
+        {
+          "text": "La maduración de la afinidad se logra mutando el dominio CH1."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "Marque la opción correcta en relación al reconocimiento antigénico por parte de receptores inmunes.",
+      "options": [
+        {
+          "text": "Se lleva a cabo por BCRs, TCRs y TLRs."
+        },
+        {
+          "text": "Ese reconocimiento implica que habrá diferenciación a células efectoras y memoria."
+        },
+        {
+          "text": "Se da por contacto físico entre los CDR1, 2 y 3 con el epitopo en el caso del BCR.",
+          "correct": true
+        },
+        {
+          "text": "El MHC reconoce antígenos presentados en el contexto del TCR."
+        },
+        {
+          "text": "El MHC discrimina entre antígenos propios y no propios."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "En relación a los mecanismos generadores de diversidad de los anticuerpos, indique la opción correcta:",
+      "options": [
+        {
+          "text": "En la médula ósea no existen células que expresen inmunoglobulinas en sus membranas plasmáticas."
+        },
+        {
+          "text": "La activación de los linfocitos B por el antígeno en los órganos linfoides secundarios inicia el proceso de recombinación de los segmentos VDJ para la cadena pesada y VJ para la liviana."
+        },
+        {
+          "text": "El cambio de clase de la cadena pesada de las inmunoglobulinas no es un proceso aleatorio, sino que depende de las señales recibidas del microambiente de la zona clara del centro germinativo.",
+          "correct": true
+        },
+        {
+          "text": "El proceso de hipermutación somática de los anticuerpos asociado a la selección por el antígeno conduce a una pérdida de afinidad y especifidad contra el antígeno."
+        },
+        {
+          "text": "El framework 1 (FR1) de las regiones variables de los anticuerpos contiene exclusivamente el segmento génico J."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "En cuanto a la presentación de antígenos, marque la opción correcta:",
+      "options": [
+        {
+          "text": "La interacción péptido-MHC se caracteriza por ser una interacción saturable y de disociación rápida (menos de unos minutos) lo que asegura que se muestre una mayor cantidad de péptidos a los linfocitos T."
+        },
+        {
+          "text": "Las moléculas de MHC son capaces de presentar dos péptidos a la vez si los mismos comparten características estructurales."
+        },
+        {
+          "text": "El inmunoproteasoma contiene sub-unidades catalíticas inducibles (inducidas por señales de peligro inmunológico) las cuales preparan péptidos más adecuados para ser cargados en moléculas de MHC de clase I.",
+          "correct": true
+        },
+        {
+          "text": "El proteasoma no contiene sub-unidades catalíticas."
+        },
+        {
+          "text": "En el retículo endoplásmico se pueden cargar péptidos en moléculas de MHC de clase II ya que a ese nivel las mismas ya fueron estabilizadas y el lugar para el péptido está libre."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "El proceso de presentación de antígenos es finamente regulado por el pH endofagosomal. En relación a éste hecho, señale cuál de las siguientes afirmaciones es correcta:",
+      "options": [
+        {
+          "text": "La ATP-asa vacuolar (V-ATPasa) es una enzima que aumenta el pH de las vesículas endofagosomales."
+        },
+        {
+          "text": "La cloroquina, es un fármaco capaz de potenciar la presentación de antígenos por la vía de MHC de clase II ya que acidifica el endosoma MIIC/CIIV."
+        },
+        {
+          "text": "Los macrófagos son células que típicamente realizan presentación cruzada (crosspresentación) ya que mantienen su pH fagosomal aproximadamente en 7.4 durante las primeras 2 horas luego de la fagocitosis."
+        },
+        {
+          "text": "Las células dendríticas cuando maduran, mejoran su capacidad de presentar antígenos a los linfocitos TCD4 porque ensamblan la V-ATPasa que acidifica los endofagosomas.",
+          "correct": true
+        },
+        {
+          "text": "Los macrófagos no tienen V-ATPasa, pero la reemplaza la enzima NOX2 (NADPH oxidasa) que alcaliniza la luz de sus fagosomas."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "Marque la opción correcta en relación a la activación de los linfocitos T maduros naive.",
+      "options": [
+        {
+          "text": "Se diferencian a células memoria si se activan en ausencia de moléculas de coestimulación."
+        },
+        {
+          "text": "Son activados por macrófagos productores de IL-12."
+        },
+        {
+          "text": "Al activarse, aumentan la expresión de CD25 y disminuyen la de CD62L (L-selectina).",
+          "correct": true
+        },
+        {
+          "text": "Ocurre en el timo, tanto en la corteza como en la médula."
+        },
+        {
+          "text": "Es favorecida por la potenciación de la señalización del TCR inducida por CTLA-4."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "En relación a la linfopoyesis T marque la opción correcta.",
+      "options": [
+        {
+          "text": "La expresión del TCR se da recién una vez que el linfocito T emigra del timo y reside en órganos linfoides secundarios."
+        },
+        {
+          "text": "Un animal de experimentación deficiente en MHC de clase I no debería tener linfocitos T CD8+ en los órganos linfoides secundarios.",
+          "correct": true
+        },
+        {
+          "text": "Los linfocitos T memoria son la población principal que emigra del timo."
+        },
+        {
+          "text": "Las células epiteliales corticales tienen una función principalmente estructural."
+        },
+        {
+          "text": "Las células que emigran del timo son aun inmaduras, debiendo completar su \"educación\" en la médula ósea."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "Indique lo correcto en relación a los mecanismos efectores celulares de la respuesta inmune:",
+      "options": [
+        {
+          "text": "Los linfocitos Th1 se caracterizan por secretar importantes cantidades de IL-17 la cual atrae neutrófilos al sitio de infección."
+        },
+        {
+          "text": "Los linfocitos Th2 se caracterizan por secretar interferon gamma el cual es un fuerte activador de los macrófagos."
+        },
+        {
+          "text": "Los linfocitos Tfh (helper foliculares) no expresan CD4 en su superficie."
+        },
+        {
+          "text": "Los linfocitos Th17 representan la principal línea de defensa contra los helmintos parásitos."
+        },
+        {
+          "text": "Las células dendríticas mediante activación de diferentes receptores de reconocimiento de patrones (RRP) por parte de patrones moleculares asociados a patógenos modulan el tipo de respuesta de las células T CD4+.",
+          "correct": true
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "Indique lo correcto en relación a los mecanismos efectores de la respuestainmune celular:",
+      "options": [
+        {
+          "text": "Los linfocitos T CD8+ vírgenes que salen del timo se encuentran pre-activados y con alta capacidad citotóxica."
+        },
+        {
+          "text": "La perforina y la granzima representan citoquinas que activan la proliferación de las células blanco."
+        },
+        {
+          "text": "Los linfocitos CD4+ no participan en la activación de los linfocitos CD8+ ya que representan un linaje celular independiente."
+        },
+        {
+          "text": "Los linfocitos T γδ (gamma/delta) reconocen mediante el recpetor NKG2D a las proteínas MICA y MICB expresadas en la membrana de células estresadas.",
+          "correct": true
+        },
+        {
+          "text": "El sistema Fas/FasL representa la segunda señal de activación linfocitaria."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "En cuanto a los mecanismos efectores mediados por los anticuerpos, marque la opción correcta:",
+      "options": [
+        {
+          "text": "La neutralización es mediada por anticuerpos de varios isotipos presentes en la circulación, pero los de tipo IgE son los más eficaces."
+        },
+        {
+          "text": "Las IgG y las IgA de alta afinidad pueden neutralizar bacterias y sus toxinas pero no son eficaces para neutralizar frente a una infección viral."
+        },
+        {
+          "text": "Las IgG pueden inhibir la formación de biofilms que algunos microorganismos como Streptococcus pneumoniae forman sobre las células epiteliales.",
+          "correct": true
+        },
+        {
+          "text": "Los anticuerpos son capaces de activar la vía clásica del complemento tanto cuando los mismos están libres en plasma o unidos a las superficies microbianas."
+        },
+        {
+          "text": "Los anticuerpos de tipo IgD, por sus características estructurales son los que mejor activan el complemento por la vía clásica."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "Los receptores para la porción Fc de los anticuerpos (Receptores Fc), activan gran variedad de células efectoras de la respuesta inmune. Con respecto a ellos, señale la opción correcta:",
+      "options": [
+        {
+          "text": "El FcεRI (receptor para la IgE) es un receptor de baja afinidad expresado típicamente por los macrófagos."
+        },
+        {
+          "text": "Los receptores Fc son receptores específicos, que siempre tienen en su dominio citoplasmático motivos ITAM (immunoreceptor tyrosine-based activation motif) por lo que señalizan cascadas de activación."
+        },
+        {
+          "text": "El FcγRIIb expresado por los linfocitos B, participa en el mecanismo fisiológico de regulación de la respuesta inmune humoral conocido como \"retroalimentación por el anticuerpo\".",
+          "correct": true
+        },
+        {
+          "text": "Los receptores de Fc presentes en los neutrófilos reconocen la región variable y constante de las IgE."
+        },
+        {
+          "text": "El receptor CD16 (FcγRIIIa) expresado por los Natural Killers se une con mayor afinidad a las IgG monoméricas circulantes que a aquellas mostradas en superficies celulares."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "En cuánto a los linfocitos T reguladores, señale la opción correcta:",
+      "options": [
+        {
+          "text": "Son fuertemente dependientes de IL-12 para su superviviencia, esto se explica por su alta expresión de CD25 en su membrana."
+        },
+        {
+          "text": "El TCR de los linfocitos T reguladores tímicos (tTregs) tiene una avidez nula por el MHC-péptido, motivo por el cuál no responden y semueren."
+        },
+        {
+          "text": "No se ha demostrado que tengan capacidad citotóxica."
+        },
+        {
+          "text": "En el hombre, con el marcador FoxP3 positivo (FoxP3+) podemos catalogar al linfocito T como regulador ya que la definición es fenotípica."
+        },
+        {
+          "text": "Uno de los mecanismos utilizados por los linfocitos Treg es actuando sobre otras células, que no necesariamente tienen la misma especificidad de antígeno. El contacto con sus células blanco no es a través del TCR sino a través de citoquinas como IL-10, TGF-β o IL-35 (efecto by-stander).",
+          "correct": true
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "Sobre la tolerancia inmunológica:",
+      "options": [
+        {
+          "text": "Implica que se generan mecanismos activos que protegen a un antígeno por un tiempo limitado y en un solo órgano o tejido."
+        },
+        {
+          "text": "Los antígenos propios presentados sin moléculas de co-estimulación hacen que el linfocito T sufra apoptosis activando las proteínas de tipo BH3 en lamitocondria.",
+          "correct": true
+        },
+        {
+          "text": "En el mecanismo de anergia, el linfocito T se muere porque comienza a expresar en su membrana receptores de muerte celular como por ejemplo: Fas."
+        },
+        {
+          "text": "En el timo, las células epiteliales medulares (mTEC) presentan antígenos propios en moléculas de MHC de clase II pero no pueden presentar en moléculas de MHC de clase I."
+        },
+        {
+          "text": "El único mecanismo de tolerancia central conocido para los linfocitos B es la edición de su BCR."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "En relación a los linfocitos T presentes en la piel, indique la opción correcta:",
+      "options": [
+        {
+          "text": "Todos expresan el antígeno linfocitario cutáneo (CLA).",
+          "correct": true
+        },
+        {
+          "text": "Todos son linfocitos T CD8+."
+        },
+        {
+          "text": "Son los principales productores de péptidos anti-microbianos."
+        },
+        {
+          "text": "Sólo una parte de los linfocitos T de la piel se pueden unir a la E-selectina presente en el endotelio vascular."
+        },
+        {
+          "text": "Pueden producir IL-22 que activa a los mastocitos presentes en la dermis."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "Indique lo correcto en relación a la respuesta inmune en las mucosas:",
+      "options": [
+        {
+          "text": "La principal función de las células M es impedir que los antígenos presentes en la luz intestinal ingresen a los folículos linfoides presentes en las mucosas."
+        },
+        {
+          "text": "Las células caliciformes secretan altas cantidades de calcio a la luz intestinal."
+        },
+        {
+          "text": "Los linfocitos intraepiteliales (LIE) tienen como función principal la eliminación de las células epiteliales dañadas.",
+          "correct": true
+        },
+        {
+          "text": "Los péptidos antimicrobianos siempre se expresan asociados a las proteínas del complejo mayor de histocompatibilidad."
+        },
+        {
+          "text": "Las células epiteliales de la mucosa no tienen capacidad de comunicarse con las células del sistema inmune adaptativo."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "Sobre la respuesta inmune en el embarazo, indique lo correcto:",
+      "options": [
+        {
+          "text": "El aumento de las células natural killer uterinas ocurre cuando disminuyen los niveles de progesterona."
+        },
+        {
+          "text": "La disminución de la relación entre la cantidad de linfocitos Th1/Th2 es un problema importarte para la tolerancia inmune en el embarazo."
+        },
+        {
+          "text": "La presencia de moléculas MHC de clase I aumenta para favorecer el funcionamiento de los linfocito T citotóxicos."
+        },
+        {
+          "text": "La ausencia molécula CNS1 (conserved noncoding sequence 1) favorece la generación de linfocitos Treg."
+        },
+        {
+          "text": "Todas las otras opciones son incorrectas.",
+          "correct": true
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "En relación con la molécula HLA-G indique lo INCORRECTO:",
+      "options": [
+        {
+          "text": "Cuando se une a receptores de las células natural killer induce la producción de mediadores que favorecen la vascularización de la placenta."
+        },
+        {
+          "text": "Inhibe la función citotóxica de los linfocitos T CD8+."
+        },
+        {
+          "text": "Cuando aumenta son mayores la posibilidades de que una madre desarrolle preeclampsia.",
+          "correct": true
+        },
+        {
+          "text": "Es un inmunomodulador importante para la tolerancia materno-fetal."
+        },
+        {
+          "text": "Su producción es favorecida por la progesterona."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "En cuanto a la respuesta inmune que se genera frente a la infección por bacterias extracelulares, marque la opción correcta:",
+      "options": [
+        {
+          "text": "Se puede activar la vía alternativa y de las lectinas del complemento pero no la vía clásica."
+        },
+        {
+          "text": "Las exotoxinas liberadas por éstas bacterias producen daño en las células del hospedero pero no las endotoxinas ya que éstas últimas no son liberadas por el patógeno y no pueden entrar a la célula."
+        },
+        {
+          "text": "La respuesta humoral es muy eficiente para eliminar bacterias encapsuladas ricas en polisacáridos.",
+          "correct": true
+        },
+        {
+          "text": "La respuesta celular efectora de tipo Th2 es la más apropiada en éstos casos."
+        },
+        {
+          "text": "El TLR3 (Toll-like Receptor 3) reconoce motivos en la bacteria Escherichia Coli y señaliza cascadas que llevan a la producción de IL-1β."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "En cuanto a la respuesta inmune que se genera frente a patógenos extracelulares, marque la opción correcta:",
+      "options": [
+        {
+          "text": "Los β-glucanos expresados en ciertos hongos son reconocidos por receptores de la inmunidad innata en células dendríticas que las hace producir IL-23, IL-1, IL-6 y TGF-β lo lo que genera una respuesta celular Th17.",
+          "correct": true
+        },
+        {
+          "text": "Los parásitos extracelulares no activan el complemento."
+        },
+        {
+          "text": "Las células ILC3 son reclutadas típicamente por la IL-9 en el contexto de infecciones por helmintos extracelulares."
+        },
+        {
+          "text": "IDO (Indoleamine 2,3-dioxygenase) favorece la respuesta Th17 frente a infecciones por hongos."
+        },
+        {
+          "text": "En los pacientes con neutropenia (porcentaje de neutrófilos por debajo del normal en sangre) la respuesta inmune frente a hongos no se ve afectada."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "Marque la opción que indica el mecanismo efector más eficiente para la eliminación de bacterias intracelulares:",
+      "options": [
+        {
+          "text": "Anticuerpos IgG específicos que realizan Citotoxicidad dependiente de anticuerpos (ADCC) con eosinófilos."
+        },
+        {
+          "text": "Netosis por neutrófilos."
+        },
+        {
+          "text": "Apoptosis inducida por mastocitos."
+        },
+        {
+          "text": "Células NK (asesinas naturales) activadas por IL-12.",
+          "correct": true
+        },
+        {
+          "text": "Linfocitos T CD8 sin diferenciar estimulados por Th17 específicos."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "Indique la opción que NO describe un mecanismo de evasión inmunológica utilizado por patógenos intracelulares:",
+      "options": [
+        {
+          "text": "Escape del fagolisosoma para evitar eliminación por fagocitos."
+        },
+        {
+          "text": "Inhibición de la activación de células T a través de la inhibición de la presentación antigénica inducida por disminución de la expresión de MHC-II en células presentadoras de antígenos."
+        },
+        {
+          "text": "Inducción de apoptosis de linfocitos Th1."
+        },
+        {
+          "text": "Diferenciación de linfocitos innatos ILC2 a linfocitos T reguladores (Treg).",
+          "correct": true
+        },
+        {
+          "text": "Producción de proteínas homólogas de citoquinas por parte del patógeno que bloquean la señalización por el receptor al que unen."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "En relación a la inmunoterapia del cáncer basada en el bloqueo de PD-1, marque la opción correcta.",
+      "options": [
+        {
+          "text": "Puede ser influenciada por la microbiota intestinal.",
+          "correct": true
+        },
+        {
+          "text": "Tiene por objetivo favorecer el “exhausting” de células TCD8+."
+        },
+        {
+          "text": "Funciona mejor cuando se usan anticuerpos agonistas de PD-1."
+        },
+        {
+          "text": "No se han observado mejoras en el efecto antitumoral si se asocia a anticuerpos anti-CTLA-4."
+        },
+        {
+          "text": "Está indicado asociarlo con corticoides (inmunosupresores) para mejorar el efecto anti-tumoral."
+        }
+      ],
+      "evaluation": "parcial_2"
+    },
+    {
+      "text": "Sobre los anticuerpos monoclonales utilizados en terapia en humanos, indique la opción correcta.",
+      "options": [
+        {
+          "text": "Se utilizan para estimular o inhibir respuestas inmunes entre otras aplicaciones.",
+          "correct": true
+        },
+        {
+          "text": "Los anticuerpos de origen murino siguen siendo ampliamente utilizados."
+        },
+        {
+          "text": "Cada anticuerpo monoclonal se origina de un único clon y por tanto tienen una diversidad grande de especificidades."
+        },
+        {
+          "text": "Son útiles siempre y cuando el blanco terapéutico sea una molécula soluble."
+        },
+        {
+          "text": "Por definición tienen que ser capaces de activar el complemento."
+        }
+      ],
+      "evaluation": "parcial_2"
+    }
+  ],
+  "evaluations": [
+    {
+      "key": "parcial_2",
+      "name": "2° parcial"
+    }
+  ]
+}
