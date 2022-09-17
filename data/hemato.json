@@ -36,6 +36,7 @@
       "id": "812d3de5-0ca5-4819-9546-b4b4cdb00fbd",
       "evaluation": "parcial_2",
       "text": "Acerca de la inflamación, indique lo correcto:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "3d58a62f-4e99-4a3c-9f7a-4c22fbe36775",
@@ -64,6 +65,7 @@
       "id": "9afddad9-0f2f-4a1b-9b49-4d2ce9c58a94",
       "evaluation": "parcial_2",
       "text": "Acerca de la tolerancia inmunológica y sus mecanismos, marque la opción correcta:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "1cc0947e-914a-4391-aa13-ce8dae78a852",
@@ -116,6 +118,7 @@
       "id": "977ae45e-deb7-4f72-98e9-16991f6d9f5c",
       "evaluation": "parcial_2",
       "text": "Acerca de las vías de presentación de antígenos, señale la opción verdadera:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "6c5fbc52-405f-46af-9a81-747213f27ad8",
@@ -144,6 +147,7 @@
       "id": "1070f17c-614d-4749-aec0-2dabb8dbc489",
       "evaluation": "parcial_2",
       "text": "Acerca de los linfocitos T reguladores (Tregs) marque la opción correcta:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "da055fee-6526-45a0-89f3-3c7da3b8152f",
@@ -465,6 +469,7 @@
       "id": "28f29fbd-e78e-44bf-b5e6-96b831d9fa5e",
       "evaluation": "parcial_2",
       "text": "El sistema del complemento comprende numerosas proteínas plasmáticas que poseen funciones efectoras que contribuyen a la eliminación de patógenos. En cuanto a sus características, indique la opción correcta:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "328081a2-6ea4-4ab2-9d1a-1c666a281052",
@@ -681,6 +686,7 @@
       "id": "7073a05f-9a85-457b-b505-dd0b15205c85",
       "evaluation": "parcial_2",
       "text": "En la evaluación de la respuesta inmune de un paciente con lepra se obtiene la información siguiente: nivel aumentado de anticuerpos circulantes específicos para M. leprae, respuestas inmunes anti-M. leprae caracterizadas por alta producción de IL-4 y baja producción de interferón-γ (INF-γ). Indique lo correcto:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "c85ee9c5-e2b2-4d79-9b71-092212d6423a",
@@ -873,6 +879,7 @@
       "id": "6e3d473d-968d-4c7b-9fe3-aa74266ef9a6",
       "evaluation": "parcial_2",
       "text": "En relación a la inmunidad de mucosas indique lo correcto:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "1b07cf65-bbae-4924-bda2-29aa71464a39",
@@ -1043,6 +1050,7 @@
       "id": "b17256a9-f380-49d6-9e6e-c6fcd64ee94b",
       "evaluation": "parcial_2",
       "text": "En relación a los linfocitos T presentes en la piel, indique la opción correcta:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "581404a0-5998-4479-acf4-907990523263",
@@ -1212,6 +1220,7 @@
       "id": "42108894-6a2a-481d-8cf2-d04ebe57e885",
       "evaluation": "parcial_2",
       "text": "En una muestra de piel se identificó un tipo celular con las siguientes características: expresa las moléculas CD3 y CD4, su función favorece el reclutamiento de neutrófilos, puede inducir la producción de péptidos antimicrobianos, como la catelicidina LL-37. Indique lo correcto sobre el tipo celular identificado:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "54222eb7-ea95-4c75-b900-3de95afb005e",
@@ -1239,11 +1248,12 @@
     {
       "id": "25b48c06-34dc-4648-95f2-f528ff06999d",
       "evaluation": "parcial_2",
-      "text": "Indique la afirmación correcta sobre un linfocito T CD4+ vírgen que es activado por una célula dendrítica en presencia de IL-12 y de IFN-ɣ:",
+      "text": "Indique la afirmación correcta sobre un linfocito T CD4+ vírgen que es activado por una célula dendrítica en presencia de IL-12 y de IFN-γ:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "1061b40b-8c93-463a-9c28-c239ccc85d2d",
-          "text": "Mediante la secreción de IFN-ɣ activa a los macrófagos aumentando así su capacidad bactericida.",
+          "text": "Mediante la secreción de IFN-γ activa a los macrófagos aumentando así su capacidad bactericida.",
           "correct": true
         },
         {
@@ -1268,6 +1278,7 @@
       "id": "ccccc324-6369-44a5-aff5-42b16bc57af0",
       "evaluation": "parcial_2",
       "text": "Indique la opción correcta en relación a la citotoxicidad celular dependiente de anticuerpos (ADCC):",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "5ae46de8-6b8c-4321-bc44-f22373c486c6",
@@ -1296,6 +1307,7 @@
       "id": "6ed98fd1-4885-420b-a656-c3d5c4d92572",
       "evaluation": "parcial_2",
       "text": "Indique la opción correcta en relación a la inmunopatogenia de la psoriasis:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "c3ceaa8a-0aa2-4b2a-94e6-48915c173f16",
@@ -1333,7 +1345,7 @@
         },
         {
           "id": "4c384828-809d-4488-9473-601bdecfafaa",
-          "text": "El IFN-α, pero no el IFN-ɣ, confiere resistencia anti-viral a las células a través del aumento de la expresión de los TLRs de membrana plasmática."
+          "text": "El IFN-α, pero no el IFN-γ, confiere resistencia anti-viral a las células a través del aumento de la expresión de los TLRs de membrana plasmática."
         },
         {
           "id": "b81d2e1e-7f07-488c-b75d-f6f6b2e2d4d3",
@@ -1819,6 +1831,7 @@
       "id": "bc963649-14ea-4674-978a-95eb00277831",
       "evaluation": "parcial_2",
       "text": "Sobre la presentación de antígenos por la vía de moléculas de clase II, marque lo correcto:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "58a8cfb2-dd88-4581-91d5-3bc8c4f7fcde",
@@ -1875,6 +1888,7 @@
       "id": "f286b5cb-c9f2-40ab-955e-cc403bc780ad",
       "evaluation": "parcial_2",
       "text": "Sobre la relación inmune materno-fetal, indique lo correcto:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "e50331f4-4a13-48dc-8b4c-8ed02dbcdb82",
@@ -1903,11 +1917,11 @@
       "id": "5712e9d3-ff66-4c2a-8593-42113f901624",
       "evaluation": "parcial_2",
       "text": "Sobre la respuesta inmune contra patógenos extracelulares, marque la opción correcta:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "f9601beb-3802-4142-9e12-947fc3e83e9d",
-          "text": "La respuesta inmune desarrollada contra el patógeno extracelular no causa lesión tisular.",
-          "correct": true
+          "text": "La respuesta inmune desarrollada contra el patógeno extracelular no causa lesión tisular."
         },
         {
           "id": "f29ed8f6-d755-43ac-973f-5f8976399280",
@@ -1919,7 +1933,8 @@
         },
         {
           "id": "2834a4cd-10bd-4218-b350-c7860e3e4289",
-          "text": "La neutralización de toxinas bacterianas por las inmunoglobulinas de tipo A (IgA) es un mecanismo muy importante de respuesta contra patógenos extracelulares en la luz de las mucosas."
+          "text": "La neutralización de toxinas bacterianas por las inmunoglobulinas de tipo A (IgA) es un mecanismo muy importante de respuesta contra patógenos extracelulares en la luz de las mucosas.",
+          "correct": true
         },
         {
           "id": "1da11986-fa3d-4e74-a5a3-4d5c56cecea5",
@@ -1987,6 +2002,7 @@
       "id": "9f7b580f-bff5-4598-8929-7bf802370d6e",
       "evaluation": "parcial_2",
       "text": "Sobre los mecanismos de evasión de la respuesta inmune de las bacterias extracelulares, marque la opción correcta:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "336f2466-5e3e-498a-b450-18a10df23996",
@@ -2072,6 +2088,7 @@
       "id": "8fa4f720-829f-41d9-a761-6f620892cb3f",
       "evaluation": "parcial_2",
       "text": "¿Cuál de las siguientes moléculas puede inducir el desarrollo del trabajo de parto?",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "b82e69b0-6d74-49af-8db4-b1834a3167a4",
