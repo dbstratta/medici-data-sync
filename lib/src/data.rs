@@ -3,6 +3,7 @@ use std::fs::DirEntry;
 use std::path::PathBuf;
 
 use anyhow::{bail, Result};
+use chrono::NaiveDate;
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
@@ -176,9 +177,10 @@ pub struct QuestionData {
 
     pub course_key: Option<String>,
     pub text: String,
+    pub evaluation: String,
+    pub asked_at: Option<NaiveDate>,
     #[serde(skip)]
     pub question_options: Vec<QuestionOptionData>,
-    pub evaluation: String,
 
     pub hash: String,
 }
@@ -189,6 +191,7 @@ impl QuestionData {
         text: String,
         question_options: Vec<QuestionOptionData>,
         evaluation: String,
+        asked_at: Option<NaiveDate>,
     ) -> Self {
         let hash = Self::hash_data(id, &text, &question_options[..], &evaluation);
 
@@ -199,6 +202,7 @@ impl QuestionData {
             question_options,
             evaluation,
             hash,
+            asked_at,
         }
     }
 
@@ -294,6 +298,7 @@ impl From<RawQuestionData> for QuestionData {
             raw.text,
             options,
             raw.evaluation,
+            raw.asked_at,
         )
     }
 }

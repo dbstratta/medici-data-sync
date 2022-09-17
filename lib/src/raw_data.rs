@@ -1,4 +1,5 @@
 use anyhow::Result;
+use chrono::NaiveDate;
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
@@ -43,8 +44,10 @@ pub struct RawQuestionData {
     pub id: Option<Uuid>,
 
     pub text: String,
-    pub options: Vec<RawQuestionOptionData>,
     pub evaluation: String,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub asked_at: Option<NaiveDate>,
+    pub options: Vec<RawQuestionOptionData>,
 }
 
 impl From<QuestionData> for RawQuestionData {
@@ -56,6 +59,7 @@ impl From<QuestionData> for RawQuestionData {
             text: data.text,
             options: raw_question_options,
             evaluation: data.evaluation,
+            asked_at: data.asked_at,
         }
     }
 }
