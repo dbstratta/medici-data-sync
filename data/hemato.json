@@ -8,6 +8,7 @@
       "id": "6168064c-6129-472a-b4d9-f41259477fde",
       "evaluation": "parcial_2",
       "text": "A partir de una placenta humana se aisló una célula que presenta las siguientes características: no expresa receptores para Fcγ, produce factores angiogénicos, no tiene actividad citotóxica. Indique lo correcto:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "0b77963c-dae6-4575-a0ee-5503a40b7397",
@@ -35,8 +36,8 @@
     {
       "id": "812d3de5-0ca5-4819-9546-b4b4cdb00fbd",
       "evaluation": "parcial_2",
-      "text": "Acerca de la inflamación, indique lo correcto:",
       "asked_at": "2016-09-24",
+      "text": "Acerca de la inflamación, indique lo correcto:",
       "options": [
         {
           "id": "3d58a62f-4e99-4a3c-9f7a-4c22fbe36775",
@@ -64,8 +65,8 @@
     {
       "id": "9afddad9-0f2f-4a1b-9b49-4d2ce9c58a94",
       "evaluation": "parcial_2",
-      "text": "Acerca de la tolerancia inmunológica y sus mecanismos, marque la opción correcta:",
       "asked_at": "2016-09-24",
+      "text": "Acerca de la tolerancia inmunológica y sus mecanismos, marque la opción correcta:",
       "options": [
         {
           "id": "1cc0947e-914a-4391-aa13-ce8dae78a852",
@@ -94,6 +95,7 @@
       "id": "85b2bc52-1e31-4d86-b7de-a4c5c031b3c6",
       "evaluation": "parcial_2",
       "text": "Acerca de las células dendríticas como células presentadoras de antígenos señale la opción correcta:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "cb8435bb-b74a-4e4b-bc13-4e60fb2a2af7",
@@ -117,8 +119,8 @@
     {
       "id": "977ae45e-deb7-4f72-98e9-16991f6d9f5c",
       "evaluation": "parcial_2",
-      "text": "Acerca de las vías de presentación de antígenos, señale la opción verdadera:",
       "asked_at": "2016-09-24",
+      "text": "Acerca de las vías de presentación de antígenos, señale la opción verdadera:",
       "options": [
         {
           "id": "6c5fbc52-405f-46af-9a81-747213f27ad8",
@@ -146,8 +148,8 @@
     {
       "id": "1070f17c-614d-4749-aec0-2dabb8dbc489",
       "evaluation": "parcial_2",
-      "text": "Acerca de los linfocitos T reguladores (Tregs) marque la opción correcta:",
       "asked_at": "2016-09-24",
+      "text": "Acerca de los linfocitos T reguladores (Tregs) marque la opción correcta:",
       "options": [
         {
           "id": "da055fee-6526-45a0-89f3-3c7da3b8152f",
@@ -175,8 +177,8 @@
     {
       "id": "43bd0233-4be6-4ca1-83aa-cfd89bedbe5e",
       "evaluation": "parcial_2",
-      "text": "Acerca del antagonista del receptor de la IL-1, indique la opción correcta:",
       "asked_at": "2016-09-24",
+      "text": "Acerca del antagonista del receptor de la IL-1, indique la opción correcta:",
       "options": [
         {
           "id": "d39669e3-bcab-40af-a55f-b6ffc5da7b95",
@@ -205,6 +207,7 @@
       "id": "aa1e403c-71a3-46f6-b958-bfb9ff2b3bd5",
       "evaluation": "parcial_2",
       "text": "Con respecto a la activación y recirculación de los linfocitos T indique lo correcto:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "74b2378b-e259-49a8-a655-0775dd17d807",
@@ -261,6 +264,7 @@
       "id": "ed901118-4826-42b3-8418-4babd150371f",
       "evaluation": "parcial_2",
       "text": "Con respecto a la respuesta inmune antiviral indique lo correcto:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "2cabc894-d228-4061-86d9-2b13e6d6b63d",
@@ -313,6 +317,7 @@
       "id": "ca3df7fd-2f40-4a43-9063-eef840e6185a",
       "evaluation": "parcial_2",
       "text": "Con respecto a las características y funciones de los receptores FcR, indique la opción correcta:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "2dcc9935-3567-4365-853c-e76afd52ff0c",
@@ -341,6 +346,7 @@
       "id": "7a27f7d9-2dcb-4afa-b6c2-584332963bb6",
       "evaluation": "parcial_2",
       "text": "Con respecto a los linfocitos T CD8+ indique lo correcto:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "0423886b-bd5d-4059-bb95-78df35779257",
@@ -365,6 +371,7 @@
       "id": "c2d95a23-b8b9-4991-9c41-ba5721ba9856",
       "evaluation": "parcial_2",
       "text": "Con respecto al IFN tipo I indique la respuesta correcta:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "77ecd153-4255-4178-a3ef-59977b2208ac",
@@ -445,6 +452,7 @@
       "id": "a8b69646-1a88-4c73-87ec-a4a53748c086",
       "evaluation": "parcial_2",
       "text": "Durante el diagnóstico etiológico de una neumonía se realiza el aislamiento de una cepa bacteriana a partir del hemocultivo. El cultivo en agar sangre muestra colonias pequeñas, umbilicadas, que producen una coloración verdosa alrededor (α hemólisis). El frotis teñido con Gram de esta cepa muestra diplococos gram positivos. En relación al microorganismo estudiado podemos:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "c1d75f90-c511-40aa-b6de-048502602078",
@@ -468,8 +476,8 @@
     {
       "id": "28f29fbd-e78e-44bf-b5e6-96b831d9fa5e",
       "evaluation": "parcial_2",
-      "text": "El sistema del complemento comprende numerosas proteínas plasmáticas que poseen funciones efectoras que contribuyen a la eliminación de patógenos. En cuanto a sus características, indique la opción correcta:",
       "asked_at": "2016-09-24",
+      "text": "El sistema del complemento comprende numerosas proteínas plasmáticas que poseen funciones efectoras que contribuyen a la eliminación de patógenos. En cuanto a sus características, indique la opción correcta:",
       "options": [
         {
           "id": "328081a2-6ea4-4ab2-9d1a-1c666a281052",
@@ -582,6 +590,7 @@
       "id": "6e2f01c2-6887-4356-ae5e-9767f6f2f1ac",
       "evaluation": "parcial_2",
       "text": "En cuanto a los mecanismos de tolerancia inmunológica, señale la opción correcta:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "1d3c2a81-7000-4db7-b71b-ef60f6cac5c0",
@@ -638,6 +647,7 @@
       "id": "2a9cc64d-522f-42d6-98b9-db646b3417cf",
       "evaluation": "parcial_2",
       "text": "En el algoritmo diagnóstico de Infección por VIH, actualmente se usa como tamizaje un EIA de 4ta generación, que permite disminuir el período ventana en relación a los métodos de 3era generación. Esto es debido a que el EIA de 4ta generación detecta:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "3e87fcfb-9634-4967-95ed-40c7ee1b3d8b",
@@ -662,6 +672,7 @@
       "id": "ecc39041-cd46-49ad-817d-7787c90e472b",
       "evaluation": "parcial_2",
       "text": "En el ciclo de replicación del VIH en las células CD4+, el flujo de la información genética para la síntesis de las proteínas virales es (v = viral; p =  proviral; m = mensajero):",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "d38d7fa7-e9d6-4997-bef8-ed2c059ab75f",
@@ -685,8 +696,8 @@
     {
       "id": "7073a05f-9a85-457b-b505-dd0b15205c85",
       "evaluation": "parcial_2",
-      "text": "En la evaluación de la respuesta inmune de un paciente con lepra se obtiene la información siguiente: nivel aumentado de anticuerpos circulantes específicos para M. leprae, respuestas inmunes anti-M. leprae caracterizadas por alta producción de IL-4 y baja producción de interferón-γ (INF-γ). Indique lo correcto:",
       "asked_at": "2016-09-24",
+      "text": "En la evaluación de la respuesta inmune de un paciente con lepra se obtiene la información siguiente: nivel aumentado de anticuerpos circulantes específicos para M. leprae, respuestas inmunes anti-M. leprae caracterizadas por alta producción de IL-4 y baja producción de interferón-γ (INF-γ). Indique lo correcto:",
       "options": [
         {
           "id": "c85ee9c5-e2b2-4d79-9b71-092212d6423a",
@@ -715,6 +726,7 @@
       "id": "b8d5d9fb-e98a-45dc-869f-2a768c807e00",
       "evaluation": "parcial_2",
       "text": "En la respuesta inmune frente a una infección por parásitos helmintos (señale la opción correcta):",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "57a1886b-a074-48d9-ab4c-2dfa3ee716ba",
@@ -743,6 +755,7 @@
       "id": "24b6539c-8e1a-452c-a611-ffb591d5da86",
       "evaluation": "parcial_2",
       "text": "En las formas clínicas observadas durante la infección por Mycobacterium leprae indique lo correcto:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "43a10239-b33a-4b0f-865c-53be8087b046",
@@ -767,6 +780,7 @@
       "id": "efca05d5-e1f9-4b53-b8bf-64c73853b50e",
       "evaluation": "parcial_2",
       "text": "En relación a la IL-1β marque la opción correcta:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "2a4d7d9b-f1a2-4fad-8215-106abeec836b",
@@ -795,6 +809,7 @@
       "id": "69dd71f2-f90f-49f9-8fb7-ffac909e48d0",
       "evaluation": "parcial_2",
       "text": "En relación a la Inmunidad de mucosas indique lo correcto:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "d1ac1116-6b9f-46c3-beaf-b3e074d1187c",
@@ -878,8 +893,8 @@
     {
       "id": "6e3d473d-968d-4c7b-9fe3-aa74266ef9a6",
       "evaluation": "parcial_2",
-      "text": "En relación a la inmunidad de mucosas indique lo correcto:",
       "asked_at": "2016-09-24",
+      "text": "En relación a la inmunidad de mucosas indique lo correcto:",
       "options": [
         {
           "id": "1b07cf65-bbae-4924-bda2-29aa71464a39",
@@ -907,8 +922,8 @@
     {
       "id": "8bb86f55-a57d-4327-9a95-5decdfff3fd1",
       "evaluation": "parcial_2",
-      "text": "En relación a la inmunidad de mucosas indique lo correcto:",
       "asked_at": "2016-09-24",
+      "text": "En relación a la inmunidad de mucosas indique lo correcto:",
       "options": [
         {
           "id": "c11513d9-be1d-4491-931c-845bb07b60b4",
@@ -936,8 +951,8 @@
     {
       "id": "6ede2387-135a-44fa-b7a6-ae6becb4d355",
       "evaluation": "parcial_2",
-      "text": "En relación a la inmunidad mediada por células indique lo correcto:",
       "asked_at": "2016-09-24",
+      "text": "En relación a la inmunidad mediada por células indique lo correcto:",
       "options": [
         {
           "id": "d58c809c-60e7-4d75-9346-a6e6cf59753b",
@@ -994,6 +1009,7 @@
       "id": "9637d7a1-4b4e-4f96-a8d8-2cd025e66029",
       "evaluation": "parcial_2",
       "text": "En relación a la linfopoyesis T marque lo correcto:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "fbb9ff67-64b5-4e70-841d-ab555a1ea16e",
@@ -1049,8 +1065,8 @@
     {
       "id": "b17256a9-f380-49d6-9e6e-c6fcd64ee94b",
       "evaluation": "parcial_2",
-      "text": "En relación a los linfocitos T presentes en la piel, indique la opción correcta:",
       "asked_at": "2016-09-24",
+      "text": "En relación a los linfocitos T presentes en la piel, indique la opción correcta:",
       "options": [
         {
           "id": "581404a0-5998-4479-acf4-907990523263",
@@ -1078,8 +1094,8 @@
     {
       "id": "3cc6a0aa-830a-4aab-a82e-c177b4e94cf6",
       "evaluation": "parcial_2",
-      "text": "En relación a los mecanismos de evasión inmunológica desarrollados por patógenos intracelulares para favorecer su sobrevida y replicación en el hospedero, indique la opción correcta:",
       "asked_at": "2016-09-24",
+      "text": "En relación a los mecanismos de evasión inmunológica desarrollados por patógenos intracelulares para favorecer su sobrevida y replicación en el hospedero, indique la opción correcta:",
       "options": [
         {
           "id": "21e5652a-2b64-40ae-9b67-4a947aa88a36",
@@ -1219,8 +1235,8 @@
     {
       "id": "42108894-6a2a-481d-8cf2-d04ebe57e885",
       "evaluation": "parcial_2",
-      "text": "En una muestra de piel se identificó un tipo celular con las siguientes características: expresa las moléculas CD3 y CD4, su función favorece el reclutamiento de neutrófilos, puede inducir la producción de péptidos antimicrobianos, como la catelicidina LL-37. Indique lo correcto sobre el tipo celular identificado:",
       "asked_at": "2016-09-24",
+      "text": "En una muestra de piel se identificó un tipo celular con las siguientes características: expresa las moléculas CD3 y CD4, su función favorece el reclutamiento de neutrófilos, puede inducir la producción de péptidos antimicrobianos, como la catelicidina LL-37. Indique lo correcto sobre el tipo celular identificado:",
       "options": [
         {
           "id": "54222eb7-ea95-4c75-b900-3de95afb005e",
@@ -1248,8 +1264,8 @@
     {
       "id": "25b48c06-34dc-4648-95f2-f528ff06999d",
       "evaluation": "parcial_2",
-      "text": "Indique la afirmación correcta sobre un linfocito T CD4+ vírgen que es activado por una célula dendrítica en presencia de IL-12 y de IFN-γ:",
       "asked_at": "2016-09-24",
+      "text": "Indique la afirmación correcta sobre un linfocito T CD4+ vírgen que es activado por una célula dendrítica en presencia de IL-12 y de IFN-γ:",
       "options": [
         {
           "id": "1061b40b-8c93-463a-9c28-c239ccc85d2d",
@@ -1277,8 +1293,8 @@
     {
       "id": "ccccc324-6369-44a5-aff5-42b16bc57af0",
       "evaluation": "parcial_2",
-      "text": "Indique la opción correcta en relación a la citotoxicidad celular dependiente de anticuerpos (ADCC):",
       "asked_at": "2016-09-24",
+      "text": "Indique la opción correcta en relación a la citotoxicidad celular dependiente de anticuerpos (ADCC):",
       "options": [
         {
           "id": "5ae46de8-6b8c-4321-bc44-f22373c486c6",
@@ -1306,8 +1322,8 @@
     {
       "id": "6ed98fd1-4885-420b-a656-c3d5c4d92572",
       "evaluation": "parcial_2",
-      "text": "Indique la opción correcta en relación a la inmunopatogenia de la psoriasis:",
       "asked_at": "2016-09-24",
+      "text": "Indique la opción correcta en relación a la inmunopatogenia de la psoriasis:",
       "options": [
         {
           "id": "c3ceaa8a-0aa2-4b2a-94e6-48915c173f16",
@@ -1335,8 +1351,8 @@
     {
       "id": "d6431b33-ecab-48a0-bcdc-abe0cd31a877",
       "evaluation": "parcial_2",
-      "text": "Indique la opción correcta sobre el tipo de respuesta inmune efectiva contra patógenos intracelulares:",
       "asked_at": "2016-09-24",
+      "text": "Indique la opción correcta sobre el tipo de respuesta inmune efectiva contra patógenos intracelulares:",
       "options": [
         {
           "id": "4782bff0-52a1-47f0-8f1a-8656e042cd80",
@@ -1393,6 +1409,7 @@
       "id": "23a65795-c3c2-4e90-bd32-cfc2777587cd",
       "evaluation": "parcial_2",
       "text": "Indique la opción verdadera en cuanto a los mecanismos efectores que median los anticuerpos:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "0bef0d90-ea0a-4678-9776-f9c5e403e101",
@@ -1421,6 +1438,7 @@
       "id": "79bbec24-9834-44f6-9d16-143ffac6e610",
       "evaluation": "parcial_2",
       "text": "Indique la respuesta INCORRECTA con respecto al sistema inmune cutáneo:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "2d346b16-71a5-401e-bff0-a771e614bc18",
@@ -1469,6 +1487,7 @@
       "id": "58d56d1e-2471-4a25-a76f-4cf096cc505c",
       "evaluation": "parcial_2",
       "text": "Indique lo correcto en relación a la inmunidad y mucosas:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "4335c78f-0be8-4044-b516-4de9dfe0197d",
@@ -1496,8 +1515,8 @@
     {
       "id": "c8894b8a-26ee-4483-9275-33284a208f09",
       "evaluation": "parcial_2",
-      "text": "Indique lo correcto en relación a la inmunidad y mucosas:",
       "asked_at": "2016-09-24",
+      "text": "Indique lo correcto en relación a la inmunidad y mucosas:",
       "options": [
         {
           "id": "e92bac9c-c238-45ba-97ae-aa0fd5ec5158",
@@ -1582,6 +1601,7 @@
       "id": "80411507-e973-4c67-99eb-741e19c5966a",
       "evaluation": "parcial_2",
       "text": "Las moléculas del CMH (Complejo Mayor de Histocompatibilidad) presentan lo que se denomina polimorfismo génico. Señale la opción INCORRECTA:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "e4d687c3-f984-4d58-b668-59e7a912db02",
@@ -1606,6 +1626,7 @@
       "id": "3169bb3f-b1cb-4472-9e3a-72f29546882d",
       "evaluation": "parcial_2",
       "text": "Los linfocitos T reguladores CD4+ se caracterizan por (señale la opción correcta):",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "a3232cfb-3a1c-4330-9e09-6cee7e2855f0",
@@ -1634,6 +1655,7 @@
       "id": "adb4ca54-06b4-4f07-b522-a48a805d3591",
       "evaluation": "parcial_2",
       "text": "Los siguientes mecanismos son utilizados por las bacterias extracelulares para evadir la respuesta del sistema inmune (señale la opción correcta):",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "1d1995d6-d372-406a-9dcc-8702dea9e5cb",
@@ -1661,8 +1683,8 @@
     {
       "id": "0029cb28-d5bb-422e-9d4a-d1dbee1944a3",
       "evaluation": "parcial_2",
-      "text": "Marque la opción correcta sobre el proceso inflamatorio:",
       "asked_at": "2016-09-24",
+      "text": "Marque la opción correcta sobre el proceso inflamatorio:",
       "options": [
         {
           "id": "af63cb4e-5f1c-4eed-a989-5a2c8bd703a3",
@@ -1691,6 +1713,7 @@
       "id": "0b7c578c-1d80-4f77-ae14-8b1b4f5ab10d",
       "evaluation": "parcial_2",
       "text": "Marque la opción correcta sobre la activación del endotelio durante la inflamación:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "b7f5a2e1-4951-49d4-b600-d75e5c9831ac",
@@ -1830,8 +1853,8 @@
     {
       "id": "bc963649-14ea-4674-978a-95eb00277831",
       "evaluation": "parcial_2",
-      "text": "Sobre la presentación de antígenos por la vía de moléculas de clase II, marque lo correcto:",
       "asked_at": "2016-09-24",
+      "text": "Sobre la presentación de antígenos por la vía de moléculas de clase II, marque lo correcto:",
       "options": [
         {
           "id": "58a8cfb2-dd88-4581-91d5-3bc8c4f7fcde",
@@ -1860,6 +1883,7 @@
       "id": "6218a23d-21b2-44bf-86a8-d03d72224929",
       "evaluation": "parcial_2",
       "text": "Sobre la relación Inmune materno-fetal, indique lo correcto:",
+      "asked_at": "2017-09-23",
       "options": [
         {
           "id": "5dac98d0-7356-4fae-b9c1-38a9fbbec42a",
@@ -1887,8 +1911,8 @@
     {
       "id": "f286b5cb-c9f2-40ab-955e-cc403bc780ad",
       "evaluation": "parcial_2",
-      "text": "Sobre la relación inmune materno-fetal, indique lo correcto:",
       "asked_at": "2016-09-24",
+      "text": "Sobre la relación inmune materno-fetal, indique lo correcto:",
       "options": [
         {
           "id": "e50331f4-4a13-48dc-8b4c-8ed02dbcdb82",
@@ -1916,12 +1940,13 @@
     {
       "id": "5712e9d3-ff66-4c2a-8593-42113f901624",
       "evaluation": "parcial_2",
-      "text": "Sobre la respuesta inmune contra patógenos extracelulares, marque la opción correcta:",
       "asked_at": "2016-09-24",
+      "text": "Sobre la respuesta inmune contra patógenos extracelulares, marque la opción correcta:",
       "options": [
         {
-          "id": "f9601beb-3802-4142-9e12-947fc3e83e9d",
-          "text": "La respuesta inmune desarrollada contra el patógeno extracelular no causa lesión tisular."
+          "id": "2834a4cd-10bd-4218-b350-c7860e3e4289",
+          "text": "La neutralización de toxinas bacterianas por las inmunoglobulinas de tipo A (IgA) es un mecanismo muy importante de respuesta contra patógenos extracelulares en la luz de las mucosas.",
+          "correct": true
         },
         {
           "id": "f29ed8f6-d755-43ac-973f-5f8976399280",
@@ -1932,13 +1957,12 @@
           "text": "La flora microbiana normal no colabora con ésta respuesta inmune."
         },
         {
-          "id": "2834a4cd-10bd-4218-b350-c7860e3e4289",
-          "text": "La neutralización de toxinas bacterianas por las inmunoglobulinas de tipo A (IgA) es un mecanismo muy importante de respuesta contra patógenos extracelulares en la luz de las mucosas.",
-          "correct": true
-        },
-        {
           "id": "1da11986-fa3d-4e74-a5a3-4d5c56cecea5",
           "text": "La respuesta inmune de tipo celular no participa en las respuestas inmunes hacia estos microorganismos."
+        },
+        {
+          "id": "f9601beb-3802-4142-9e12-947fc3e83e9d",
+          "text": "La respuesta inmune desarrollada contra el patógeno extracelular no causa lesión tisular."
         }
       ]
     },
@@ -2001,8 +2025,8 @@
     {
       "id": "9f7b580f-bff5-4598-8929-7bf802370d6e",
       "evaluation": "parcial_2",
-      "text": "Sobre los mecanismos de evasión de la respuesta inmune de las bacterias extracelulares, marque la opción correcta:",
       "asked_at": "2016-09-24",
+      "text": "Sobre los mecanismos de evasión de la respuesta inmune de las bacterias extracelulares, marque la opción correcta:",
       "options": [
         {
           "id": "336f2466-5e3e-498a-b450-18a10df23996",
@@ -2058,8 +2082,8 @@
     {
       "id": "06b30f44-b5c0-4bd9-b3e0-cd24557b5332",
       "evaluation": "parcial_2",
-      "text": "¿Cuál de las siguientes afirmaciones sobre la inmunidad mediada por células es correcta?",
       "asked_at": "2016-09-24",
+      "text": "¿Cuál de las siguientes afirmaciones sobre la inmunidad mediada por células es correcta?",
       "options": [
         {
           "id": "7a7a94e2-b399-4c4c-8ab9-7135057ee470",
@@ -2087,8 +2111,8 @@
     {
       "id": "8fa4f720-829f-41d9-a761-6f620892cb3f",
       "evaluation": "parcial_2",
-      "text": "¿Cuál de las siguientes moléculas puede inducir el desarrollo del trabajo de parto?",
       "asked_at": "2016-09-24",
+      "text": "¿Cuál de las siguientes moléculas puede inducir el desarrollo del trabajo de parto?",
       "options": [
         {
           "id": "b82e69b0-6d74-49af-8db4-b1834a3167a4",
