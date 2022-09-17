@@ -135,8 +135,11 @@ impl CourseData {
     fn sort(&mut self) {
         self.questions
             .sort_by(|a, b| match a.evaluation.cmp(&b.evaluation) {
-                Ordering::Equal => match a.text.cmp(&b.text) {
-                    Ordering::Equal => a.id.cmp(&b.id),
+                Ordering::Equal => match a.asked_at.cmp(&b.asked_at) {
+                    Ordering::Equal => match a.text.cmp(&b.text) {
+                        Ordering::Equal => a.id.cmp(&b.id),
+                        ordering => ordering,
+                    },
                     ordering => ordering,
                 },
                 ordering => ordering,
