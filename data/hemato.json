@@ -1,14 +1,11 @@
 {
   "name": "Hematología e Inmunología",
   "short_name": "Hemato",
-  "aliases": [
-    "hemato",
-    "inmuno"
-  ],
+  "aliases": ["hemato", "inmuno"],
   "year": 3,
   "questions": [
     {
-      "id": "3a886835-ce8e-4f93-8b6e-ede6a3a0b09e",
+      "id": "6168064c-6129-472a-b4d9-f41259477fde",
       "evaluation": "parcial_2",
       "text": "A partir de una placenta humana se aisló una célula que presenta las siguientes características: no expresa receptores para Fcγ, produce factores angiogénicos, no tiene actividad citotóxica. Indique lo correcto:",
       "options": [
@@ -175,6 +172,7 @@
       "id": "43bd0233-4be6-4ca1-83aa-cfd89bedbe5e",
       "evaluation": "parcial_2",
       "text": "Acerca del antagonista del receptor de la IL-1, indique la opción correcta:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "d39669e3-bcab-40af-a55f-b6ffc5da7b95",
@@ -903,6 +901,7 @@
       "id": "8bb86f55-a57d-4327-9a95-5decdfff3fd1",
       "evaluation": "parcial_2",
       "text": "En relación a la inmunidad de mucosas indique lo correcto:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "c11513d9-be1d-4491-931c-845bb07b60b4",
@@ -931,6 +930,7 @@
       "id": "6ede2387-135a-44fa-b7a6-ae6becb4d355",
       "evaluation": "parcial_2",
       "text": "En relación a la inmunidad mediada por células indique lo correcto:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "d58c809c-60e7-4d75-9346-a6e6cf59753b",
@@ -1071,6 +1071,7 @@
       "id": "3cc6a0aa-830a-4aab-a82e-c177b4e94cf6",
       "evaluation": "parcial_2",
       "text": "En relación a los mecanismos de evasión inmunológica desarrollados por patógenos intracelulares para favorecer su sobrevida y replicación en el hospedero, indique la opción correcta:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "21e5652a-2b64-40ae-9b67-4a947aa88a36",
@@ -1323,6 +1324,7 @@
       "id": "d6431b33-ecab-48a0-bcdc-abe0cd31a877",
       "evaluation": "parcial_2",
       "text": "Indique la opción correcta sobre el tipo de respuesta inmune efectiva contra patógenos intracelulares:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "4782bff0-52a1-47f0-8f1a-8656e042cd80",
@@ -1483,6 +1485,7 @@
       "id": "c8894b8a-26ee-4483-9275-33284a208f09",
       "evaluation": "parcial_2",
       "text": "Indique lo correcto en relación a la inmunidad y mucosas:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "e92bac9c-c238-45ba-97ae-aa0fd5ec5158",
@@ -1647,6 +1650,7 @@
       "id": "0029cb28-d5bb-422e-9d4a-d1dbee1944a3",
       "evaluation": "parcial_2",
       "text": "Marque la opción correcta sobre el proceso inflamatorio:",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "af63cb4e-5f1c-4eed-a989-5a2c8bd703a3",
@@ -2039,6 +2043,7 @@
       "id": "06b30f44-b5c0-4bd9-b3e0-cd24557b5332",
       "evaluation": "parcial_2",
       "text": "¿Cuál de las siguientes afirmaciones sobre la inmunidad mediada por células es correcta?",
+      "asked_at": "2016-09-24",
       "options": [
         {
           "id": "7a7a94e2-b399-4c4c-8ab9-7135057ee470",
