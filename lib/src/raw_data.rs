@@ -43,8 +43,8 @@ impl From<CourseData> for RawCourseData {
 pub struct RawQuestionData {
     pub id: Option<Uuid>,
 
-    pub text: String,
     pub evaluation: String,
+    pub text: String,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub asked_at: Option<NaiveDate>,
     pub options: Vec<RawQuestionOptionData>,

@@ -6,6 +6,7 @@
   "questions": [
     {
       "id": "6e301483-caca-4eaa-be4a-4f8325f3a51a",
+      "evaluation": "parcial_2",
       "text": "El proceso de presentación de antígenos es finamente regulado por el pH endofagosomal. En relación a éste hecho, señale cuál de las siguientes afirmaciones es correcta:",
       "options": [
         {
@@ -29,11 +30,11 @@
           "id": "6dd50a13-4ac2-44be-a83a-e1ed12fc5771",
           "text": "Los macrófagos son células que típicamente realizan presentación cruzada (cross-presentación) ya que mantienen su pH fagosomal aproximadamente en 7.4 durante las primeras 2 horas luego de la fagocitosis."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "107767fa-8d32-40e4-ab93-9a19ef9fbcf6",
+      "evaluation": "parcial_2",
       "text": "En cuanto a la presentación de antígenos, marque la opción correcta:",
       "options": [
         {
@@ -57,11 +58,11 @@
           "id": "45907487-54fc-4f83-9066-cd910ec31fae",
           "text": "Las moléculas de MHC son capaces de presentar dos péptidos a la vez si los mismos comparten características estructurales."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "edfd9789-1313-40e4-9c9b-8fdfb0ee905d",
+      "evaluation": "parcial_2",
       "text": "En cuanto a la respuesta inmune que se genera frente a la infección por bacterias extracelulares, marque la opción correcta:",
       "options": [
         {
@@ -85,11 +86,11 @@
           "id": "cb91c2c0-6d86-4737-a5c2-79cb05729734",
           "text": "Se puede activar la vía alternativa y de las lectinas del complemento pero no la vía clásica."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "159e1048-1764-4b12-8a21-6a2087b793e9",
+      "evaluation": "parcial_2",
       "text": "En cuanto a la respuesta inmune que se genera frente a patógenos extracelulares, marque la opción correcta:",
       "options": [
         {
@@ -113,11 +114,11 @@
           "id": "3fabecae-2dfe-40cd-803e-2aaa498cd23b",
           "text": "Los parásitos extracelulares no activan el complemento."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "15ee762a-f137-41fe-add5-66392ea39f6e",
+      "evaluation": "parcial_2",
       "text": "En cuanto a los mecanismos efectores mediados por los anticuerpos, marque la opción correcta:",
       "options": [
         {
@@ -141,11 +142,11 @@
           "id": "85c64b8c-cf3a-4f21-b858-69b3ce969cd4",
           "text": "Los anticuerpos son capaces de activar la vía clásica del complemento tanto cuando los mismos están libres en plasma o unidos a las superficies microbianas."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "e43fb3fc-c7c2-490a-be2b-bf1a44f15744",
+      "evaluation": "parcial_2",
       "text": "En cuánto a los linfocitos T reguladores, señale la opción correcta:",
       "options": [
         {
@@ -169,11 +170,11 @@
           "id": "63b9039c-7caa-4b0d-b684-775f7056d8f5",
           "text": "Son fuertemente dependientes de IL-12 para su superviviencia, esto se explica por su alta expresión de CD25 en su membrana."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "7cbe305e-ec25-4201-a732-bbc50ba412c7",
+      "evaluation": "parcial_2",
       "text": "En relación a la inmunoterapia del cáncer basada en el bloqueo de PD-1, marque la opción correcta.",
       "options": [
         {
@@ -197,11 +198,11 @@
           "id": "b5d6ab7f-c0f0-46cc-a3ee-4c6000d3fdea",
           "text": "Tiene por objetivo favorecer el “exhausting” de células TCD8+."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "93b67ec4-c614-4684-a8f2-7e06601b1522",
+      "evaluation": "parcial_2",
       "text": "En relación a la linfopoyesis T marque la opción correcta.",
       "options": [
         {
@@ -225,11 +226,11 @@
           "id": "13a62b2d-92a7-4a60-91fc-29737b2da5e9",
           "text": "Los linfocitos T memoria son la población principal que emigra del timo."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "bb666cde-d3d1-4bea-834a-e43720e24e9c",
+      "evaluation": "parcial_2",
       "text": "En relación a los linfocitos T presentes en la piel, indique la opción correcta:",
       "options": [
         {
@@ -253,11 +254,11 @@
           "id": "b0a1802b-36d9-4b42-b6ac-cff37a8cfb8f",
           "text": "Todos son linfocitos T CD8+."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "379c1dcd-b975-4960-be2e-d384a2c5681e",
+      "evaluation": "parcial_2",
       "text": "En relación a los mecanismos efectores de la inmunidad innata, indique la opción correcta:",
       "options": [
         {
@@ -281,11 +282,11 @@
           "id": "19b9950e-6312-46b7-8c55-12d3735d081b",
           "text": "Los linfocitos innatos citotóxicos de tipo ILC3 promueven la activación de granulocitos y la contracción muscular."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "3f4d663f-aef4-413c-a604-d75201edb1ab",
+      "evaluation": "parcial_2",
       "text": "En relación a los mecanismos generadores de diversidad de los anticuerpos, indique la opción correcta:",
       "options": [
         {
@@ -309,11 +310,11 @@
           "id": "815f21a1-0c0e-4548-801c-56c73bd55f47",
           "text": "La activación de los linfocitos B por el antígeno en los órganos linfoides secundarios inicia el proceso de recombinación de los segmentos VDJ para la cadena pesada y VJ para la liviana."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "23b0d51d-7dfc-4663-939e-1d53ff714104",
+      "evaluation": "parcial_2",
       "text": "En relación con la molécula HLA-G indique lo INCORRECTO:",
       "options": [
         {
@@ -337,11 +338,11 @@
           "id": "45ec9caa-0999-4a84-a5b9-1f9844a4d11c",
           "text": "Su producción es favorecida por la progesterona."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "ef13fad9-d4d9-4f00-8302-27c48fd25e56",
+      "evaluation": "parcial_2",
       "text": "En relación con la respuesta inmune primaria y la secundaria, indique lo INCORRECTO:",
       "options": [
         {
@@ -365,11 +366,11 @@
           "id": "77477786-2f67-40d3-b104-c6e4b469c1ef",
           "text": "Tanto en la respuesta inmune primaria como en la secundaria se producen anticuerpos que pueden activar al sistema complemento."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "5cbb5da9-978d-4689-9221-933a97891acf",
+      "evaluation": "parcial_2",
       "text": "En relación con los linfocitos, indique lo correcto:",
       "options": [
         {
@@ -393,11 +394,11 @@
           "id": "e6b88ff9-4f0a-4925-a948-f2b863dfa4c4",
           "text": "Los linfocitos T suelen reconocer a un antígeno en su configuración nativa."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "a3fc6f55-2cdb-484e-ace8-7525c229676a",
+      "evaluation": "parcial_2",
       "text": "Indique la opción correcta en relación a la estructura de los anticuerpos.",
       "options": [
         {
@@ -421,11 +422,11 @@
           "id": "883fc8dd-47ee-4ee5-92c3-83d88c339881",
           "text": "Las cadenas mu son cinco veces más pesadas que las gamma."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "2f647664-fec8-4cde-912f-82df1a371b4c",
+      "evaluation": "parcial_2",
       "text": "Indique la opción correcta sobre las diferentes vías de señalización de los receptores innatos que reconocen patrones moleculares derivados de patógenos:",
       "options": [
         {
@@ -449,11 +450,11 @@
           "id": "4b92dd75-0058-498e-9242-ec22b2fe00e9",
           "text": "La señalización por los TLR bloquea la activación de la Caspasa-1 por el inflamasoma."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "d0dce088-e202-4619-8923-a5868e6359ef",
+      "evaluation": "parcial_2",
       "text": "Indique la opción que NO describe un mecanismo de evasión inmunológica utilizado por patógenos intracelulares:",
       "options": [
         {
@@ -477,11 +478,11 @@
           "id": "8a694c62-a6e8-4fe1-8455-a9cf9fda2f0f",
           "text": "Producción de proteínas homólogas de citoquinas por parte del patógeno que bloquean la señalización por el receptor al que unen."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "f508e1e2-9edd-412d-a2c3-650f9ea34310",
+      "evaluation": "parcial_2",
       "text": "Indique lo correcto en relación a la respuesta inmune en las mucosas:",
       "options": [
         {
@@ -505,11 +506,11 @@
           "id": "03e03354-0900-4eea-98b3-bf304474c0df",
           "text": "Los péptidos antimicrobianos siempre se expresan asociados a las proteínas del complejo mayor de histocompatibilidad."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "aac1cc34-9f19-4387-bd7e-a5c28ba7eddf",
+      "evaluation": "parcial_2",
       "text": "Indique lo correcto en relación a los mecanismos efectores celulares de la respuesta inmune:",
       "options": [
         {
@@ -533,11 +534,11 @@
           "id": "ae5cd668-8e5a-472f-a660-36117dbf14b3",
           "text": "Los linfocitos Th2 se caracterizan por secretar interferon gamma el cual es un fuerte activador de los macrófagos."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "9870ead7-6036-46f4-95e6-efc1ac2da6e8",
+      "evaluation": "parcial_2",
       "text": "Indique lo correcto en relación a los mecanismos efectores de la respuesta inmune celular:",
       "options": [
         {
@@ -561,11 +562,11 @@
           "id": "237342f0-4833-4bc9-a9d9-0c530f66b12e",
           "text": "Los linfocitos T CD8+ vírgenes que salen del timo se encuentran pre-activados y con alta capacidad citotóxica."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "a730a155-d680-472a-99be-37b84927411c",
+      "evaluation": "parcial_2",
       "text": "Los receptores para la porción Fc de los anticuerpos (receptores Fc), activan gran variedad de células efectoras de la respuesta inmune. Con respecto a ellos, señale la opción correcta:",
       "options": [
         {
@@ -589,11 +590,11 @@
           "id": "7f992469-fac1-47c9-8d65-6b5b01ee1b3b",
           "text": "Los receptores de Fc presentes en los neutrófilos reconocen la región variable y constante de las IgE."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "3f177e7b-4fa9-4b07-86dd-c757896a2df7",
+      "evaluation": "parcial_2",
       "text": "Marque la opción correcta en relación a la activación de los linfocitos T maduros naive.",
       "options": [
         {
@@ -617,11 +618,11 @@
           "id": "0eeba3fe-c8cb-4e38-9053-48c6969449e0",
           "text": "Son activados por macrófagos productores de IL-12."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "cbbbd648-dc49-46f0-a6d5-2605d800f6ac",
+      "evaluation": "parcial_2",
       "text": "Marque la opción correcta en relación al reconocimiento antigénico por parte de receptores inmunes.",
       "options": [
         {
@@ -645,11 +646,11 @@
           "id": "72d67710-1d4b-4eeb-a5cc-5d2b00feadda",
           "text": "Se lleva a cabo por BCRs, TCRs y TLRs."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "1e0df55f-87a7-4e31-acb1-abc64bd2a493",
+      "evaluation": "parcial_2",
       "text": "Marque la opción correcta sobre los receptores innatos de reconocimiento de material genético:",
       "options": [
         {
@@ -673,11 +674,11 @@
           "id": "a297ea32-ee8b-4fea-b12e-295bf824981a",
           "text": "Los receptores de tipo lectina C (CLR) pueden reconocer ADN glicosilado derivado de patógenos."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "a3ee511f-97d6-4fad-9c4e-f12689b1fa67",
+      "evaluation": "parcial_2",
       "text": "Marque la opción que indica el mecanismo efector más eficiente para la eliminación de bacterias intracelulares:",
       "options": [
         {
@@ -701,11 +702,11 @@
           "id": "b9b66d01-e15f-4ecb-afcc-c7d33a06d380",
           "text": "Netosis por neutrófilos."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "e0cf7a25-eed8-4c56-bb2a-32eff59965c2",
+      "evaluation": "parcial_2",
       "text": "Sobre la respuesta inmune en el embarazo, indique lo correcto:",
       "options": [
         {
@@ -729,11 +730,11 @@
           "id": "32372cc5-da7f-4899-829f-517c27db0361",
           "text": "La presencia de moléculas MHC de clase I aumenta para favorecer el funcionamiento de los linfocito T citotóxicos."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "6954f8dc-809c-419a-82f5-72940fb8200f",
+      "evaluation": "parcial_2",
       "text": "Sobre la tolerancia inmunológica:",
       "options": [
         {
@@ -757,11 +758,11 @@
           "id": "8714d797-01eb-4dc3-8eac-9839909221a6",
           "text": "Implica que se generan mecanismos activos que protegen a un antígeno por un tiempo limitado y en un solo órgano o tejido."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     },
     {
       "id": "a6099b57-51a5-4040-83ed-70b0c7d1c9d5",
+      "evaluation": "parcial_2",
       "text": "Sobre los anticuerpos monoclonales utilizados en terapia en humanos, indique la opción correcta.",
       "options": [
         {
@@ -785,8 +786,7 @@
           "id": "f3a5246c-0d90-41e1-bd0c-8788b950bf37",
           "text": "Son útiles siempre y cuando el blanco terapéutico sea una molécula soluble."
         }
-      ],
-      "evaluation": "parcial_2"
+      ]
     }
   ],
   "evaluations": [
