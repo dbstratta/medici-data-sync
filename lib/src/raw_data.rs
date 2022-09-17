@@ -44,9 +44,9 @@ pub struct RawQuestionData {
     pub id: Option<Uuid>,
 
     pub evaluation: String,
-    pub text: String,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub asked_at: Option<NaiveDate>,
+    pub text: String,
     pub options: Vec<RawQuestionOptionData>,
 }
 
