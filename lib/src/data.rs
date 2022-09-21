@@ -180,6 +180,7 @@ pub struct QuestionData {
 
     pub course_key: Option<String>,
     pub evaluation: String,
+    pub source: String,
     pub asked_at: Option<NaiveDate>,
     pub text: String,
     #[serde(skip)]
@@ -194,6 +195,7 @@ impl QuestionData {
         text: String,
         question_options: Vec<QuestionOptionData>,
         evaluation: String,
+        source: String,
         asked_at: Option<NaiveDate>,
     ) -> Self {
         let hash = Self::hash_data(
@@ -201,6 +203,7 @@ impl QuestionData {
             &text,
             &question_options[..],
             &evaluation,
+            &source,
             asked_at.as_ref(),
         );
 
@@ -208,6 +211,7 @@ impl QuestionData {
             id,
             course_key: None,
             evaluation,
+            source,
             asked_at,
             text,
             question_options,
@@ -220,6 +224,7 @@ impl QuestionData {
         text: &str,
         question_options: &[QuestionOptionData],
         evaluation: &str,
+        source: &str,
         asked_at: Option<&NaiveDate>,
     ) -> String {
         let mut hasher = blake3::Hasher::new();
@@ -235,6 +240,7 @@ impl QuestionData {
                 .as_bytes(),
         );
         hasher.update(evaluation.as_bytes());
+        hasher.update(source.as_bytes());
 
         if let Some(asked_at) = asked_at {
             hasher.update(asked_at.to_string().as_bytes());
@@ -312,6 +318,7 @@ impl From<RawQuestionData> for QuestionData {
             raw.text,
             options,
             raw.evaluation,
+            raw.source,
             raw.asked_at,
         )
     }

@@ -44,6 +44,7 @@ pub struct RawQuestionData {
     pub id: Option<Uuid>,
 
     pub evaluation: String,
+    pub source: String,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub asked_at: Option<NaiveDate>,
     pub text: String,
@@ -60,6 +61,7 @@ impl From<QuestionData> for RawQuestionData {
             options: raw_question_options,
             evaluation: data.evaluation,
             asked_at: data.asked_at,
+            source: data.source,
         }
     }
 }
