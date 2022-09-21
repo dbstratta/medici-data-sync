@@ -1,11 +1,7 @@
-
 {
   "name": "Hematología e Inmunología",
   "short_name": "Hemato",
-  "aliases": [
-    "hemato",
-    "inmuno"
-  ],
+  "aliases": ["hemato", "inmuno"],
   "year": 3,
   "questions": [
     {
@@ -15,7 +11,7 @@
       "text": "En relación a la inflamación, marque la opción correcta.",
       "options": [
         {
-          "text": "Depende de metabolitos del ácido araquidónico que disminuyen el flujo sanguíneo y la permeabilidad vascular por los capilares.",
+          "text": "Depende de metabolitos del ácido araquidónico que disminuyen el flujo sanguíneo y la permeabilidad vascular por los capilares."
         },
         {
           "text": "El bloqueo de IL-1beta puede mejorar la evolución de pacientes con enfermedad cardiovascular.",
@@ -39,7 +35,7 @@
       "text": "En relación al proceso inflamatorio, indique la opción correcta.",
       "options": [
         {
-          "text": "Se define como el aumento de TNF-alfa en suero.",
+          "text": "Se define como el aumento de TNF-alfa en suero."
         },
         {
           "text": "Es un potente inhibidor de la conversión de fibrinógeno en fibrina, particularmente a través del C3a y C5a."
@@ -87,7 +83,7 @@
       "text": "Con respecto a la cobertura vacunal y el efecto rebaño, señale la opción correcta:",
       "options": [
         {
-          "text": "La cobertura vacunal es el porcentaje del total de la población que recibió determinada vacuna.",
+          "text": "La cobertura vacunal es el porcentaje del total de la población que recibió determinada vacuna."
         },
         {
           "text": "El efecto rebaño solo se alcanza cuando la cobertura vacunal de una población es muy elevada.",
@@ -111,7 +107,7 @@
       "text": "A pesar del uso masivo de vacunas conjugadas neumocóccicas a nivel mundial, y también en Uruguay, se ha puesto en duda su utilización a largo plazo debido a que:",
       "options": [
         {
-          "text": "No han generado impacto en los serotipos circulantes en la población adulta.",
+          "text": "No han generado impacto en los serotipos circulantes en la población adulta."
         },
         {
           "text": "No han generado impacto en la circulación de serotipos vacunales en la población de niños menores de 5 años."
@@ -135,7 +131,7 @@
       "text": "¿Cómo se llama el mecanismo por el cual se eliminan las células muertas luego de que se logró controlar a neumococo en el pulmón?",
       "options": [
         {
-          "text": "Apoptosis.",
+          "text": "Apoptosis."
         },
         {
           "text": "Eferocitosis.",
@@ -159,7 +155,7 @@
       "text": "¿A qué metabolito producido por la microbiota responden las células epiteliales desencadenando mecanismos tendientes a mantener la homeostasis a nivel intestinal?",
       "options": [
         {
-          "text": "Flagelina.",
+          "text": "Flagelina."
         },
         {
           "text": "LPS."
@@ -220,8 +216,8 @@
           "text": "Serotipificación capsular."
         },
         {
-          "text": "Southern blot.",
-        },
+          "text": "Southern blot."
+        }
       ]
     },
     {
@@ -231,7 +227,7 @@
       "text": "¿Cuál de los siguientes componentes de la partícula viral del VIH le permite la adsorción al receptor CD4+ y es útil para su detección en el laboratorio? Marque la opción correcta.",
       "options": [
         {
-          "text": "Proteína de la cápside p24.",
+          "text": "Proteína de la cápside p24."
         },
         {
           "text": "ADN proviral."
@@ -279,7 +275,7 @@
       "text": "¿Cuál de los siguientes mecanismos confiere resistencia a fluoroquinolonas? Marque la opción correcta.",
       "options": [
         {
-          "text": "Carbapenemasas.",
+          "text": "Carbapenemasas."
         },
         {
           "text": "Mutaciones en los genes gyrA y gyrB.",
@@ -303,7 +299,7 @@
       "text": "¿A cuál de los siguientes antibióticos se puede observar resistencia si nos encontramos frente a un fenotipo MLSB de expresión constitutiva? Marque la opción correcta.",
       "options": [
         {
-          "text": "Trimetoprim-sulfametoxazol.",
+          "text": "Trimetoprim-sulfametoxazol."
         },
         {
           "text": "Quinolonas."
@@ -327,7 +323,7 @@
       "text": "¿Cuál de los siguientes genes confiere resistencia a colistin en aislamientos de enterobacterias? Marque la opción correcta.",
       "options": [
         {
-          "text": "mecA.",
+          "text": "mecA."
         },
         {
           "text": "pbp."
@@ -351,7 +347,7 @@
       "text": "La sensibilidad a los beta-lactámicos en un aislamiento de Staphylococcus aureus se estudia mediante la utilización de un disco de cefoxitin. Frente a un halo de resistencia al cefoxitin, ¿qué mecanismo molecular de resistencia queda en evidencia? Marque la opción correcta.",
       "options": [
         {
-          "text": "Producción de una β-lactamasa de clase C.",
+          "text": "Producción de una β-lactamasa de clase C."
         },
         {
           "text": "Producción de PBP en mosaico."
@@ -412,8 +408,8 @@
           "text": "IL-2."
         },
         {
-          "text": "IL-12.",
-        },
+          "text": "IL-12."
+        }
       ]
     },
     {
@@ -423,7 +419,7 @@
       "text": "El omalizumab es un anticuerpo monoclonal utilizado en el asma, su mecanismo de acción se basa en:",
       "options": [
         {
-          "text": "Bloqueo de IL-5.",
+          "text": "Bloqueo de IL-5."
         },
         {
           "text": "Inhibición de TNF alfa."
@@ -471,7 +467,7 @@
       "text": "Las reacciones de hipersensibilidad de tipo III están en la base de:",
       "options": [
         {
-          "text": "El asma atópica, a través de la hiperproducción de IgE.",
+          "text": "El asma atópica, a través de la hiperproducción de IgE."
         },
         {
           "text": "La enfermedad de Graves-Basedow, hiperestimulando el receptor de TSH."
@@ -495,7 +491,7 @@
       "text": "En la trombocitopenia inmunomediada, aparecen autoanticuerpos que:",
       "options": [
         {
-          "text": "Pueden ser detectados por la prueba de Coombs indirecta.",
+          "text": "Pueden ser detectados por la prueba de Coombs indirecta."
         },
         {
           "text": "Simulan la función de la trombopoietina, estimulando su receptor."
@@ -519,7 +515,7 @@
       "text": "Respecto a las inmunodeficiencias señale la opción correcta:",
       "options": [
         {
-          "text": "Afectan al desarrollo de la respuesta inmune específica pero no así a la inmunidad inespecífica.",
+          "text": "Afectan al desarrollo de la respuesta inmune específica pero no así a la inmunidad inespecífica."
         },
         {
           "text": "Afectan al correcto desarrollo de la respuesta inmune adaptativa siendo normal la inmunidad innata."
@@ -543,7 +539,7 @@
       "text": "En relación a la presentación clínica de las inmunodeficiencias:",
       "options": [
         {
-          "text": "Son condiciones que en la mayoría de los casos resultan incompatibles con la vida.",
+          "text": "Son condiciones que en la mayoría de los casos resultan incompatibles con la vida."
         },
         {
           "text": "Se caracterizan por una susceptibilidad aumentada a las enfermedades infecciosas.",
@@ -567,7 +563,7 @@
       "text": "En el caso de un paciente con indicación de trasplante hematopoyético, el Laboratorio de Inmunogenética del Instituto Nacional de Donación y Trasplante:",
       "options": [
         {
-          "text": "Estudia a todos los familiares hasta cuarto grado en línea directa dado que las chances de encontrar un donante HLA compatible entre ellos es muy alta.",
+          "text": "Estudia a todos los familiares hasta cuarto grado en línea directa dado que las chances de encontrar un donante HLA compatible entre ellos es muy alta."
         },
         {
           "text": "Analiza la disponibilidad de donante intrafamiliar y tipifica a todos en alta resolución HLA clase I y II."
@@ -591,7 +587,7 @@
       "text": "En la respuesta alogénica que se desencadena en los trasplantes de órganos sólidos:",
       "options": [
         {
-          "text": "Las moléculas HLA del receptor no cumplen ninguna función.",
+          "text": "Las moléculas HLA del receptor no cumplen ninguna función."
         },
         {
           "text": "Pueden haber tres vías de alo-reconocimiento no excluyentes: directa, indirecta y semi-directa.",
@@ -615,7 +611,7 @@
       "text": "En cuanto al trasplante de riñón, marque la opción correcta:",
       "options": [
         {
-          "text": "Para saber si un donante y un receptor son compatibles, se estudian los antígenos propios de las células endoteliales.",
+          "text": "Para saber si un donante y un receptor son compatibles, se estudian los antígenos propios de las células endoteliales."
         },
         {
           "text": "Para proceder a un trasplante renal, el receptor no debe tener anticuerpos preformados fijadores de complemento contra los antígenos del donante.",
@@ -639,7 +635,7 @@
       "text": "En cuanto a los estudios de histocompatibilidad, marque la correcta:",
       "options": [
         {
-          "text": "La prueba cruzada detecta anticuerpos del donante específicos contra los antígenos del receptor.",
+          "text": "La prueba cruzada detecta anticuerpos del donante específicos contra los antígenos del receptor."
         },
         {
           "text": "La tipificación del sistema HLA se puede realizar únicamente por técnicas de biología molecular."
@@ -663,7 +659,7 @@
       "text": "En cuanto al sistema HLA, marque la opción correcta:",
       "options": [
         {
-          "text": "Los antígenos HLA de clase I presentan antígenos provenientes del medio extracelular a los linfocitos T CD4.",
+          "text": "Los antígenos HLA de clase I presentan antígenos provenientes del medio extracelular a los linfocitos T CD4."
         },
         {
           "text": "Los genes que codifican los antígenos HLA de clase I y los genes que codifican los antígenos HLA de clase II, se encuentran en cromosomas diferentes."
@@ -711,7 +707,7 @@
       "text": "En relación a la inflamación indique la opción correcta:",
       "options": [
         {
-          "text": "La IL-1alfa es clivada por la caspasa 1 para dar lugar a la IL-1beta.",
+          "text": "La IL-1alfa es clivada por la caspasa 1 para dar lugar a la IL-1beta."
         },
         {
           "text": "Se resuelve en el momento en que las células endoteliales expresan E-selectina."
@@ -735,7 +731,7 @@
       "text": "Con respecto a la composición de la microbiota a lo largo de la vida en los humanos, indique la opción correcta:",
       "options": [
         {
-          "text": "Los niños menores de 2 años son menos susceptibles que los adultos a los factores que alteran la composición microbiana.",
+          "text": "Los niños menores de 2 años son menos susceptibles que los adultos a los factores que alteran la composición microbiana."
         },
         {
           "text": "La composición de la microbiota intestinal en la vida temprana no está influenciada por la higiene del entorno."
@@ -759,7 +755,7 @@
       "text": "A nivel del intestino Salmonella se beneficia del estado de inflamación que ella misma genera, y compite con la microbiota local. Dentro de los mecanismos propios utilizados por el patógeno encontramos:",
       "options": [
         {
-          "text": "La secreción de hierro al lumen intestinal.",
+          "text": "La secreción de hierro al lumen intestinal."
         },
         {
           "text": "La secreción de especies reactivas del oxígeno para oxidar tetrationato."
@@ -783,7 +779,7 @@
       "text": "¿Qué entiende por cobertura vacunal?",
       "options": [
         {
-          "text": "Es la efectividad real en comparación con la esperada.",
+          "text": "Es la efectividad real en comparación con la esperada."
         },
         {
           "text": "Es el porcentaje de dosis inoculadas respecto al total adquirido."
@@ -807,7 +803,7 @@
       "text": "Los ensayos fase I con un nuevo candidato de vacuna son:",
       "options": [
         {
-          "text": "Ensayos preclínicos dirigidos a evaluar la eficacia de la nueva vacuna.",
+          "text": "Ensayos preclínicos dirigidos a evaluar la eficacia de la nueva vacuna."
         },
         {
           "text": "Ensayos en primates no humanos dirigidos a evaluar la ausencia de toxicidad."
@@ -831,7 +827,7 @@
       "text": "Las primeras vacunas neumocócicas desarrolladas se basaron en la generación de protección serotipo-específica mediante inmunización con polisacáridos capsulares. Indique cuantos polisacáridos purificados contiene dicha vacuna.",
       "options": [
         {
-          "text": "7.",
+          "text": "7."
         },
         {
           "text": "9."
@@ -855,7 +851,7 @@
       "text": "Según el artículo \"Whole-Cell or Acellular Pertussis Primary Immunizations in Infancy Determines Adolescent Cellular Immune Profiles\" publicado en Frontiers in Immunology 9:51, doi: 10.3389/fimmu.2018.00051. ¿Qué característica tiene el perfil inmunológico en la pre-adolescencia de los individuos vacunados con la vacuna DTwP (wP, componente Pertussis celular) en el primer año de vida?",
       "options": [
         {
-          "text": "No presentan respuesta de anticuerpos específicos contra Pertussis.",
+          "text": "No presentan respuesta de anticuerpos específicos contra Pertussis."
         },
         {
           "text": "Tienen una proporción de respuesta Th1/Th2 mayor que los vacunados solamente con la vacuna DTaP (aP, componente Pertussis acelular) para los antígenos específicos de Pertussis.",
@@ -879,7 +875,7 @@
       "text": "El diagnóstico de VIH, se realiza combinando un conjunto de métodos de estudios directos e indirectos, dentro de los que se encuentra el Western Blot. Con respecto a este método señale la opción correcta:",
       "options": [
         {
-          "text": "Se trata de un método directo que detecta antígenos virales.",
+          "text": "Se trata de un método directo que detecta antígenos virales."
         },
         {
           "text": "Se trata de un método indirecto que detecta anticuerpos contra el virus.",
@@ -890,7 +886,7 @@
         },
         {
           "text": "Se trata de un método indirecto que detecta inhibición del complemento."
-        },
+        }
       ]
     },
     {
@@ -900,7 +896,7 @@
       "text": "Usted está siguiendo la evolución de un paciente al que se le diagnosticó hepatitis a virus B. Señale cuál de los siguientes marcadores espera usted que aparezca para comunicarle al paciente que se ha curado de dicha enfermedad.",
       "options": [
         {
-          "text": "Antígeno de superficie.",
+          "text": "Antígeno de superficie."
         },
         {
           "text": "IgM anti-antígeno del core."
@@ -911,7 +907,7 @@
         {
           "text": "Anticuerpos contra el antígeno de superficie.",
           "correct": true
-        },
+        }
       ]
     },
     {
@@ -921,7 +917,7 @@
       "text": "Señale cuál de las siguientes características NO se corresponde a los retrovirus.",
       "options": [
         {
-          "text": "Presentan ARN de polaridad positiva.",
+          "text": "Presentan ARN de polaridad positiva."
         },
         {
           "text": "Presentan una retrotranscriptasa."
@@ -932,7 +928,7 @@
         },
         {
           "text": "Presentan una cápside icosaédrica."
-        },
+        }
       ]
     },
     {
@@ -966,7 +962,7 @@
       "text": "De la muestra de materia fecal de un paciente con diarrea se obtiene un microorganismo que usted quiere confirmar que pertenece al género Salmonella. Señale que combinación de resultados en agar Mac Conkey Lactosa, TSI y Citrato debe observarse para confirmar susospecha.",
       "options": [
         {
-          "text": "Colonias lactosa positivas, sulfhídrico positivo, citrato negativo.",
+          "text": "Colonias lactosa positivas, sulfhídrico positivo, citrato negativo."
         },
         {
           "text": "Colonias lactosa negativas, sulfhídrico positivo, citrato positivo.",
@@ -977,7 +973,7 @@
         },
         {
           "text": "Colonias lactosa positivas, sulfhídrico positivo, citrato positivo."
-        },
+        }
       ]
     },
     {
@@ -987,7 +983,7 @@
       "text": "Al estudiar la sensibilidad a antibióticos mediante un antibiograma de un bacilo gramnegativo, es posible realizar un test de sinergia entre los discos de ceftazidime, cetriaxona y amoxicilina clavulánico. El objetivo de este test es detectar:",
       "options": [
         {
-          "text": "Resistencia inducible a lincosamidas.",
+          "text": "Resistencia inducible a lincosamidas."
         },
         {
           "text": "Meticilino resistencia."
@@ -998,7 +994,7 @@
         },
         {
           "text": "Presencia de Bombas de eflujo."
-        },
+        }
       ]
     },
     {
@@ -1008,7 +1004,7 @@
       "text": "Señale cuál de los siguientes antibióticos actúa inhibiendo la síntesis proteica.",
       "options": [
         {
-          "text": "Ampicilina.",
+          "text": "Ampicilina."
         },
         {
           "text": "Fosfomicina."
@@ -1019,7 +1015,7 @@
         {
           "text": "Eritromicina.",
           "correct": true
-        },
+        }
       ]
     },
     {
@@ -1029,7 +1025,7 @@
       "text": "Usted observa en una coloración con tinción de Gram, bacilos gramnegativos. Señale cuál de las siguientes estructuras está presente en estos y no en los grampositivos.",
       "options": [
         {
-          "text": "Peptidoglicano (PG).",
+          "text": "Peptidoglicano (PG)."
         },
         {
           "text": "Ácidos teicoicos (AT)."
@@ -1040,7 +1036,7 @@
         {
           "text": "Lipopolisacárido (LPS).",
           "correct": true
-        },
+        }
       ]
     },
     {
@@ -1050,7 +1046,7 @@
       "text": "Las moléculas HLA clase I y II no difieren en:",
       "options": [
         {
-          "text": "El tipo de células T que estimulan.",
+          "text": "El tipo de células T que estimulan."
         },
         {
           "text": "El tipo de células en el que se expresan."
@@ -1074,7 +1070,7 @@
       "text": "En relación al trasplante de progenitores hematopoyéticos HLA compatible 10/10:",
       "options": [
         {
-          "text": "Las mayores probabilidades de encontrar un donante compatible está entre los padres o hijos del receptor.",
+          "text": "Las mayores probabilidades de encontrar un donante compatible está entre los padres o hijos del receptor."
         },
         {
           "text": "Se analiza solamente la compatibilidad de HLA clase I."
@@ -1098,7 +1094,7 @@
       "text": "Para establecer los haplotipos HLA de un receptor, la mejor opción sería estudiar a:",
       "options": [
         {
-          "text": "Receptor y un hermano.",
+          "text": "Receptor y un hermano."
         },
         {
           "text": "Receptor y dos hermanos."
@@ -1122,7 +1118,7 @@
       "text": "De las siguientes opciones en relación al sistema de trasplante en nuestro país, todas son correctas excepto:",
       "options": [
         {
-          "text": "Se considera donante a toda persona mayor de edad y capaz, que en vida no hubiera expresado su negativa a la donación.",
+          "text": "Se considera donante a toda persona mayor de edad y capaz, que en vida no hubiera expresado su negativa a la donación."
         },
         {
           "text": "Se puede ser donante de órganos después de fallecido para persona no determinada y en vida para familiares hasta cuarto grado."
@@ -1170,7 +1166,7 @@
       "text": "Con respecto a la fase de sensibilización en las reacciones de hipersensibilidad de tipo I o inmediata, señale cuál de las siguientes citoquinas es fundamental en el cambio de isotipo de inmunoglobulina:",
       "options": [
         {
-          "text": "IL-5.",
+          "text": "IL-5."
         },
         {
           "text": "IL-1."
@@ -1194,7 +1190,7 @@
       "text": "En cuanto al asma bronquial, señale la opción correcta:",
       "options": [
         {
-          "text": "Su mecanismo es principalmente mediado por linfocitos Th1, por lo que se clasifica como una reacción de hipersensibilidad de tipo IV.",
+          "text": "Su mecanismo es principalmente mediado por linfocitos Th1, por lo que se clasifica como una reacción de hipersensibilidad de tipo IV."
         },
         {
           "text": "Presenta reacciones mediadas por IgE.",
@@ -1218,7 +1214,7 @@
       "text": "En cuanto al omalizumab en la práctica clínica, señale la opción correcta:",
       "options": [
         {
-          "text": "Es un medicamento de fácil acceso y bajo costo.",
+          "text": "Es un medicamento de fácil acceso y bajo costo."
         },
         {
           "text": "Actúa inhibiendo una tirosin kinasa."
@@ -1242,7 +1238,7 @@
       "text": "En cuanto a la prueba de la tuberculina o PPD, señale la opción correcta:",
       "options": [
         {
-          "text": "Su patogenia se explica por una reacción de hipersensibilidad de tipo IVb.",
+          "text": "Su patogenia se explica por una reacción de hipersensibilidad de tipo IVb."
         },
         {
           "text": "Su resultado se evidencia a las 2 hs de inyectado el antígeno."
@@ -1266,7 +1262,7 @@
       "text": "En la base patogénica de la prueba de la tuberculina se encuentra una reacción de hipersensibilidad mediada por (señale la opción correcta):",
       "options": [
         {
-          "text": "Linfocitos T citotóxicos.",
+          "text": "Linfocitos T citotóxicos."
         },
         {
           "text": "Complemento."
@@ -1290,7 +1286,7 @@
       "text": "La característica de la respuesta inmune adaptativa que se ve alterada en forma más llamativa en el mieloma múltiple es (señale la opción correcta):",
       "options": [
         {
-          "text": "Las respuestas efectoras celulares.",
+          "text": "Las respuestas efectoras celulares."
         },
         {
           "text": "La demora entre la exposición al antígeno y el inicio de la reacción."
@@ -1338,7 +1334,7 @@
       "text": "Las inmunodeficiencias combinadas severas, maque la opción correcta:",
       "options": [
         {
-          "text": "Suelen iniciar síntomas luego de los 6 meses de edad.",
+          "text": "Suelen iniciar síntomas luego de los 6 meses de edad."
         },
         {
           "text": "Presentan susceptibilidad infecciosa a virus, baterías, hongos y parásitos.",
@@ -1349,7 +1345,7 @@
         },
         {
           "text": "El hallazgo de laboratorio característico es la linfopenia B e hipogamaglobulinemia."
-        },
+        }
       ]
     },
     {
@@ -1359,7 +1355,7 @@
       "text": "En relación a la respuesta alogénica en los trasplantes (marque la correcta):",
       "options": [
         {
-          "text": "La presentación de aloantígenos al LT (linfocito T) del receptor, depende exclusivamente de las células presentadoras de antígenos del donante.",
+          "text": "La presentación de aloantígenos al LT (linfocito T) del receptor, depende exclusivamente de las células presentadoras de antígenos del donante."
         },
         {
           "text": "Es una respuesta mediada fundamentalmente por los linfocitos Th1 del donante."
@@ -1383,7 +1379,7 @@
       "text": "El cuanto a generalidades del sistema HLA (marque la correcta):",
       "options": [
         {
-          "text": "Las moléculas HLA clase II están presentes en todas las células nucleadas.",
+          "text": "Las moléculas HLA clase II están presentes en todas las células nucleadas."
         },
         {
           "text": "El modo de herencia es autosómica dominante."
@@ -1431,7 +1427,7 @@
       "text": "En los trasplantes de órganos sólidos (marque la correcta):",
       "options": [
         {
-          "text": "Se tiene en cuenta la compatibilidad del sistema eritrocitario Rhesus (Rh).",
+          "text": "Se tiene en cuenta la compatibilidad del sistema eritrocitario Rhesus (Rh)."
         },
         {
           "text": "La compatibilidad HLA requiere estudios de alta resolución."
@@ -1455,7 +1451,7 @@
       "text": "Respecto a la patogenia de la tuberculosis, señale la opción correcta:",
       "options": [
         {
-          "text": "Es un ejemplo de enfermedad infecciosa en la que la lesión tisular se debe principalmente al desarrollo de una reacción de hipersensibilidad mediada por anticuerpos.",
+          "text": "Es un ejemplo de enfermedad infecciosa en la que la lesión tisular se debe principalmente al desarrollo de una reacción de hipersensibilidad mediada por anticuerpos."
         },
         {
           "text": "En la base patogénica de la tuberculosis subyace una reacción de hipersensibilidad de tipo IVc (mediada por LT citotóxicos)."
@@ -1479,7 +1475,7 @@
       "text": "En relación a la prueba tuberculínica, señale la opción correcta:",
       "options": [
         {
-          "text": "Posee una alta sensibilidad para el diagnóstico de enfermedad tuberculosa activa.",
+          "text": "Posee una alta sensibilidad para el diagnóstico de enfermedad tuberculosa activa."
         },
         {
           "text": "Para su realización se utiliza un derivado proteico purificado de Mycobacterium bovis."
@@ -1503,7 +1499,7 @@
       "text": "Acerca de los mecanismos de acción del Rituximab (anticuerpo monoclonal anti-CD20) en el tratamiento de la Trombocitopenia Inmune, señale la opción correcta:",
       "options": [
         {
-          "text": "Causa una depleción de los linfocitos T.",
+          "text": "Causa una depleción de los linfocitos T."
         },
         {
           "text": "Actúa bloqueando los receptores Fc involucrados en la fagocitosis de plaquetas opsonizadas."
@@ -1538,7 +1534,7 @@
         },
         {
           "text": "Inactivación del antibiótico."
-        },
+        }
       ]
     },
     {
@@ -1548,7 +1544,7 @@
       "text": "¿Cuál de los siguientes antibióticos actúa inhibiendo el superenrollamiento del ADN mediante acción sobre las ADN girasas? Marque la opción correcta.",
       "options": [
         {
-          "text": "Trimetoprim-sulfametoxazol.",
+          "text": "Trimetoprim-sulfametoxazol."
         },
         {
           "text": "Quinolonas.",
@@ -1559,7 +1555,7 @@
         },
         {
           "text": "Aminoglucósidos."
-        },
+        }
       ]
     },
     {
@@ -1569,7 +1565,7 @@
       "text": "M.F, sexo femenino, 67 años, consulta por disuria, dolor lumbar y fiebre de 48 horas de evolución.  Del examen físico se destaca: vigil, bien orientada en tiempo y espacio, temperatura axilar 38°C, hemodinamia estable, fosa lumbar dolorosa a izquierda, resto sin particularidades. Se solicita urocultivo, hemocultivos, y se inicia antibioticoterapia empírica. A las 36 horas se reciben los siguientes resultados: Urocultivo: 100.000 UFC/ml de E. coli. Hemocultivos: desarrolla en una de dos muestras E. coli. En relación al diagnóstico en este paciente, marque la opción correcta:",
       "options": [
         {
-          "text": "Sepsis nefrourológica.",
+          "text": "Sepsis nefrourológica."
         },
         {
           "text": "Pielonefritis bacteriémica.",
@@ -1580,7 +1576,7 @@
         },
         {
           "text": "Sepsis sin foco clínico."
-        },
+        }
       ]
     },
     {
@@ -1614,7 +1610,7 @@
       "text": "¿En qué fase de los ensayos clínicos se encuentra la vacuna Gardasil?",
       "options": [
         {
-          "text": "Fase I.",
+          "text": "Fase I."
         },
         {
           "text": "Fase II."
@@ -1638,7 +1634,7 @@
       "text": "En el artículo \"TLR5-Mediated Sensing of Gut Microbiotals Necessary for Antibody Responses To Seasonal Influenza Vaccination\" los autores demuestran la importancia de la microbiota intestinal en los títulos de anticuerpos específicos anti influenza en ratones inmunizados con la vacuna TIV (vacuna anti influenza, trivalente, inactivada, sin adyuvante). En que otro tipo de vacunas los autores encuentran el mismo efecto de la microbiota sobre el título de anticuerpos:",
       "options": [
         {
-          "text": "Todas las vacunas ensayas.",
+          "text": "Todas las vacunas ensayas."
         },
         {
           "text": "Solo las vacunas inactivadas sin adyuvante.",
@@ -1662,7 +1658,7 @@
       "text": "Una de las funciones beneficiosas de la microbiota intestinal es la de protección frente a infecciones por patógenos, efecto conocido como \"resistencia a la colonización\". Esto se consigue gracias a que las bacterias de la microbiota:",
       "options": [
         {
-          "text": "No expresan PAMPs, promoviendo así el reconocimiento de los PAMPs de los patógenos por el sistema inmune.",
+          "text": "No expresan PAMPs, promoviendo así el reconocimiento de los PAMPs de los patógenos por el sistema inmune."
         },
         {
           "text": "Compiten con los patógenos por el espacio y los nutrientes, limitando así su crecimiento.",
@@ -1686,7 +1682,7 @@
       "text": "El macrófago alveolar es una célula clave en la respuesta del hospedero durante la neumonía por S. pneumoniae. ¿En qué etapas de la infección es que juega su papel más importante?",
       "options": [
         {
-          "text": "En etapas tempranas de la infección.",
+          "text": "En etapas tempranas de la infección."
         },
         {
           "text": "En etapas tardías de la infección."
@@ -1710,7 +1706,7 @@
       "text": "Salmonella enterica es capaz de invadir las células epiteliales del intestino, causando una fuerte respuesta inflamatoria. Indique qué proceso es esencial para que se de esa invasión:",
       "options": [
         {
-          "text": "El reconocimiento del lipopolisacárido bacteriano por los receptores de las células epiteliales.",
+          "text": "El reconocimiento del lipopolisacárido bacteriano por los receptores de las células epiteliales."
         },
         {
           "text": "La evasión del efecto de los péptidos antimicrobianos por parte de la bacteria."
@@ -1734,7 +1730,7 @@
       "text": "Respecto a las reacciones de hipersensibilidad de tipo I mediadas por IgE, señale la opción correcta:",
       "options": [
         {
-          "text": "Corresponden a procesos de baja prevalencia en la población general.",
+          "text": "Corresponden a procesos de baja prevalencia en la población general."
         },
         {
           "text": "El término atopía se utiliza para describir este tipo de reacciones.",
@@ -1769,7 +1765,7 @@
         },
         {
           "text": "Estructuras formadas por glúcidos, que cumplen funciones en la movilidad."
-        },
+        }
       ]
     },
     {
@@ -1790,7 +1786,7 @@
         },
         {
           "text": "Inhiben la multiplicación de las bacterias Gram negativas y permiten el desarrollo de los Gram positivos."
-        },
+        }
       ]
     },
     {
@@ -1800,7 +1796,7 @@
       "text": " La presencia del gen mecA, codificante de la proteína PBP2a o PBP2', permite denominar a un aislamiento de S. aureus, meticilino resistente. ¿Cuál de los siguientes discos de antibióticos es útil in vitro para determinar la presencia de dicho gen? Marque la opción correcta.",
       "options": [
         {
-          "text": "Penicilina.",
+          "text": "Penicilina."
         },
         {
           "text": "Cefoxitin.",
@@ -1811,7 +1807,7 @@
         },
         {
           "text": "Imipenem."
-        },
+        }
       ]
     },
     {
@@ -1821,7 +1817,7 @@
       "text": "En relación a los glucocorticoides, señale la opción correcta:",
       "options": [
         {
-          "text": "Son ampliamente utilizados en el tratamiento de enfermedades autoinmunes ya que no generan efectos adversos importantes a largo plazo.",
+          "text": "Son ampliamente utilizados en el tratamiento de enfermedades autoinmunes ya que no generan efectos adversos importantes a largo plazo."
         },
         {
           "text": "Dentro de sus efectos está la supresión de la respuesta inmunitaria adaptativa pero carecen de efecto sobre la inmunidad innata."
@@ -1845,7 +1841,7 @@
       "text": " ¿Cuál de los siguientes mecanismos se destaca como causa de la alteración del sistema inmune por el virus influenza? (Señale la opción correcta):",
       "options": [
         {
-          "text": "Neutrofilia.",
+          "text": "Neutrofilia."
         },
         {
           "text": "Degranulación de eosinófilos."
@@ -1869,7 +1865,7 @@
       "text": "En relación al mieloma múltiple, señale la opción correcta:",
       "options": [
         {
-          "text": "Debido al aumento en el nivel de inmunoglobulinas estos pacientes tienen mejor respuesta ante infecciones.",
+          "text": "Debido al aumento en el nivel de inmunoglobulinas estos pacientes tienen mejor respuesta ante infecciones."
         },
         {
           "text": "Algunas de las manifestaciones clásicas de esta patología son la anemia y las lesiones líticas óseas.",
@@ -1893,7 +1889,7 @@
       "text": "Seleccione la secuencia más adecuada a seguir para la obtención de dos hemocultivos en un paciente con neumonía aguda comunitaria que requiere internación:",
       "options": [
         {
-          "text": "Primero se coloca la vía periférica y se administra la dosis inicial de antibiótico, y posteriormente por la misma vía se extrae sangre suficiente para inocular dos frascos de hemocultivo.",
+          "text": "Primero se coloca la vía periférica y se administra la dosis inicial de antibiótico, y posteriormente por la misma vía se extrae sangre suficiente para inocular dos frascos de hemocultivo."
         },
         {
           "text": "Primero se coloca la vía periférica y se extrae por ella sangre para inocular los dos frascos de hemocultivo, luego se administa la primer dosis de antibiótico intravenoso."
@@ -1904,7 +1900,7 @@
         },
         {
           "text": "Primero se coloca la vía periférica y se administra la dosis inicial de antibiótico y luego se punciona el otro antebrazo y se extrae sangre suficiente para llenar los dos frascos de hemocultivo."
-        },
+        }
       ]
     },
     {
@@ -1925,7 +1921,7 @@
         },
         {
           "text": "El tipo capsular de S. pneumoniae."
-        },
+        }
       ]
     },
     {
@@ -1935,7 +1931,7 @@
       "text": "Dentro de las herramientas diagnósticas para la identificación de Streptococcus pyogenes como agente etiológico de las faringoamigdalitis se encuentran los test rápidos, que presentan anticuerpos dirigidos contra:",
       "options": [
         {
-          "text": "El ácido hialurónico de la cápsula.",
+          "text": "El ácido hialurónico de la cápsula."
         },
         {
           "text": "El antígeno O del lipopolisacárido."
@@ -1959,7 +1955,7 @@
       "text": "¿En cuál fase de los ensayos clínicos se determina la eficacia de una vacuna?",
       "options": [
         {
-          "text": "Pre-clínica.",
+          "text": "Pre-clínica."
         },
         {
           "text": "Fase I."
@@ -1975,7 +1971,7 @@
           "text": "Fase IV."
         }
       ]
-    },
+    }
   ],
   "evaluations": [
     {
@@ -1983,3 +1979,4 @@
       "name": "3° parcial"
     }
   ]
+}
