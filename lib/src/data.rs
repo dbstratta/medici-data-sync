@@ -183,6 +183,7 @@ pub struct QuestionData {
     pub source: String,
     pub asked_at: Option<NaiveDate>,
     pub text: String,
+    pub image_url: Option<String>,
     #[serde(skip)]
     pub question_options: Vec<QuestionOptionData>,
 
@@ -193,6 +194,7 @@ impl QuestionData {
     fn new(
         id: Uuid,
         text: String,
+        image_url: Option<String>,
         question_options: Vec<QuestionOptionData>,
         evaluation: String,
         source: String,
@@ -214,6 +216,7 @@ impl QuestionData {
             source,
             asked_at,
             text,
+            image_url,
             question_options,
             hash,
         }
@@ -316,6 +319,7 @@ impl From<RawQuestionData> for QuestionData {
         Self::new(
             raw.id.unwrap_or_else(|| Uuid::new_v4()),
             raw.text,
+            None,
             options,
             raw.evaluation,
             raw.source,
