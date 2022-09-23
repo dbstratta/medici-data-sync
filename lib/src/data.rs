@@ -319,7 +319,7 @@ impl From<RawQuestionData> for QuestionData {
         Self::new(
             raw.id.unwrap_or_else(|| Uuid::new_v4()),
             raw.text,
-            None,
+            raw.image,
             options,
             raw.evaluation,
             raw.source,

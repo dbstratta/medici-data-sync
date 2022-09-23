@@ -49,7 +49,7 @@ pub struct RawQuestionData {
     pub asked_at: Option<NaiveDate>,
     pub text: String,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub image_url: Option<String>,
+    pub image: Option<String>,
     pub options: Vec<RawQuestionOptionData>,
 }
 
@@ -60,7 +60,7 @@ impl From<QuestionData> for RawQuestionData {
         Self {
             id: Some(data.id),
             text: data.text,
-            image_url: data.image_url,
+            image: data.image_url,
             options: raw_question_options,
             evaluation: data.evaluation,
             asked_at: data.asked_at,

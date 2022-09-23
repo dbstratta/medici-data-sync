@@ -1,0 +1,39 @@
+{
+  "name": "Hematología e Inmunología",
+  "short_name": "Hemato",
+  "aliases": ["hemato", "inmuno"],
+  "year": 3,
+  "questions": [
+    {
+      "evaluation": "parcial_1",
+      "source": "partial",
+      "asked_at": "2021-08-21",
+      "text": "La siguiente figura es sacada del trabajo publicado en J. Clin. Invest. 113:1271-1276 (2004) discutido como seminario 5. Se trataron ratones WT (círculos) y knock-out para el gen de la interleucina 6 (IL6 KO, triángulos) con una dieta estándar o baja en hierro. De acuerdo a los resultados y sus conocimientos puede asegurar que:",
+      "image": "asdf.avif",
+      "options": [
+        {
+          "text": "La IL-6 y el aumento de los niveles sanguíneos de hierro estimulan la síntesis de hepcidina a nivel hepatocítico actuando por diferentes vías de señalización.",
+          "correct": true
+        },
+        {
+          "text": "Los blancos directos de la IL-6 son las proteínas ferroportinas, actuando sobre las mismas se inhibe la salida de hierro de los enterocitos."
+        },
+        {
+          "text": "La IL-6 circulante es indispensable para inducir la síntesis de hepcidina en respuesta a los niveles de hierro sanguíneos."
+        },
+        {
+          "text": "El aumento en la transcripción del gen de la hepcidina en los ratones con dieta baja en hierro es significativamente mayor en los ratones IL-6 KO respecto a los WT."
+        },
+        {
+          "text": "La ausencia de IL-6 inhibe la transcripción del gen de la hepcidina cuando bajan los niveles de hierro."
+        }
+      ]
+    }
+  ],
+  "evaluations": [
+    {
+      "key": "parcial_1",
+      "name": "1° parcial"
+    }
+  ]
+}
