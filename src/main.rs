@@ -42,11 +42,23 @@ impl Synchronizer {
 #[derive(Subcommand, Clone, Debug)]
 enum Command {
     Format {
-        #[clap(short, long, value_parser, value_name = "PATH")]
+        #[clap(
+            short,
+            long,
+            value_parser,
+            value_name = "PATH",
+            default_value = "./data"
+        )]
         data_path: PathBuf,
     },
     Sync {
-        #[clap(short, long, value_parser, value_name = "PATH")]
+        #[clap(
+            short,
+            long,
+            value_parser,
+            value_name = "PATH",
+            default_value = "./data"
+        )]
         data_path: PathBuf,
 
         #[clap(long, value_parser, value_name = "ENGINE_URL", env = "ENGINE_URL")]

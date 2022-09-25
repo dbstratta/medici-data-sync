@@ -163,7 +163,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "data-synchronizer-bin"
+name = "data-sync"
 version = "0.1.0"
 dependencies = [
  "anyhow",
