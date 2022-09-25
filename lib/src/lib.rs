@@ -1,4 +1,5 @@
 mod data;
+mod hashable;
 mod helpers;
 mod raw_data;
 mod sync;

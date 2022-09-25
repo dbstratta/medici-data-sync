@@ -8,6 +8,7 @@ use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
 use crate::{
+    hashable::Hashable,
     helpers::{read_dir_entry_data, write_data},
     RawCourseData,
 };
@@ -36,17 +37,8 @@ impl CourseData {
         let questions: Vec<QuestionData> = raw.questions.into_iter().map(Into::into).collect();
         let evaluations: Vec<CourseEvaluationData> =
             raw.evaluations.into_iter().map(Into::into).collect();
-        let hash = Self::hash_data(
-            &key,
-            &raw.name,
-            &raw.short_name,
-            &raw.aliases,
-            raw.year.as_ref(),
-            &questions[..],
-            &evaluations[..],
-        );
 
-        Self {
+        let mut data = Self {
             key,
             name: raw.name,
             short_name: raw.short_name,
@@ -54,48 +46,12 @@ impl CourseData {
             year: raw.year,
             questions,
             evaluations,
-            hash,
-        }
-    }
+            hash: Default::default(),
+        };
 
-    fn hash_data(
-        key: &str,
-        name: &str,
-        short_name: &str,
-        aliases: &[String],
-        year: Option<&i16>,
-        questions: &[QuestionData],
-        evaluations: &[CourseEvaluationData],
-    ) -> String {
-        let mut hasher = blake3::Hasher::new();
+        data.set_hash();
 
-        hasher.update(key.as_bytes());
-        hasher.update(name.as_bytes());
-        hasher.update(short_name.as_bytes());
-        hasher.update(aliases.join("").as_bytes());
-
-        if let Some(year) = year {
-            hasher.update(&year.to_be_bytes());
-        }
-
-        hasher.update(
-            questions
-                .iter()
-                .map(|question| question.hash.clone())
-                .collect::<Vec<_>>()
-                .join("")
-                .as_bytes(),
-        );
-        hasher.update(
-            evaluations
-                .iter()
-                .map(|evaluation| evaluation.hash.clone())
-                .collect::<Vec<_>>()
-                .join("")
-                .as_bytes(),
-        );
-
-        hasher.finalize().to_string()
+        data
     }
 
     pub fn load_and_write_formatted(dir_entry: DirEntry) -> Result<Self> {
@@ -174,6 +130,38 @@ impl CourseData {
     }
 }
 
+impl Hashable for CourseData {
+    fn hashable_data(&self) -> Vec<u8> {
+        let mut bytes = vec![];
+
+        bytes.extend(self.key.as_bytes());
+        bytes.extend(self.name.as_bytes());
+        bytes.extend(self.short_name.as_bytes());
+        bytes.extend(self.aliases.join("").as_bytes());
+
+        if let Some(year) = self.year {
+            bytes.extend(&year.to_be_bytes());
+        }
+
+        bytes.extend(
+            self.questions
+                .iter()
+                .flat_map(|question| question.hash.as_bytes()),
+        );
+        bytes.extend(
+            self.evaluations
+                .iter()
+                .flat_map(|evaluation| evaluation.hash.as_bytes()),
+        );
+
+        bytes
+    }
+
+    fn set_hash(&mut self) {
+        self.hash = self.hash_data();
+    }
+}
+
 #[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct QuestionData {
     pub id: Uuid,
@@ -200,16 +188,7 @@ impl QuestionData {
         source: String,
         asked_at: Option<NaiveDate>,
     ) -> Self {
-        let hash = Self::hash_data(
-            id,
-            &text,
-            &question_options[..],
-            &evaluation,
-            &source,
-            asked_at.as_ref(),
-        );
-
-        Self {
+        let mut data = Self {
             id,
             course_key: None,
             evaluation,
@@ -218,38 +197,12 @@ impl QuestionData {
             text,
             image_url,
             question_options,
-            hash,
-        }
-    }
+            hash: Default::default(),
+        };
 
-    fn hash_data(
-        id: Uuid,
-        text: &str,
-        question_options: &[QuestionOptionData],
-        evaluation: &str,
-        source: &str,
-        asked_at: Option<&NaiveDate>,
-    ) -> String {
-        let mut hasher = blake3::Hasher::new();
+        data.set_hash();
 
-        hasher.update(id.as_bytes());
-        hasher.update(text.as_bytes());
-        hasher.update(
-            question_options
-                .iter()
-                .map(|option| option.hash.clone())
-                .collect::<Vec<_>>()
-                .join("")
-                .as_bytes(),
-        );
-        hasher.update(evaluation.as_bytes());
-        hasher.update(source.as_bytes());
-
-        if let Some(asked_at) = asked_at {
-            hasher.update(asked_at.to_string().as_bytes());
-        }
-
-        hasher.finalize().to_string()
+        data
     }
 
     fn sort_options(&mut self) {
@@ -312,6 +265,34 @@ impl QuestionData {
     }
 }
 
+impl Hashable for QuestionData {
+    fn hashable_data(&self) -> Vec<u8> {
+        let mut bytes = vec![];
+
+        bytes.extend(self.id.as_bytes());
+        bytes.extend(self.text.as_bytes());
+
+        bytes.extend(
+            self.question_options
+                .iter()
+                .flat_map(|question_option| question_option.hash.as_bytes()),
+        );
+
+        bytes.extend(self.evaluation.as_bytes());
+        bytes.extend(self.source.as_bytes());
+
+        if let Some(asked_at) = self.asked_at {
+            bytes.extend(asked_at.to_string().as_bytes());
+        }
+
+        bytes
+    }
+
+    fn set_hash(&mut self) {
+        self.hash = self.hash_data();
+    }
+}
+
 impl From<RawQuestionData> for QuestionData {
     fn from(raw: RawQuestionData) -> Self {
         let options = raw.options.into_iter().map(Into::into).collect();
@@ -342,30 +323,18 @@ pub struct QuestionOptionData {
 
 impl QuestionOptionData {
     fn new(id: Uuid, text: String, correct: bool, explanation: Option<String>) -> Self {
-        let hash = Self::hash_data(id, &text, correct, explanation.as_deref());
-
-        Self {
+        let mut data = Self {
             id,
             question_id: None,
             text,
             correct,
             explanation,
-            hash,
-        }
-    }
+            hash: Default::default(),
+        };
 
-    fn hash_data(id: Uuid, text: &str, correct: bool, explanation: Option<&str>) -> String {
-        let mut hasher = blake3::Hasher::new();
+        data.set_hash();
 
-        hasher.update(id.as_bytes());
-        hasher.update(text.as_bytes());
-        hasher.update(&[correct as u8]);
-
-        if let Some(explanation) = explanation {
-            hasher.update(explanation.as_bytes());
-        }
-
-        hasher.finalize().to_string()
+        data
     }
 
     fn eq_data(&self, other: &Self) -> bool {
@@ -376,6 +345,26 @@ impl QuestionOptionData {
 
     pub fn set_question_id(&mut self, question_id: Uuid) {
         self.question_id = Some(question_id);
+    }
+}
+
+impl Hashable for QuestionOptionData {
+    fn hashable_data(&self) -> Vec<u8> {
+        let mut bytes = vec![];
+
+        bytes.extend(self.id.as_bytes());
+        bytes.extend(self.text.as_bytes());
+        bytes.extend(&[self.correct as u8]);
+
+        if let Some(explanation) = &self.explanation {
+            bytes.extend(explanation.as_bytes());
+        }
+
+        bytes
+    }
+
+    fn set_hash(&mut self) {
+        self.hash = self.hash_data();
     }
 }
 
@@ -400,22 +389,16 @@ pub struct CourseEvaluationData {
 
 impl CourseEvaluationData {
     pub fn new(raw: RawCourseEvaluationData) -> Self {
-        let hash = Self::hash_data(&raw.name);
-
-        Self {
+        let mut data = Self {
             course_key: None,
             key: raw.key,
             name: raw.name,
-            hash,
-        }
-    }
+            hash: Default::default(),
+        };
 
-    fn hash_data(name: &str) -> String {
-        let mut hasher = blake3::Hasher::new();
+        data.set_hash();
 
-        hasher.update(name.as_bytes());
-
-        hasher.finalize().to_string()
+        data
     }
 
     pub fn set_course_key(&mut self, course_key: String) {
@@ -425,6 +408,20 @@ impl CourseEvaluationData {
 
     pub fn full_key(course_key: &str, key: &str) -> String {
         format!("{}{COURSE_EVALUATION_KEY_SEPARATOR}{}", course_key, key)
+    }
+}
+
+impl Hashable for CourseEvaluationData {
+    fn hashable_data(&self) -> Vec<u8> {
+        let mut bytes = vec![];
+
+        bytes.extend(self.name.as_bytes());
+
+        bytes
+    }
+
+    fn set_hash(&mut self) {
+        self.hash = self.hash_data();
     }
 }
 
