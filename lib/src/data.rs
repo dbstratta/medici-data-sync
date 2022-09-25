@@ -272,6 +272,10 @@ impl Hashable for QuestionData {
         bytes.extend(self.id.as_bytes());
         bytes.extend(self.text.as_bytes());
 
+        if let Some(image_url) = &self.image_url {
+            bytes.extend(image_url.as_bytes());
+        }
+
         bytes.extend(
             self.question_options
                 .iter()
