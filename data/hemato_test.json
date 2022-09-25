@@ -1,10 +1,14 @@
 {
-  "name": "Hematología e Inmunología",
-  "short_name": "Hemato",
-  "aliases": ["hemato", "inmuno"],
+  "name": "Hematología e Inmunología2",
+  "short_name": "Hemato2",
+  "aliases": [
+    "hemato",
+    "inmuno"
+  ],
   "year": 3,
   "questions": [
     {
+      "id": "75a86779-f777-4fdb-81de-998571d3790c",
       "evaluation": "parcial_1",
       "source": "partial",
       "asked_at": "2021-08-21",
@@ -12,20 +16,25 @@
       "image": "asdf.avif",
       "options": [
         {
+          "id": "6d4827b1-a608-4433-9f39-99c7794cd3ea",
           "text": "La IL-6 y el aumento de los niveles sanguíneos de hierro estimulan la síntesis de hepcidina a nivel hepatocítico actuando por diferentes vías de señalización.",
           "correct": true
         },
         {
-          "text": "Los blancos directos de la IL-6 son las proteínas ferroportinas, actuando sobre las mismas se inhibe la salida de hierro de los enterocitos."
-        },
-        {
-          "text": "La IL-6 circulante es indispensable para inducir la síntesis de hepcidina en respuesta a los niveles de hierro sanguíneos."
-        },
-        {
+          "id": "0d15f7ad-822d-4796-a9d1-a36aeba01213",
           "text": "El aumento en la transcripción del gen de la hepcidina en los ratones con dieta baja en hierro es significativamente mayor en los ratones IL-6 KO respecto a los WT."
         },
         {
+          "id": "35dda6e4-e8fa-430e-aa67-36383d6f7ec9",
+          "text": "La IL-6 circulante es indispensable para inducir la síntesis de hepcidina en respuesta a los niveles de hierro sanguíneos."
+        },
+        {
+          "id": "05a69d54-c55a-42ec-8dfb-48f3babfde9d",
           "text": "La ausencia de IL-6 inhibe la transcripción del gen de la hepcidina cuando bajan los niveles de hierro."
+        },
+        {
+          "id": "33d1ca71-d4f8-4378-844f-b98cabb14e05",
+          "text": "Los blancos directos de la IL-6 son las proteínas ferroportinas, actuando sobre las mismas se inhibe la salida de hierro de los enterocitos."
         }
       ]
     }
