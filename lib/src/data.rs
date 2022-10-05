@@ -56,7 +56,7 @@ impl CourseData {
 
     pub async fn load_and_write_formatted(
         dir_entry: DirEntry,
-        images_path: PathBuf,
+        mut images_path: PathBuf,
     ) -> Result<Self> {
         let path = dir_entry.path();
         let mut data = Self::load(path.clone(), dir_entry)?;
@@ -67,6 +67,7 @@ impl CourseData {
 
         data.set_data();
 
+        images_path.push(data.key.clone());
         data.format(images_path).await?;
 
         data.clone().write(path)?;
@@ -79,7 +80,7 @@ impl CourseData {
 
         let key = path
             .file_stem()
-            .and_then(|name| name.to_str())
+            .and_then(OsStr::to_str)
             .expect("invalid file name")
             .to_owned();
         let raw_course_data = RawCourseData::from_slice(&raw_data[..])?;
