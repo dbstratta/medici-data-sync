@@ -321,6 +321,14 @@ impl QuestionData {
             &self.evaluation,
         )
     }
+
+    pub fn full_image_path(&self) -> Option<String> {
+        Some(format!(
+            "{}/{}",
+            self.course_key.as_ref().expect("course key not set"),
+            self.image_file_name.as_ref()?.as_os_str().to_string_lossy()
+        ))
+    }
 }
 
 impl Hashable for QuestionData {
