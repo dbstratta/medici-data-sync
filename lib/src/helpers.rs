@@ -26,9 +26,16 @@ pub fn write_data(path: PathBuf, data: String) -> Result<()> {
     Ok(())
 }
 
-pub fn load_courses_data_and_write_formatted(data_path: PathBuf) -> Result<Vec<CourseData>> {
-    read_data_dir(data_path)?
-        .into_iter()
-        .map(|dir_entry| CourseData::load_and_write_formatted(dir_entry?))
-        .collect()
+pub async fn load_courses_data_and_write_formatted(
+    data_path: PathBuf,
+    images_path: PathBuf,
+) -> Result<Vec<CourseData>> {
+    let mut courses_data = vec![];
+
+    for dir_entry in read_data_dir(data_path)? {
+        courses_data
+            .push(CourseData::load_and_write_formatted(dir_entry?, images_path.clone()).await?);
+    }
+
+    Ok(courses_data)
 }

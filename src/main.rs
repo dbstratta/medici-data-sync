@@ -35,7 +35,7 @@ impl Synchronizer {
                 data_path,
                 images_path,
             } => {
-                format::format(data_path, images_path)?;
+                format::format(data_path, images_path).await?;
             }
         }
 

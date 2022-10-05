@@ -1,3 +1,5 @@
+use std::path::PathBuf;
+
 use anyhow::Result;
 use chrono::NaiveDate;
 use serde::{Deserialize, Serialize};
@@ -49,7 +51,7 @@ pub struct RawQuestionData {
     pub asked_at: Option<NaiveDate>,
     pub text: String,
     #[serde(skip_serializing_if = "Option::is_none")]
-    pub image: Option<String>,
+    pub image: Option<PathBuf>,
     pub options: Vec<RawQuestionOptionData>,
 }
 

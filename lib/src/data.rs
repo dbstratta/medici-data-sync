@@ -1,6 +1,6 @@
-use std::cmp::Ordering;
 use std::fs::DirEntry;
 use std::path::PathBuf;
+use std::{cmp::Ordering, ffi::OsStr};
 
 use anyhow::{bail, Result};
 use chrono::NaiveDate;
@@ -54,7 +54,10 @@ impl CourseData {
         data
     }
 
-    pub fn load_and_write_formatted(dir_entry: DirEntry) -> Result<Self> {
+    pub async fn load_and_write_formatted(
+        dir_entry: DirEntry,
+        images_path: PathBuf,
+    ) -> Result<Self> {
         let path = dir_entry.path();
         let mut data = Self::load(path.clone(), dir_entry)?;
 
@@ -64,7 +67,7 @@ impl CourseData {
 
         data.set_data();
 
-        data.format();
+        data.format(images_path).await?;
 
         data.clone().write(path)?;
 
@@ -135,10 +138,12 @@ impl CourseData {
         }
     }
 
-    fn format(&mut self) {
+    async fn format(&mut self, images_path: PathBuf) -> Result<()> {
         for question in &mut self.questions {
-            question.format();
+            question.format(images_path.clone()).await?;
         }
+
+        Ok(())
     }
 }
 
@@ -183,7 +188,7 @@ pub struct QuestionData {
     pub source: String,
     pub asked_at: Option<NaiveDate>,
     pub text: String,
-    pub image_file_name: Option<String>,
+    pub image_file_name: Option<PathBuf>,
     #[serde(skip)]
     pub question_options: Vec<QuestionOptionData>,
 
@@ -194,7 +199,7 @@ impl QuestionData {
     fn new(
         id: Uuid,
         text: String,
-        image_url: Option<String>,
+        image_file_name: Option<PathBuf>,
         question_options: Vec<QuestionOptionData>,
         evaluation: String,
         source: String,
@@ -207,7 +212,7 @@ impl QuestionData {
             source,
             asked_at,
             text,
-            image_file_name: image_url,
+            image_file_name: image_file_name,
             question_options,
             hash: Default::default(),
         };
@@ -265,18 +270,36 @@ impl QuestionData {
         Ok(())
     }
 
-    fn format(&mut self) {
+    async fn format(&mut self, images_path: PathBuf) -> Result<()> {
         self.text = self.text.trim().into();
 
-        if let Some(image_filename) = &self.image_file_name {
-            if image_filename != &self.id.to_string() {
-                self.image_file_name.replace(self.id.to_string());
+        if let Some(image_file_name) = &self.image_file_name {
+            let stem = image_file_name.file_stem().and_then(OsStr::to_str).unwrap();
+
+            if stem != &self.id.to_string() {
+                let extension = image_file_name
+                    .extension()
+                    .and_then(OsStr::to_str)
+                    .expect("no extension in image file name");
+
+                let mut new_file_name = PathBuf::from(self.id.to_string());
+                new_file_name.set_extension(extension);
+
+                let mut old_path = images_path.clone();
+                old_path.push(image_file_name);
+                let mut new_path = images_path.clone();
+                new_path.push(new_file_name.clone());
+                tokio::fs::rename(old_path, new_path).await?;
+
+                self.image_file_name.replace(new_file_name);
             }
         }
 
         for question_option in self.question_options.iter_mut() {
             question_option.format();
         }
+
+        Ok(())
     }
 
     fn set_data(&mut self, course_key: String) {
@@ -306,8 +329,8 @@ impl Hashable for QuestionData {
         bytes.extend(self.id.as_bytes());
         bytes.extend(self.text.as_bytes());
 
-        if let Some(image_url) = &self.image_file_name {
-            bytes.extend(image_url.as_bytes());
+        if let Some(image_file_name) = &self.image_file_name {
+            bytes.extend(image_file_name.to_string_lossy().as_bytes());
         }
 
         bytes.extend(

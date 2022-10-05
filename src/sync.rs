@@ -20,7 +20,8 @@ pub async fn sync(
     let mut question_options_to_sync = vec![];
     let mut course_evaluations_to_sync = vec![];
 
-    let mut courses_data = load_courses_data_and_write_formatted(data_path)?;
+    let mut courses_data =
+        load_courses_data_and_write_formatted(data_path, images_path.clone()).await?;
 
     for mut course_data in courses_data.drain(..) {
         let skip_course = match sync_metadata.courses_metadata.remove(&course_data.key) {
