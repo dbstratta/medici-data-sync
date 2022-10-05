@@ -26,4 +26,5 @@ pub struct SyncMetadata {
     pub questions_metadata: HashMap<Uuid, String>,
     pub question_options_metadata: HashMap<Uuid, String>,
     pub course_evaluations_metadata: HashMap<String, String>,
+    pub images_bucket_name: String,
 }

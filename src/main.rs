@@ -25,13 +25,17 @@ impl Synchronizer {
         match self.command {
             Command::Sync {
                 data_path,
+                images_path,
                 engine_url,
                 engine_key,
             } => {
-                sync::sync(data_path, engine_url, engine_key).await?;
+                sync::sync(data_path, images_path, engine_url, engine_key).await?;
             }
-            Command::Format { data_path } => {
-                format::format(data_path)?;
+            Command::Format {
+                data_path,
+                images_path,
+            } => {
+                format::format(data_path, images_path)?;
             }
         }
 
@@ -50,6 +54,15 @@ enum Command {
             default_value = "./data"
         )]
         data_path: PathBuf,
+
+        #[clap(
+            short,
+            long,
+            value_parser,
+            value_name = "PATH",
+            default_value = "./images"
+        )]
+        images_path: PathBuf,
     },
     Sync {
         #[clap(
@@ -60,6 +73,15 @@ enum Command {
             default_value = "./data"
         )]
         data_path: PathBuf,
+
+        #[clap(
+            short,
+            long,
+            value_parser,
+            value_name = "PATH",
+            default_value = "./images"
+        )]
+        images_path: PathBuf,
 
         #[clap(long, value_parser, value_name = "ENGINE_URL", env = "ENGINE_URL")]
         engine_url: Url,

@@ -4,7 +4,7 @@ use anyhow::Result;
 
 use medici_data_sync::{read_data_dir, CourseData};
 
-pub fn format(data_path: PathBuf) -> Result<()> {
+pub fn format(data_path: PathBuf, images_path: PathBuf) -> Result<()> {
     let entries = read_data_dir(data_path)?;
 
     for dir_entry in entries {

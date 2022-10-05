@@ -61,7 +61,10 @@ impl CourseData {
         data.check()?;
         data.deduplicate();
         data.sort();
-        data.format_text();
+
+        data.set_data();
+
+        data.format();
 
         data.clone().write(path)?;
 
@@ -122,10 +125,19 @@ impl CourseData {
         Ok(())
     }
 
-    fn format_text(&mut self) {
-        for question in self.questions.iter_mut() {
-            question.text = question.text.trim().into();
-            question.format_text();
+    fn set_data(&mut self) {
+        for question in &mut self.questions {
+            question.set_data(self.key.clone());
+        }
+
+        for evaluation in &mut self.evaluations {
+            evaluation.set_course_key(self.key.clone());
+        }
+    }
+
+    fn format(&mut self) {
+        for question in &mut self.questions {
+            question.format();
         }
     }
 }
@@ -171,7 +183,7 @@ pub struct QuestionData {
     pub source: String,
     pub asked_at: Option<NaiveDate>,
     pub text: String,
-    pub image_url: Option<String>,
+    pub image_file_name: Option<String>,
     #[serde(skip)]
     pub question_options: Vec<QuestionOptionData>,
 
@@ -195,7 +207,7 @@ impl QuestionData {
             source,
             asked_at,
             text,
-            image_url,
+            image_file_name: image_url,
             question_options,
             hash: Default::default(),
         };
@@ -253,15 +265,37 @@ impl QuestionData {
         Ok(())
     }
 
-    fn format_text(&mut self) {
+    fn format(&mut self) {
+        self.text = self.text.trim().into();
+
+        if let Some(image_filename) = &self.image_file_name {
+            if image_filename != &self.id.to_string() {
+                self.image_file_name.replace(self.id.to_string());
+            }
+        }
+
         for question_option in self.question_options.iter_mut() {
-            question_option.text = question_option.text.trim().into();
+            question_option.format();
+        }
+    }
+
+    fn set_data(&mut self, course_key: String) {
+        self.set_course_key(course_key);
+
+        for question_option in self.question_options.iter_mut() {
+            question_option.set_question_id(self.id);
         }
     }
 
     pub fn set_course_key(&mut self, course_key: String) {
-        self.course_key = Some(course_key.clone());
-        self.evaluation = CourseEvaluationData::full_key(&course_key, &self.evaluation);
+        self.course_key.replace(course_key);
+    }
+
+    pub fn full_evaluation_key(&self) -> String {
+        CourseEvaluationData::full_key(
+            self.course_key.as_ref().expect("course key not set"),
+            &self.evaluation,
+        )
     }
 }
 
@@ -272,7 +306,7 @@ impl Hashable for QuestionData {
         bytes.extend(self.id.as_bytes());
         bytes.extend(self.text.as_bytes());
 
-        if let Some(image_url) = &self.image_url {
+        if let Some(image_url) = &self.image_file_name {
             bytes.extend(image_url.as_bytes());
         }
 
@@ -347,6 +381,10 @@ impl QuestionOptionData {
             && self.explanation == other.explanation
     }
 
+    fn format(&mut self) {
+        self.text = self.text.trim().into();
+    }
+
     pub fn set_question_id(&mut self, question_id: Uuid) {
         self.question_id = Some(question_id);
     }
@@ -407,7 +445,6 @@ impl CourseEvaluationData {
 
     pub fn set_course_key(&mut self, course_key: String) {
         self.course_key = Some(course_key.clone());
-        self.key = Self::full_key(&course_key, &self.key);
     }
 
     pub fn full_key(course_key: &str, key: &str) -> String {

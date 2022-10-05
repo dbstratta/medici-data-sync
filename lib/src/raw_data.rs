@@ -60,7 +60,7 @@ impl From<QuestionData> for RawQuestionData {
         Self {
             id: Some(data.id),
             text: data.text,
-            image: data.image_url,
+            image: data.image_file_name,
             options: raw_question_options,
             evaluation: data.evaluation,
             asked_at: data.asked_at,

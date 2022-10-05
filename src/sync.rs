@@ -6,7 +6,12 @@ use url::Url;
 
 use medici_data_sync::{load_courses_data_and_write_formatted, SyncData, SyncMetadata};
 
-pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String>) -> Result<()> {
+pub async fn sync(
+    data_path: PathBuf,
+    images_path: PathBuf,
+    engine_url: Url,
+    engine_key: Secret<String>,
+) -> Result<()> {
     let engine_client = engine_client(engine_key)?;
     let mut sync_metadata = sync_metadata(&engine_client, engine_url.clone()).await?;
 
@@ -23,9 +28,7 @@ pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String
             _ => false,
         };
 
-        for mut course_evaluation_data in course_data.evaluations.drain(..) {
-            course_evaluation_data.set_course_key(course_data.key.clone());
-
+        for course_evaluation_data in course_data.evaluations.drain(..) {
             match sync_metadata
                 .course_evaluations_metadata
                 .remove(&course_evaluation_data.key)
@@ -37,17 +40,13 @@ pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String
         }
 
         for mut question_data in course_data.questions.drain(..) {
-            question_data.set_course_key(course_data.key.clone());
-
             let skip_question = match sync_metadata.questions_metadata.remove(&question_data.id) {
                 Some(question_hash) if question_hash == question_data.hash => true,
                 _ if !skip_course => false,
                 _ => true,
             };
 
-            for mut question_option_data in question_data.question_options.drain(..) {
-                question_option_data.set_question_id(question_data.id);
-
+            for question_option_data in question_data.question_options.drain(..) {
                 match sync_metadata
                     .question_options_metadata
                     .remove(&question_option_data.id)
@@ -101,6 +100,8 @@ pub async fn sync(data_path: PathBuf, engine_url: Url, engine_key: Secret<String
     )
     .await?;
 
+    sync_images(images_path, &sync_metadata.images_bucket_name).await?;
+
     Ok(())
 }
 
@@ -134,4 +135,16 @@ async fn sync_data(client: &reqwest::Client, engine_url: Url, data: SyncData) ->
     } else {
         bail!("Error {}", response.status())
     }
+}
+
+async fn sync_images(images_path: PathBuf, bucket_name: &str) -> Result<()> {
+    tokio::process::Command::new("aws")
+        .arg("s3")
+        .arg("sync")
+        .arg(images_path)
+        .arg(format!("s3://{bucket_name}"))
+        .status()
+        .await?;
+
+    Ok(())
 }
